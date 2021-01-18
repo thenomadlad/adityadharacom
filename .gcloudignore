@@ -1,0 +1,5 @@
+# Next.js source code
+/pages/
+node_modules/
+yarn.lock
+package-lock.json
