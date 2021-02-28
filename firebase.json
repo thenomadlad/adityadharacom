@@ -9,12 +9,16 @@
     "rewrites": [
       {
         "source": "**",
-        "function": "nextServer"
+        "function": "nextjsServing"
       }
     ]
   },
   "functions": {
     "source": ".",
+    "predeploy": [
+      "npm install",
+      "npm run build"
+    ],
     "runtime": "nodejs14"
   }
 }
