@@ -1,24 +1,24 @@
 {
   "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "public": "public/",
+    "cleanUrls": true,
     "rewrites": [
       {
         "source": "**",
-        "function": "nextjsServing"
+        "function": "nextjsServing-server"
       }
     ]
   },
   "functions": {
     "source": ".",
-    "predeploy": [
-      "npm install",
-      "npm run build"
-    ],
-    "runtime": "nodejs14"
+    "engines": {
+      "node": "14"
+    },
+    "ignore": [
+      "firebase.json",
+			"*.log",
+			"**/.*",
+			"**/node_modules/**"
+    ]
   }
 }

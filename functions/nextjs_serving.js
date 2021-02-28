@@ -1,20 +1,22 @@
-const { join } = require('path');
+const admin = require("firebase-admin");
 const { https } = require('firebase-functions');
 const { default: next } = require('next');
+const config = require('../next.config.js')
 
-const nextjsDistDir = join("..", require('../next.config.js').distDir);
+// admin.initializeApp();
 
+// set up nextjs serving handler
 const isDev = process.env.NODE_ENV !== 'production';
-
-const server = next({
+const app = next({
   dev: isDev,
-  conf: {
-    distDir: nextjsDistDir
-  },
+  conf: config,
+});
+const nextjsHandle = app.getRequestHandler();
+
+// create "server" which handles https functions using a nextjsHandle
+const server = https.onRequest((req, res) => {
+  console.log("File: ", req.originalUrl);
+  return app.prepare().then(() => nextjsHandle(req, res));
 });
 
-const nextjsHandle = server.getRequestHandler();
-
-exports.nextjsServing = https.onRequest((req, res) => {
-  return server.prepare().then(() => nextjsHandle(req, res));
-});
+exports.nextjsServing = { server };
