@@ -11,13 +11,10 @@
   },
   "functions": {
     "source": ".",
-    "engines": {
-      "node": "14"
-    },
+    "runtime": "nodejs14",
     "ignore": [
       "firebase.json",
 			"*.log",
-			"**/.*",
 			"**/node_modules/**"
     ]
   }

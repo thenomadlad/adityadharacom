@@ -12,11 +12,12 @@ const app = next({
   conf: config,
 });
 const nextjsHandle = app.getRequestHandler();
+const preparedApp = app.prepare();
 
 // create "server" which handles https functions using a nextjsHandle
 const server = https.onRequest((req, res) => {
   console.log("File: ", req.originalUrl);
-  return app.prepare().then(() => nextjsHandle(req, res));
+  return preparedApp.then(() => nextjsHandle(req, res));
 });
 
 exports.nextjsServing = { server };
