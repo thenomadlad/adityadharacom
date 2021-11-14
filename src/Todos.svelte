@@ -3,7 +3,7 @@
     import { db } from './firebase';
     import { collection, doc, setDoc, deleteDoc, query, orderBy, where } from 'firebase/firestore';
     import { collectionData } from 'rxfire/firestore';
-    import { startWith } from 'rxjs/operators';
+    import { tap } from 'rxjs/operators';
 
     const COLL_NAME = 'todos';
 
@@ -13,7 +13,7 @@
     const todosRef = collection(db, COLL_NAME);
     const queryRef = query(todosRef, orderBy("created"), where("uid", "==", uid))
 
-    const todos = collectionData(queryRef, {idField: 'id'}).pipe(startWith([]));
+    const todos = collectionData(queryRef, { idField: 'id' }).pipe(tap(console.log));
 
 
     async function generateId(text: string, uid: string): Promise<string> {
@@ -53,9 +53,11 @@
 </script>
 
 <ul>
+    {#if $todos}
     {#each $todos as todo}
         <TodoItem {...todo} on:remove={removeItem} on:toggle={updateStatus} />:
     {/each}
+    {/if}
 </ul>
 
 <input bind:value={text}>
