@@ -1,20 +1,18 @@
 <script lang="ts">
 	import 'bulma/css/bulma.css';
-	import Login from './Login.svelte';
-	import Todos from './Todos.svelte';
-
-	export let name: string = "Aditya";
+	import Login from './account/Login.svelte';
+	import ChatWindow from './chat/ChatWindow.svelte';
 
 	let uid: string;
 </script>
 
 
 <main>
+	<h1>Hi! My Name's Aditya, let's chat</h1>
 	<Login bind:uid={uid} />
-	<h1>My name's {name}, tell me what you're working on</h1>
-	<p>Your UID is {uid}</p>
-
 	{#if uid}
-		<Todos uid={uid} />
+		<ChatWindow {uid} />
+	{:else}
+		<img src='public/assets/capybara.png' alt="Aditya capybara logo" />
 	{/if}
 </main>
