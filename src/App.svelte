@@ -8,6 +8,7 @@
 
 
 <main>
+<<<<<<< Updated upstream
 	<h1>Hi! My Name's Aditya, let's chat</h1>
 	<Login bind:uid={uid} />
 	{#if uid}
@@ -15,4 +16,23 @@
 	{:else}
 		<img src='public/assets/capybara.png' alt="Aditya capybara logo" />
 	{/if}
+=======
+	<section class="section">
+		<div class="container">
+		  <h1 class="title">
+			My name's {name}, 
+		  </h1>
+		  <p class="subtitle">
+			Tell me what you need to work on today
+		  </p>
+		  
+		  <Login bind:uid={uid} />
+		  <p>Your UID is {uid}</p>
+	  
+		  {#if uid}
+			  <Todos uid={uid} />
+		  {/if}
+		</div>
+	  </section>
+>>>>>>> Stashed changes
 </main>
