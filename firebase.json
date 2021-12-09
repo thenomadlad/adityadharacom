@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"firestore": {
 		"rules": "firestore.rules",
 		"indexes": "firestore.indexes.json"
@@ -18,4 +19,25 @@
 			"enabled": true
 		}
 	}
+=======
+  "hosting": {
+    "public": "public/",
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextjsServing-server"
+      }
+    ]
+  },
+  "functions": {
+    "source": ".",
+    "runtime": "nodejs14",
+    "ignore": [
+      "firebase.json",
+			"*.log",
+			"**/node_modules/**"
+    ]
+  }
+>>>>>>> main
 }
