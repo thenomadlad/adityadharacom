@@ -1,19 +1,19 @@
 {
-  "indexes": [
-    {
-      "collectionGroup": "todos",
-      "queryScope": "COLLECTION",
-      "fields": [
-        {
-          "fieldPath": "uid",
-          "order": "ASCENDING"
-        },
-        {
-          "fieldPath": "created",
-          "order": "ASCENDING"
-        }
-      ]
-    }
-  ],
-  "fieldOverrides": []
+	"indexes": [
+		{
+			"collectionGroup": "todos",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "uid",
+					"order": "ASCENDING"
+				},
+				{
+					"fieldPath": "created",
+					"order": "ASCENDING"
+				}
+			]
+		}
+	],
+	"fieldOverrides": []
 }
