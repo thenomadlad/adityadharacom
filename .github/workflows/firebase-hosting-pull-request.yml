@@ -22,6 +22,7 @@ jobs:
       - run: npm run lint
       # - run: npm test
   build_and_preview:
+    needs: lint_and_test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
