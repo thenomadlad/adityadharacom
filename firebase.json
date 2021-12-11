@@ -1,21 +1,21 @@
 {
-  "hosting": {
-    "public": "public/",
-    "cleanUrls": true,
-    "rewrites": [
-      {
-        "source": "**",
-        "function": "nextjsServing-server"
-      }
-    ]
-  },
-  "functions": {
-    "source": ".",
-    "runtime": "nodejs14",
-    "ignore": [
-      "firebase.json",
-			"*.log",
-			"**/node_modules/**"
-    ]
-  }
+	"firestore": {
+		"rules": "firestore.rules",
+		"indexes": "firestore.indexes.json"
+	},
+	"hosting": {
+		"public": "build",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+	},
+	"emulators": {
+		"firestore": {
+			"port": 8080
+		},
+		"hosting": {
+			"port": 5000
+		},
+		"ui": {
+			"enabled": true
+		}
+	}
 }
