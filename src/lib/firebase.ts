@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
-var firebaseConfig = {
+const firebaseConfig = {
 	apiKey: 'AIzaSyCR6gf0bRO5Jixgm1p3WEOnksaKyG59LkY',
 	authDomain: 'mysite-286621.firebaseapp.com',
 	projectId: 'mysite-286621',
