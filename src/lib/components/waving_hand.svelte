@@ -3,7 +3,7 @@
 	let wave = false;
 
 	function setWave(e) {
-		alert(e);
+		alert(e.type);
 		wave = true;
 	}
 
