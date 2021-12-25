@@ -31,9 +31,10 @@
 	<h1
 		class="text-8xl m-10"
 		on:mouseover={setWave}
-		on:focus={waveAndUnWave}
+		on:focus={setWave}
 		on:mouseout={setNotWave}
 		on:blur={setNotWave}
+		on:click={waveAndUnWave}
 	>
 		<span class={'hand ' + (wave ? 'waveIn' : 'waveOut')}> 👋 </span>
 		😊
