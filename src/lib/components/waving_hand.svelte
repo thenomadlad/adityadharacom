@@ -23,31 +23,29 @@
 	setTimeout(wavePeriodically, waveInterval);
 </script>
 
+<div>
+	<h1
+		class="text-8xl m-10"
+		on:mouseover={setWave}
+		on:focus={setWave}
+		on:mouseout={setNotWave}
+		on:blur={setNotWave}
+	>
+		<span class={'hand ' + (wave ? 'waveIn' : 'waveOut')}> 👋 </span>
+		😊
+	</h1>
+</div>
+
 <style>
 	.hand {
 		display: inline-block;
 	}
 	.waveOut {
 		transition: transform 0.5s ease-in;
-		transform: rotate(0deg)
+		transform: rotate(0deg);
 	}
 	.waveIn {
 		transition: transform 0.5s ease-in;
-		transform: rotate(15deg)
+		transform: rotate(15deg);
 	}
 </style>
-
-<div>
-    <h1
-        class="text-8xl m-10"
-        on:mouseover={setWave}
-        on:focus={setWave}
-        on:mouseout={setNotWave}
-        on:blur={setNotWave}
-    >
-        <span class={'hand ' + (wave ? 'waveIn' : 'waveOut')}>
-            👋
-        </span>
-        😊
-    </h1>
-</div>
