@@ -10,14 +10,18 @@
 		wave = false;
 	}
 
-	// kick off the wave
-	function wavePeriodically() {
+	function waveAndUnWave() {
 		if (!wave) {
 			setWave();
 			setTimeout(() => {
 				setNotWave();
 			}, 500);
 		}
+	}
+
+	// kick off the wave
+	function wavePeriodically() {
+		waveAndUnWave();
 		setTimeout(wavePeriodically, waveInterval);
 	}
 	setTimeout(wavePeriodically, waveInterval);
@@ -27,7 +31,7 @@
 	<h1
 		class="text-8xl m-10"
 		on:mouseover={setWave}
-		on:focus={setWave}
+		on:focus={waveAndUnWave}
 		on:mouseout={setNotWave}
 		on:blur={setNotWave}
 	>
