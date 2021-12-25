@@ -2,7 +2,8 @@
 	const waveInterval = 10000;
 	let wave = false;
 
-	function setWave() {
+	function setWave(e) {
+		alert(e);
 		wave = true;
 	}
 
@@ -10,9 +11,9 @@
 		wave = false;
 	}
 
-	function waveAndUnWave() {
+	function waveAndUnWave(e) {
 		if (!wave) {
-			setWave();
+			setWave(e);
 			setTimeout(() => {
 				setNotWave();
 			}, 500);
@@ -21,7 +22,7 @@
 
 	// kick off the wave
 	function wavePeriodically() {
-		waveAndUnWave();
+		waveAndUnWave(null);
 		setTimeout(wavePeriodically, waveInterval);
 	}
 	setTimeout(wavePeriodically, waveInterval);
