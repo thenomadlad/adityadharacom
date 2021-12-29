@@ -1,5 +1,6 @@
 <script lang="ts">
-	const waveInterval = 10000;
+	const waveInterval = 10000; // in ms
+	const transitionTime = 500; // in ms
 	let wave = false;
 
 	function setWave() {
@@ -15,7 +16,7 @@
 			setWave();
 			setTimeout(() => {
 				setNotWave();
-			}, 500);
+			}, transitionTime);
 		}
 	}
 
@@ -35,7 +36,12 @@
 		on:mouseout={setNotWave}
 		on:blur={setNotWave}
 	>
-		<span class={'hand ' + (wave ? 'waveIn' : 'waveOut')}> 👋 </span>
+		<span
+			class={'hand ' + (wave ? 'waveIn' : 'waveOut')}
+			style="--transition-time: {transitionTime}ms"
+		>
+			👋
+		</span>
 		😊
 	</h1>
 </div>
@@ -45,11 +51,15 @@
 		display: inline-block;
 	}
 	.waveOut {
-		transition: transform 0.5s ease-in;
+		transition-property: transform;
+		transition-duration: var(--transition-time, 500ms);
+		transition-timing-function: ease-in;
 		transform: rotate(0deg);
 	}
 	.waveIn {
-		transition: transform 0.5s ease-in;
+		transition-property: transform;
+		transition-duration: var(--transition-time, 500ms);
+		transition-timing-function: ease-in;
 		transform: rotate(15deg);
 	}
 </style>
