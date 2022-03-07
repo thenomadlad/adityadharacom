@@ -20,7 +20,8 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run lint && npm run check
-      # - run: npm test
+      - run: npx playwright install
+      - run: npm test
   build_and_preview:
     needs: lint_and_test
     runs-on: ubuntu-latest
