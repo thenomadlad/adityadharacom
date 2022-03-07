@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let image_src: string = '/favicon.png';
-	export let image_alt: string = 'Image alt';
+	export let image_src = '/favicon.png';
+	export let image_alt = 'Image alt';
 </script>
 
 <div>
