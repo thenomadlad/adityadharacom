@@ -23,7 +23,3 @@
 		</div>
 	</div>
 </div>
-
-<div class="columns-3">
-	<Card />
-</div>
