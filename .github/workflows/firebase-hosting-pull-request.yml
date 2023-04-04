@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm ci
-      - run: npm run lint && npm run check
-      - run: npx playwright install
-      - run: npm test
+      - run: pnpm ci
+      - run: pnpm run lint && pnpm run check
+      - run: pnpx playwright install
+      - run: pnpm test
   build_and_preview:
     needs: lint_and_test
     runs-on: ubuntu-latest
