@@ -13,11 +13,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: "Install pnpm"
+        uses: pnpm/action-setup@v1.2.1
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          version: 7.x
       - run: pnpm ci
       - run: pnpm run lint && pnpm run check
       - run: pnpx playwright install
