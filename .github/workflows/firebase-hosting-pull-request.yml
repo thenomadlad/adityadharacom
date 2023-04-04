@@ -17,7 +17,7 @@ jobs:
         uses: pnpm/action-setup@v2.2.4
         with:
           version: 7.x
-      - run: pnpm ci
+      - run: pnpm install
       - run: pnpm run lint && pnpm run check
       - run: pnpx playwright install
       - run: pnpm test
