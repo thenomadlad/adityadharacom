@@ -8,26 +8,29 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: 'Install pnpm'
+        uses: pnpm/action-setup@v2.2.4
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run lint && npm run check
-      - run: npx playwright install
-      - run: npm test
+          version: 7.x
+      - run: pnpm install
+      - run: pnpm run lint && pnpm run check
+      - run: pnpx playwright install
+      - run: pnpm test
   build_and_preview:
     needs: lint_and_test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
+      - name: 'Install pnpm'
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7.x
+      - run: pnpm install && pnpm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
