@@ -29,11 +29,11 @@
 
 		<div class="inline-grid grid-cols-3 gap-x-4 gap-y-4">
 			{#each data.repos as repo}
-			<a class="block" href="{repo.url}">
-				<Card heading={repo.name} date={repo.created_at}>
-					<LanguageIcon language={repo.language} />
-				</Card>
-			</a>
+				<a class="block" href={repo.url}>
+					<Card heading={repo.name} date={repo.created_at}>
+						<LanguageIcon language={repo.language} />
+					</Card>
+				</a>
 			{/each}
 		</div>
 	</div>

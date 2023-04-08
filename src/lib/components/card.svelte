@@ -3,9 +3,9 @@
 
 	// export let image_src = '/favicon.png';
 	// export let image_alt = 'Image alt';
-	export let heading: string = 'What even is a heading?';
-	export let date: Date = new Date('2022-10-12');
-	
+	export let heading = 'What even is a heading?';
+	export let date = new Date('2022-10-12');
+
 	$: formattedDate = format(date, 'yyyy-MM-dd');
 </script>
 
