@@ -16,7 +16,7 @@
 			<div class="flex mt-20 justify-center">
 				<WavingHand />
 			</div>
-			<div class="inline-grid grid-cols-3 gap-x-4 text-3xl">
+			<div class="inline-grid grid-cols-2 gap-x-4 text-3xl">
 				<a
 					class="text-center text-gray-400 hover:text-black"
 					href="https://www.linkedin.com/in/adityadhara/"
@@ -25,9 +25,6 @@
 				</a>
 				<a class="text-center text-gray-400 hover:text-black" href="https://github.com/thenomadlad">
 					<i class="fab fa-github" />
-				</a>
-				<a class="text-center text-gray-400 hover:text-black" href="/blog">
-					<i class="fa-solid fa-pen" />
 				</a>
 			</div>
 
