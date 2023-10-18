@@ -2,25 +2,25 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - main
   schedule:
-    - cron: '0 4,16 * * *' # every day at 4 am and pm UTC
+    - cron: "0 4,16 * * *" # every day at 4 am and pm UTC
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 'Install pnpm'
+      - name: "Install pnpm"
         uses: pnpm/action-setup@v2.2.4
         with:
           version: 7.x
       - run: pnpm install && pnpm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MYSITE_286621 }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_MYSITE_286621 }}"
           channelId: live
           projectId: mysite-286621
