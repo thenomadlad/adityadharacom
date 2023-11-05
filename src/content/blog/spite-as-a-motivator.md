@@ -15,11 +15,11 @@ I had a few long talks with other more senior engineers and managers, and I foun
 
 ### Design documentation
 
-It wasn't that I didn't enjoy working on software design, it was just a lot of effort getting thoughts on paper. Any google search shows a hundred ways to structure software design documents, and a thousand ways to draw architecture diagrams. Of course, my company's solution to that problem was to create their own standard. For my team's work, I would use [the minimalist template that the rust team uses](https://github.com/rust-lang/rfcs/blob/master/0000-template.md) until I had to flesh it out for other teams or leaders to see. 
+It wasn't that I didn't enjoy working on software design, it was just a lot of effort getting thoughts on paper. Any google search shows a hundred ways to structure software design documents, and a thousand ways to draw architecture diagrams. Of course, my company's solution to that problem was to create their own standard. For my team's work, I would use [the minimalist template that the rust team uses](https://github.com/rust-lang/rfcs/blob/master/0000-template.md) until I had to flesh it out for other teams or leaders to see.
 
 The worst part is, the design documentation seemed to go out of date after a few sprints. There was nothing tying the documentation with the actual software, checking that they are accurate to each other. If there were automated tools to check documents and code were synchronized, it’d help my team keep everything up to date. Instead, I simply had to add process and regular manual work to track our outdated material and keep them up to date.
 
-***Note:*** On that topic, I'm keeping a close eye on the [Open Application Model](https://oam.dev/) and the [kubevela](https://kubevela.io/) projects. I think it’ll help write a representation of an application and its components that we can validate the structure of our code against, and generate documentation from it.
+**_Note:_** On that topic, I'm keeping a close eye on the [Open Application Model](https://oam.dev/) and the [kubevela](https://kubevela.io/) projects. I think it’ll help write a representation of an application and its components that we can validate the structure of our code against, and generate documentation from it.
 
 I understood that documentation was helpful, but usually I’d only write something out to keep my bosses at bay or to expound a contradictory opinion. My best writing was showing something was better, it wasn’t showing how it could help ourselves work better. The benefit of my team was not sufficient to overcome the friction of writing and maintaining documents. I was someone who wrote because it was easier than telling people to shut up or to listen to me
 
@@ -27,7 +27,7 @@ I understood that documentation was helpful, but usually I’d only write someth
 
 I found code reviews to also be tedious but in a different way. We have a large number of tools to review code well, and my company also makes sure to automate checks for code standards, smells and best practices (see [sonarqube](https://www.sonarqube.org/)). The expectation on me as a code reviewer was to criticize to improve the structure and design of our code. Along the way, I was also meant to teach other engineers things.
 
-This was just not as interesting as making something new. There wasn’t any glory to reading and criticizing code. I’d participate in code reviews that had large changes and structurally changed something about the services in our department. This wasn’t what my team needed - I was to foster a culture of smaller incremental changes with proper testing. I didn’t really follow that myself because there was just nothing for me to be angry or proud about if I work with smaller changes 
+This was just not as interesting as making something new. There wasn’t any glory to reading and criticizing code. I’d participate in code reviews that had large changes and structurally changed something about the services in our department. This wasn’t what my team needed - I was to foster a culture of smaller incremental changes with proper testing. I didn’t really follow that myself because there was just nothing for me to be angry or proud about if I work with smaller changes
 
 ## When It did work, pride was a really effective motivator
 
@@ -36,9 +36,10 @@ During my performance review, I did have sufficient new code, and design documen
 ### Show everyone how ML services should be done
 
 My department is learning to leverage ML for everything. However, most engineers were unfamiliar with the engineering considerations of the ML life cycle. I don't mean just serving the data, but actually helping with the ML training and feedback process:
+
 1.  Having a good way to log all our ML model predictions
-2. Design interfaces for AB testing multiple models in 
-3. Tie the individual predictions to revenue generating activities
+2.  Design interfaces for AB testing multiple models in
+3.  Tie the individual predictions to revenue generating activities
 
 I thought my department was a whole decade behind the state-of-the-art in all the above. So with the motivation to show them what they need to learn, I spent about 4-5 sprints standing up a service with the necessary controls to make the above happen.
 

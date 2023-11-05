@@ -1,17 +1,21 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+
+const LINK_STYLE = "no-underline py-5 px-3 text-black";
 ---
 
-<header>
-  <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
+<header class="m-0 px-4 py-0 bg-white shadow-md">
+  <nav class="flex items-center justify-between">
+    <h2 class="m-0 text-base">
+      <a class={LINK_STYLE} href="/">{SITE_TITLE}</a>
+    </h2>
     <div class="internal-links">
-      <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/" class={LINK_STYLE}>Home</HeaderLink>
+      <HeaderLink href="/blog" class={LINK_STYLE}>Blog</HeaderLink>
     </div>
-    <div class="social-links">
-      <a href="https://m.webtoo.ls/@astro" target="_blank">
+    <div class="hidden sm:flex">
+      <a href="https://m.webtoo.ls/@astro" class={LINK_STYLE} target="_blank">
         <span class="sr-only">Follow Astro on Mastodon</span>
         <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
           ><path
@@ -20,7 +24,11 @@ import { SITE_TITLE } from "../consts";
           ></path></svg
         >
       </a>
-      <a href="https://twitter.com/astrodotbuild" target="_blank">
+      <a
+        href="https://twitter.com/astrodotbuild"
+        class={LINK_STYLE}
+        target="_blank"
+      >
         <span class="sr-only">Follow Astro on Twitter</span>
         <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
           ><path
@@ -29,7 +37,11 @@ import { SITE_TITLE } from "../consts";
           ></path></svg
         >
       </a>
-      <a href="https://github.com/withastro/astro" target="_blank">
+      <a
+        href="https://github.com/withastro/astro"
+        class={LINK_STYLE}
+        target="_blank"
+      >
         <span class="sr-only">Go to Astro's GitHub repo</span>
         <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
           ><path
@@ -41,7 +53,7 @@ import { SITE_TITLE } from "../consts";
     </div>
   </nav>
 </header>
-<style>
+<!-- <style>
   header {
     margin: 0;
     padding: 0 1em;
@@ -81,4 +93,4 @@ import { SITE_TITLE } from "../consts";
       display: none;
     }
   }
-</style>
+</style> -->

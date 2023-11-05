@@ -35,7 +35,7 @@ The documentation for [obsidian](https://docs.obsidian.md/Home) had a thorough w
 
 Just as their tutorial said to, I created a fork of the sample repo: https://github.com/obsidianmd/obsidian-sample-plugin and went through their example code. There were samples for hooking into various UI elements, including dropdown menus and the command pallette
 
-A little poking around helps get ideas on what can be built. There were also steps to test out a plugin under development (and I'd highly recommend the hot reload option) in this page [here](https://docs.obsidian.md/Plugins/Getting+started/Development+workflow) 
+A little poking around helps get ideas on what can be built. There were also steps to test out a plugin under development (and I'd highly recommend the hot reload option) in this page [here](https://docs.obsidian.md/Plugins/Getting+started/Development+workflow)
 
 ### Step 2: Building the UI
 
