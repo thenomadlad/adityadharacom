@@ -30,7 +30,7 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta name="theme-color" content="#999999" />
 <meta
   http-equiv="Content-Security-Policy"
-  content="default-src 'self'; img-src https://*; child-src 'none';"
+  content="default-src 'unsafe-inline' 'self'; frame-ancestors 'none';"
 />
 
 <!-- Primary Meta Tags -->
