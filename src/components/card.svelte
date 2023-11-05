@@ -19,7 +19,7 @@
 			<slot>Who needs a description amirite?</slot>
 		</p>
 	</div>
-	<div class="px-6 pt-4 pb-2 text-center text-slate-400">
+	<div class="px-6 pt-4 pb-2 text-center text-slate-800">
 		<slot name="when">{formattedDate}</slot>
 	</div>
 </div>
