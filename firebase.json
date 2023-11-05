@@ -20,7 +20,7 @@
           },
           {
             "key": "Content-Security-Policy",
-            "value": "default-src * https://adityadhara.com 'self' 'unsafe-inline'; script-src * 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://adityadhara.com data:"
+            "value": "frame-ancestors ‘none’;"
           }
         ]
       }
