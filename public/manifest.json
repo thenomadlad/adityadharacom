@@ -1,0 +1,20 @@
+{
+    "name": "Aditya dhara's personal website",
+    "start_url": "https://adityadhara.com",
+    "prefer_related_applications": false,
+    "display": "fullscreen",
+    "background_color": "#999999",
+    "theme_color": "#999999",
+    "icons": [
+        {
+          "src": "/favicon.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        },
+        {
+          "src": "/favicon.png",
+          "sizes": "48x48",
+          "type": "image/png"
+        }
+    ]
+}
