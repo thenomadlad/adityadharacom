@@ -16,7 +16,7 @@ jobs:
       - name: "Install pnpm"
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7.x
+          version: 8.x
       - run: pnpm install
       - run: pnpm run lint && pnpm run check
       - name: Install Playwright Browsers
@@ -37,7 +37,7 @@ jobs:
       - name: "Install pnpm"
         uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7.x
+          version: 8.x
       - run: pnpm install && pnpm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
