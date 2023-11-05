@@ -6,6 +6,12 @@
   "hosting": {
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**/manifest.json",
+        "destination": "/manifest.json"
+      }
+    ],
     "headers": [
       {
         "source": "**/*",
@@ -20,16 +26,13 @@
           },
           {
             "key": "Content-Security-Policy",
-            "value": "frame-ancestors ‘none’;"
+            "value": "default-src 'unsafe-inline' 'self'; frame-ancestors 'none';"
           }
         ]
       }
     ]
   },
   "emulators": {
-    "firestore": {
-      "port": 8080
-    },
     "hosting": {
       "port": 5000
     },
