@@ -1,0 +1,72 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_DESCRIPTION } from "../../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_DESCRIPTION} description={SITE_DESCRIPTION} />
+    <style>
+      /* ul li * {
+        transition: 0.2s ease;
+      } */
+      ul li:first-child img {
+        width: 100%;
+      }
+
+      ul li:first-child .title {
+        font-size: 2.369rem;
+      }
+
+      @media (max-width: 720px) {
+        ul li:first-child {
+          margin-bottom: 0;
+        }
+        ul li:first-child .title {
+          font-size: 1.563em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main class="container mx-auto py-4">
+      <section>
+        <ul class="flex flex-wrap justify-between list-none m-0 p-0">
+          {
+            posts.map((post) => (
+              <li class="no-underline w-5/12 first:w-full first:mb-8 mb-4 p-4 text-center xs:w-full">
+                <a class="block" href={`/blog/${post.slug}/`}>
+                  <img
+                    class="mb-2 rounded-xl shadow-xl"
+                    width={720}
+                    height={360}
+                    src={post.data.heroImage}
+                    alt={post.data.title}
+                    style="object-fit: cover;"
+                  />
+                  <h4 class="title m-2 text-black leading-12 text-lg">
+                    {post.data.title}
+                  </h4>
+                  <p class="m-0 text-gray-400">
+                    <FormattedDate date={post.data.pubDate} />
+                  </p>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

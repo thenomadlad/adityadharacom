@@ -2,7 +2,7 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on PR
-'on': pull_request
+"on": pull_request
 jobs:
   lint_and_test:
     runs-on: ubuntu-latest
@@ -12,11 +12,11 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@v2
-      - name: 'Install pnpm'
-        uses: pnpm/action-setup@v2.2.4
+      - uses: actions/checkout@v4
+      - name: "Install pnpm"
+        uses: pnpm/action-setup@v2.4.0
         with:
-          version: 7.x
+          version: 8.x
       - run: pnpm install
       - run: pnpm run lint && pnpm run check
       - name: Install Playwright Browsers
@@ -29,18 +29,22 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+
   build_and_preview:
     needs: lint_and_test
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
     steps:
-      - uses: actions/checkout@v2
-      - name: 'Install pnpm'
-        uses: pnpm/action-setup@v2.2.4
+      - uses: actions/checkout@v4
+      - name: "Install pnpm"
+        uses: pnpm/action-setup@v2.4.0
         with:
-          version: 7.x
+          version: 8.x
       - run: pnpm install && pnpm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MYSITE_286621 }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_MYSITE_286621 }}"
           projectId: mysite-286621
