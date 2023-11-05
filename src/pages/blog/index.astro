@@ -16,66 +16,18 @@ const posts = (await getCollection("blog")).sort(
   <head>
     <BaseHead title={SITE_DESCRIPTION} description={SITE_DESCRIPTION} />
     <style>
-      main {
-        width: 960px;
-      }
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      ul li {
-        width: calc(50% - 1rem);
-      }
-      ul li * {
-        text-decoration: none;
+      /* ul li * {
         transition: 0.2s ease;
-      }
-      ul li:first-child {
-        width: 100%;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
+      } */
       ul li:first-child img {
         width: 100%;
       }
+
       ul li:first-child .title {
         font-size: 2.369rem;
       }
-      ul li img {
-        margin-bottom: 0.5rem;
-        border-radius: 12px;
-      }
-      ul li a {
-        display: block;
-      }
-      .title {
-        margin: 0;
-        color: rgb(var(--black));
-        line-height: 1;
-      }
-      .date {
-        margin: 0;
-        color: rgb(var(--gray));
-      }
-      ul li a:hover h4,
-      ul li a:hover .date {
-        color: rgb(var(--accent));
-      }
-      ul a:hover img {
-        box-shadow: var(--box-shadow);
-      }
+
       @media (max-width: 720px) {
-        ul {
-          gap: 0.5em;
-        }
-        ul li {
-          width: 100%;
-          text-align: center;
-        }
         ul li:first-child {
           margin-bottom: 0;
         }
@@ -87,21 +39,23 @@ const posts = (await getCollection("blog")).sort(
   </head>
   <body>
     <Header />
-    <main>
+    <main class="container mx-auto py-4">
       <section>
-        <ul>
+        <ul class="flex flex-wrap justify-between list-none m-0 p-0">
           {
             posts.map((post) => (
-              <li>
-                <a href={`/blog/${post.slug}/`}>
+              <li class="no-underline w-5/12 first:w-full first:mb-8 mb-4 p-4 text-center xs:w-full">
+                <a class="block" href={`/blog/${post.slug}/`}>
                   <img
+                    class="mb-2 rounded-xl shadow-xl"
                     width={720}
                     height={360}
                     src={post.data.heroImage}
-                    alt=""
+                    alt={post.data.title}
+                    style="object-fit: cover;"
                   />
-                  <h4 class="title">{post.data.title}</h4>
-                  <p class="date">
+                  <h4 class="title m-2 text-black leading-12 text-lg">{post.data.title}</h4>
+                  <p class="m-0 text-gray-400">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
                 </a>

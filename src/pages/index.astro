@@ -20,7 +20,7 @@ const data = await load();
       <div class="flex">
         <div class="m-auto inline-grid gap-y-20 justify-center items-center">
           <div class="flex mt-20 justify-center">
-            <WavingHand />
+            <WavingHand client:load />
           </div>
           <div class="inline-grid grid-cols-3 gap-x-4 text-3xl">
             <a
@@ -68,7 +68,7 @@ const data = await load();
             </a>
           </div>
           <div
-            class="inline-grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-x-4 gap-y-4"
+            class="inline-grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-x-4 gap-y-4 mb-4"
           >
             {
               data.repos.map((repo) => (
