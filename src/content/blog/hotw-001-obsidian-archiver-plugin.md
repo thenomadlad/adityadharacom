@@ -5,8 +5,6 @@ pubDate: "Sept 29 2023"
 heroImage: "/blog/hotw-001-obsidian-archiver-plugin/demo_grouped.gif"
 ---
 
-# Hack of the week - note archiver
-
 I use obsidian for note taking and I thought it'd be a good idea to create an archive folder for notes that aren't relevant anymore. Manually moving files to an archive folder was tedious, so I wanted to script it. A simple python script worked but I thought why not try my hand at making a plugin
 
 ## Problem

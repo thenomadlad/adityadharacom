@@ -5,8 +5,6 @@ pubDate: "Dec 3 2023"
 heroImage: "/blog/hotw-002-server-driven-mui/nice-table-component-demo.png"
 ---
 
-# Hack of the week - Server Driven MUI
-
 I became curious about server-driven UI patterns as a way to improve the iteration cycles of app developers. They're
 most popularly seen in iOS or android apps - if the app is not at all server driven, a new feature or A/B test needs a
 new app version which includes a lengthy deployment process and a potentially disruptive upgrade workflow for customers
