@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [23.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -16,7 +16,7 @@ jobs:
       - name: "Install pnpm"
         uses: pnpm/action-setup@v2.4.0
         with:
-          version: 8.x
+          version: 10.x
       - run: pnpm install
       - run: pnpm run lint && pnpm run check
       - name: Install Playwright Browsers
@@ -35,13 +35,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [23.x]
     steps:
       - uses: actions/checkout@v4
       - name: "Install pnpm"
         uses: pnpm/action-setup@v2.4.0
         with:
-          version: 8.x
+          version: 10.x
       - run: pnpm install && pnpm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
