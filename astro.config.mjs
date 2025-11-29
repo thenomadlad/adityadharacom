@@ -4,14 +4,18 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
 import svelte from "@astrojs/svelte";
-import remarkMermaid from "astro-diagram/remark-mermaid";
+import rehypeMermaid from 'rehype-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://adityadhara.com",
   integrations: [mdx(), sitemap(), tailwind(), svelte()],
   markdown: {
-    remarkPlugins: [remarkMermaid],
-  },
+    syntaxHighlight: {
+      type: 'shiki',
+      excludeLangs: ['mermaid', 'math'],
+    },
+    rehypePlugins: [rehypeMermaid],
+  }
 });
 

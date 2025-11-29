@@ -45,11 +45,12 @@ export async function load(): Promise<{
 }
 
 async function call_github(): Promise<Response> {
-  if (import.meta.env.VITE_GITHUB_API_TOKEN) {
-    console.debug("Using token to fetch from github");
+  if (import.meta.env.GITHUB_TOKEN) {
+    console.info("Using token to fetch from github");
+
     return await fetch(`https://api.github.com/users/thenomadlad/repos`, {
       headers: {
-        Authorization: `Bearer ${import.meta.env.VITE_GITHUB_API_TOKEN}`,
+        Authorization: `Bearer ${import.meta.env.GITHUB_TOKEN}`,
       },
     });
   }

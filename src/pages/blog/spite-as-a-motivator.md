@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/BlogPost.astro"
 title: "Spite seems to be my best motivator for software work"
 description: "Somehow I find myself realizing that I am building things out of hate"
 pubDate: "Jan 15 2023"

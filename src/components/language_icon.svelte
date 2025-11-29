@@ -27,4 +27,4 @@
 	$: devicon = map_icon(language);
 </script>
 
-<p><i class="devicon-{devicon}-plain" /> {language}</p>
+<p><i class="devicon-{devicon}-plain"></i> {language}</p>
