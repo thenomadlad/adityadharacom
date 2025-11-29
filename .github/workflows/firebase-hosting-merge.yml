@@ -20,7 +20,7 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           version: 10.x
-      - run: pnpm install && pnpm run build
+      - run: pnpm install && pnpm exec playwright install && pnpm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
