@@ -14,31 +14,10 @@ const posts = Object.values(import.meta.glob("./*.md", { eager: true })) as Mark
 <html lang="en">
   <head>
     <BaseHead title={SITE_DESCRIPTION} description={SITE_DESCRIPTION} />
-    <style>
-      /* ul li * {
-        transition: 0.2s ease;
-      } */
-      ul li:first-child img {
-        width: 100%;
-      }
-
-      ul li:first-child .title {
-        font-size: 2.369rem;
-      }
-
-      @media (max-width: 720px) {
-        ul li:first-child {
-          margin-bottom: 0;
-        }
-        ul li:first-child .title {
-          font-size: 1.563em;
-        }
-      }
-    </style>
   </head>
   <body>
     <Header />
-    <main class="container mx-auto py-4">
+    <main class="container mx-auto pt-24">
       <section>
         <ul class="flex flex-wrap justify-between list-none m-0 p-0">
           {
