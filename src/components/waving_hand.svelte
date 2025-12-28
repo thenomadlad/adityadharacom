@@ -30,7 +30,6 @@
 
 <div>
 	<h1
-		class="text-8xl m-10"
 		on:mouseover={setWave}
 		on:focus={waveAndUnWave}
 		on:mouseout={setNotWave}

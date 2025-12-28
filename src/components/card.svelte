@@ -9,7 +9,7 @@
 	$: formattedDate = format(date, 'yyyy-MM-dd');
 </script>
 
-<div class="flex flex-col justify-between rounded border-2 overflow-hidden shadow-lg h-full">
+<div class="flex flex-col justify-between rounded border-2 overflow-hidden shadow-lg bg-white h-full">
 	<!-- <img class="w-full border-b-2" src={image_src} alt={image_alt} /> -->
 	<div class="px-6 py-4 font-bold text-xl mb-4 text-center">
 		<slot name="heading">{heading}</slot>

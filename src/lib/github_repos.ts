@@ -23,25 +23,30 @@ export async function load(): Promise<{
   repos: RepoDeets[];
 }> {
   const response = await call_github();
-  const repos = ((await response.json()) as GithubRepoResponse[])
-    .filter((repo) => !repo.private)
-    .map(
-      (repo): RepoDeets => ({
-        name: repo.name,
-        url: repo.html_url,
-        created_at: new Date(repo.created_at),
-        pushed_at: new Date(repo.pushed_at),
-        language: repo.language || "misc",
-      }),
-    )
-    .sort((left, right) => {
-      return left.pushed_at.valueOf() - right.pushed_at.valueOf();
-    })
-    .reverse();
+  const github_repo_responses = (await response.json()) as GithubRepoResponse[];
+  try {
+    const repos = github_repo_responses 
+      .filter((repo) => !repo.private)
+      .map(
+        (repo): RepoDeets => ({
+          name: repo.name,
+          url: repo.html_url,
+          created_at: new Date(repo.created_at),
+          pushed_at: new Date(repo.pushed_at),
+          language: repo.language || "misc",
+        }),
+      )
+      .sort((left, right) => {
+        return left.pushed_at.valueOf() - right.pushed_at.valueOf();
+      })
+      .reverse();
 
-  return {
-    repos,
-  };
+    return {
+      repos,
+    };
+  } catch (e) {
+    throw new Error(`Unable to parse github response: ${JSON.stringify(github_repo_responses)}`, { cause: e });
+  }
 }
 
 async function call_github(): Promise<Response> {

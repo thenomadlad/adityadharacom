@@ -1,71 +1,32 @@
 ---
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import { SITE_DESCRIPTION } from "../../consts";
-import FormattedDate from "../../components/FormattedDate.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import Card from "../../components/card.svelte"
 import type { MarkdownInstance } from "astro";
 import type { PostFrontmatter } from "../../layouts/BlogPost.astro";
 
 const posts = Object.values(import.meta.glob("./*.md", { eager: true })) as MarkdownInstance<PostFrontmatter>[];
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_DESCRIPTION} description={SITE_DESCRIPTION} />
-    <style>
-      /* ul li * {
-        transition: 0.2s ease;
-      } */
-      ul li:first-child img {
-        width: 100%;
-      }
-
-      ul li:first-child .title {
-        font-size: 2.369rem;
-      }
-
-      @media (max-width: 720px) {
-        ul li:first-child {
-          margin-bottom: 0;
+<BaseLayout>
+  <div class="flex">
+    <div class="m-auto inline-grid gap-y-20 justify-center items-center">
+      <div
+        class="inline-grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-x-4 gap-y-4 mb-4"
+      >
+        {
+        posts.map((post) => (
+        <a class="block first:col-span-2" href={post.url}>
+          <Card heading={post.frontmatter.title} date={new Date(post.frontmatter.pubDate)}>
+            <img
+              class="block object-cover h-full w-full aspect-3/2"
+              src={post.frontmatter.heroImage}
+              alt={post.frontmatter.title}
+            />
+          </Card>
+        </a>
+        ))
         }
-        ul li:first-child .title {
-          font-size: 1.563em;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <Header />
-    <main class="container mx-auto py-4">
-      <section>
-        <ul class="flex flex-wrap justify-between list-none m-0 p-0">
-          {
-            posts.map((post) => (
-              <li class="no-underline w-5/12 first:w-full first:mb-8 mb-4 p-4 text-center xs:w-full">
-                <a class="block" href={post.url}>
-                  <img
-                    class="mb-2 rounded-xl shadow-xl"
-                    width={720}
-                    height={360}
-                    src={post.frontmatter.heroImage}
-                    alt={post.frontmatter.title}
-                    style="object-fit: cover;"
-                  />
-                  <h4 class="title m-2 text-black leading-12 text-lg">
-                    {post.frontmatter.title}
-                  </h4>
-                  <p class="m-0 text-gray-400">
-                    <FormattedDate date={new Date(post.frontmatter.pubDate)} />
-                  </p>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
-    <Footer />
-  </body>
-</html>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
