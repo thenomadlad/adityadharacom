@@ -1,10 +1,7 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
 import Card from "../components/card.svelte";
 import LanguageIcon from "../components/language_icon.svelte";
-import { SITE_DESCRIPTION } from "../consts";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import { load, type RepoDeets } from "../lib/github_repos";
 
 let gh_data: {repos: RepoDeets[]} = {repos: []};
@@ -15,32 +12,40 @@ try {
 }
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_DESCRIPTION} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main class="container mx-auto pt-24">
-      <div class="flex">
-        <div class="m-auto inline-grid gap-y-20 justify-center items-center">
-          <div
-            class="inline-grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-x-4 gap-y-4 mb-4"
-          >
-            {
-              gh_data.repos.map((repo) => (
-                <a class="block" href={repo.url}>
-                  <Card heading={repo.name} date={repo.created_at}>
-                    <LanguageIcon language={repo.language} />
-                  </Card>
-                </a>
-              ))
-            }
-          </div>
-        </div>
+<BaseLayout>
+  <div class="flex flex-col items-center">
+    <div class="border-2 rounded-full mb-8 h-96 w-48 bg-linear-to-br from-yellow-100 via-red-400 to-blue-800 grid grid-cols-5 grid-rows-9 items-center justify-items-center">
+      <div class="h-9 w-9 rounded-full col-2 row-2 bg-yellow-100"></div>
+      <div class="h-12 w-12 rounded-full col-3 row-5 bg-blue-600 grid grid-cols-3 grid-rows-3 overflow-hidden">
+        <div class="h-2 w-6 rounded-full col-1 row-2 bg-green-600"></div>
+        <div class="h-5 w-4 rounded-full col-1 row-2 bg-green-600"></div>
+        <div class="h-3 w-5 rounded-full col-2 row-1 bg-green-600"></div>
+        <div class="h-3 w-3 rounded-full col-2 row-3 bg-green-600"></div>
+        <div class="h-2 w-3 rounded-full col-3 row-2 bg-green-600"></div>
       </div>
-    </main>
-    <Footer />
-  </body>
-</html>
+      <div class="h-9 w-9 rounded-full col-4 row-8 bg-gray-400 grid grid-cols-3 grid-rows-3 overflow-hidden">
+        <div class="h-3 w-3 rounded-full col-1 row-1 bg-teal-400"></div>
+        <div class="h-3 w-3 rounded-full col-3 row-2 bg-teal-400"></div>
+        <div class="h-2 w-2 rounded-full col-2 row-3 bg-teal-400"></div>
+      </div>
+    </div>
+    <h1 class="text-center font-bold text-2xl pb-2 border-b-2 mb-4">
+      Projects
+    </h1>
+    <div class="m-auto inline-grid gap-y-20 justify-center items-center">
+      <div
+        class="inline-grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-x-4 gap-y-4 mb-4"
+      >
+        {
+        gh_data.repos.map((repo) => (
+        <a class="block" href={repo.url}>
+          <Card heading={repo.name} date={repo.created_at}>
+            <LanguageIcon language={repo.language} />
+          </Card>
+        </a>
+        ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>
