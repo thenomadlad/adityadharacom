@@ -11,8 +11,5 @@ pre-commit:
 
 pre-push:
   jobs:
-    - name: install-browsers
-      run: pnpm exec playwright install --with-deps
-
     - name: test
       run: pnpm exec playwright test
