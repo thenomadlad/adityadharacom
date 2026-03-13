@@ -8,8 +8,3 @@ pre-commit:
 
     - name: check
       run: pnpm run check
-
-pre-push:
-  jobs:
-    - name: test
-      run: pnpm exec playwright test
