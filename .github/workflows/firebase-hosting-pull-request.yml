@@ -18,11 +18,10 @@ jobs:
         with:
           version: 10.x
       - run: pnpm install
-      - run: pnpm run lint && pnpm run check
-      - name: Install Playwright Browsers
-        run: pnpm exec playwright install --with-deps
-      - name: Run Playwright tests
-        run: pnpm exec playwright test
+      - run: pnpm lefthook run pre-commit
+      # environment setup: browser install is duplicated in lefthook pre-push but required here for CI
+      - run: pnpm exec playwright install --with-deps
+      - run: pnpm lefthook run pre-push
       - uses: actions/upload-artifact@v4
         if: always()
         with:

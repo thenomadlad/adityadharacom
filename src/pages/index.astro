@@ -1,6 +1,6 @@
 ---
-import Card from "../components/card.svelte";
-import LanguageIcon from "../components/language_icon.svelte";
+import Card from "../components/Card.astro";
+import LanguageIcon from "../components/LanguageIcon.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { load, type RepoDeets } from "../lib/github_repos";
 
@@ -13,7 +13,7 @@ try {
 ---
 
 <BaseLayout>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center mt-8">
     <div class="border-2 rounded-full mb-8 h-96 w-48 bg-linear-to-br from-yellow-100 via-red-400 to-blue-800 grid grid-cols-5 grid-rows-9 items-center justify-items-center">
       <div class="h-9 w-9 rounded-full col-2 row-2 bg-yellow-100"></div>
       <div class="h-12 w-12 rounded-full col-3 row-5 bg-blue-600 grid grid-cols-3 grid-rows-3 overflow-hidden">

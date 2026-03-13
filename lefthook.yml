@@ -1,0 +1,18 @@
+pre-commit:
+  jobs:
+    - name: node-version
+      run: node -e "const [major] = process.versions.node.split('.'); if (major !== '22') { console.error('Node 22 required, got ' + process.versions.node); process.exit(1); }"
+
+    - name: lint
+      run: pnpm run lint
+
+    - name: check
+      run: pnpm run check
+
+pre-push:
+  jobs:
+    - name: install-browsers
+      run: pnpm exec playwright install --with-deps
+
+    - name: test
+      run: pnpm exec playwright test
