@@ -27,6 +27,7 @@ export default function WavingHand() {
         onBlur={() => setWave(false)}
       >
         <span
+          data-testid="waving-hand"
           class={`inline-block transition-transform ease-in ${wave() ? "rotate-[15deg]" : "rotate-0"}`}
           style={{ "transition-duration": `${TRANSITION_TIME}ms` }}
         >
