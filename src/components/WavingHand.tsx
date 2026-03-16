@@ -21,6 +21,7 @@ export default function WavingHand() {
   return (
     <div>
       <h1
+        id="waving-hand"
         onMouseOver={() => setWave(true)}
         onFocus={waveAndUnwave}
         onMouseOut={() => setWave(false)}
