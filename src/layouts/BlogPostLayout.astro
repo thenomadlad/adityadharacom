@@ -45,3 +45,10 @@ const {
     </div>
   </article>
 </BaseLayout>
+
+<script>
+  import mermaid from "mermaid";
+
+  mermaid.initialize({ startOnLoad: false });
+  mermaid.init(undefined, document.querySelectorAll("code.language-mermaid"));
+</script>

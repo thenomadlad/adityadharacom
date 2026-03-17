@@ -21,6 +21,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# netlify
+.netlify/
+
 # playwright
 /test-results/
 /playwright-report/
