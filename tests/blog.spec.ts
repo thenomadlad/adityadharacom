@@ -1,5 +1,10 @@
 import { expect, test } from "@playwright/test";
 
+test("mermaid diagram is rendered", async ({ page }) => {
+  await page.goto("/blog/hotw-002-server-driven-mui");
+  await expect(page.locator("code.language-mermaid svg")).toBeVisible();
+});
+
 test.describe("blog post typography", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/blog/my-site-runs-on-astro");

@@ -1,7 +1,10 @@
 pre-commit:
   jobs:
     - name: node-version
-      run: node -e "const [major] = process.versions.node.split('.'); if (major < '22') { console.error('At least Node 22 required, got ' + process.versions.node); process.exit(1); } else { console.log('found v' + major + ' - ok'); }"
+      run: node -e "const [major] = process.versions.node.split('.'); if (major < '24') { console.error('At least Node 24 required, got ' + process.versions.node); process.exit(1); } else { console.log('found v' + major + ' - ok'); }"
+
+    - name: lockfile
+      run: pnpm install --frozen-lockfile
 
     - name: lint
       run: pnpm run lint
