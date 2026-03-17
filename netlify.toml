@@ -1,7 +1,6 @@
 [build]
   command = "pnpm run build"
   publish = "dist"
-  ignore = "[[ $BRANCH == 'main' ]] && ! git describe --exact-match --tags HEAD 2>/dev/null"
 
 [build.environment]
   NODE_VERSION = "24"
