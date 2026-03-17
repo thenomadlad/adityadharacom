@@ -2,14 +2,14 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
-import svelte from "@astrojs/svelte";
+import solid from "@astrojs/solid-js";
 import rehypeMermaid from 'rehype-mermaid';
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://adityadhara.com",
-  integrations: [mdx(), sitemap(), svelte()],
+  integrations: [mdx(), sitemap(), solid()],
 
   markdown: {
     syntaxHighlight: {

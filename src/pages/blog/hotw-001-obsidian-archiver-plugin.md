@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/BlogPostLayout.astro"
 title: "Hack of the week - Obsidian archiver plugin"
 description: "Experiments with buliding an obsidian plugin"
 pubDate: "Sept 29 2023"

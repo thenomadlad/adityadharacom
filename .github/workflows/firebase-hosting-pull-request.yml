@@ -18,7 +18,7 @@ jobs:
         with:
           version: 10.x
       - run: pnpm install
-      - run: pnpm run lint && pnpm run check
+      - run: pnpm lefthook run pre-commit
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
       - name: Run Playwright tests

@@ -1,0 +1,28 @@
+---
+import "devicon";
+
+interface Props {
+  language: string;
+}
+
+const { language } = Astro.props;
+
+function map_icon(lang: string): string {
+  switch (lang.toLowerCase()) {
+    case "misc":
+      return "appwrite";
+    case "assembly":
+      return "aarch64";
+    case "vim script":
+      return "vim";
+    case "jupyter notebook":
+      return "jupyter";
+    default:
+      return lang.toLowerCase();
+  }
+}
+
+const devicon = map_icon(language);
+---
+
+<p><i class={`devicon-${devicon}-plain`}></i> {language}</p>

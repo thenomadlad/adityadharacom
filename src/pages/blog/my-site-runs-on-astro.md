@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/BlogPostLayout.astro"
 title: "My site runs on astro"
 description: "I have become an astronaut (the frontend dev kind)"
 pubDate: "Jun 29 2023"

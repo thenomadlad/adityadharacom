@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
-import Card from "../../components/card.svelte"
+import Card from "../../components/Card.astro"
 import type { MarkdownInstance } from "astro";
-import type { PostFrontmatter } from "../../layouts/BlogPost.astro";
+import type { PostFrontmatter } from "../../layouts/BlogPostLayout.astro";
 
 const posts = Object.values(import.meta.glob("./*.md", { eager: true })) as MarkdownInstance<PostFrontmatter>[];
 ---

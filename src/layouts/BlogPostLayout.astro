@@ -1,0 +1,47 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+export interface PostFrontmatter {
+  title: string,
+  description: string,
+  pubDate: string,
+  heroImage: string,
+}
+
+interface Props {
+  frontmatter: PostFrontmatter
+}
+
+const {
+  frontmatter: { title, description, pubDate, heroImage },
+} = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <article>
+    <div class="w-full">
+      {
+        heroImage && (
+          <img
+            width={1020}
+            height={510}
+            src={heroImage}
+            alt=""
+            class="block mx-auto rounded-xl shadow-md"
+          />
+        )
+      }
+    </div>
+    <div class="prose max-w-[720px] mx-auto px-4 py-4">
+      <div class="mb-4 py-4 text-center leading-none">
+        <div class="mb-2 text-gray-500">
+          <FormattedDate date={new Date(pubDate)} />
+        </div>
+        <h1 class="mt-0 mb-2">{title}</h1>
+        <hr />
+      </div>
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
