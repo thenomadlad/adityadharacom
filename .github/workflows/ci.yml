@@ -1,23 +1,38 @@
-name: Lint and test on PR
-"on": pull_request
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
 jobs:
-  lint_and_test:
+  ci:
+    name: Lint, type-check, and test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
       - uses: actions/setup-node@v6
         with:
           node-version: 24
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10.x
-      - run: pnpm install
-      - run: pnpm lefthook run pre-commit
-      - name: Install Playwright Browsers
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm run lint
+
+      - run: pnpm run check
+
+      - name: Install Playwright browsers
         run: pnpm exec playwright install --with-deps
+
       - name: Run Playwright tests
         run: pnpm exec playwright test
+
       - uses: actions/upload-artifact@v4
         if: always()
         with:
