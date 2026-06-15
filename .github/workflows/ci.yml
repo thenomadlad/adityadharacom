@@ -7,7 +7,7 @@ on:
 
 jobs:
   ci:
-    name: Lint, type-check, and test
+    name: Lint, type-check, and build
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
@@ -39,21 +39,5 @@ jobs:
 
       - run: pnpm run check
 
-      - uses: actions/cache@v4
-        id: playwright-cache
-        with:
-          path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ hashFiles('**/pnpm-lock.yaml') }}
-
-      - name: Install Playwright browsers
-        run: pnpm exec playwright install --with-deps
-
-      - name: Run Playwright tests
-        run: pnpm exec playwright test
-
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
+      - run: pnpm run build
+        # Playwright e2e tests run locally (pnpm test), not in CI — see playwright.config.ts.
