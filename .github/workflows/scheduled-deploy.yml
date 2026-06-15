@@ -1,16 +1,20 @@
-name: Scheduled weekly deploy
-"on":
+name: Scheduled daily rebuild
+
+on:
   schedule:
     - cron: "0 4 * * *" # every day at 4 AM UTC
   workflow_dispatch:
+
 jobs:
   trigger_netlify_build:
+    name: Trigger Netlify build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
+
       - name: Trigger Netlify build on latest tag
         run: |
-          LATEST_TAG=$(git describe --tags --abbrev=0)
-          curl -s -X POST "${{ secrets.NETLIFY_BUILD_HOOK }}?trigger_branch=${LATEST_TAG}"
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null) || { echo "No tags found, skipping."; exit 0; }
+          curl --fail -s -X POST "${{ secrets.NETLIFY_BUILD_HOOK }}?trigger_branch=${LATEST_TAG}"

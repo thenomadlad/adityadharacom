@@ -1,8 +1,7 @@
 ---
-layout: "../../layouts/BlogPostLayout.astro"
 title: "Hack of the week - Obsidian archiver plugin"
 description: "Experiments with buliding an obsidian plugin"
-pubDate: "Sept 29 2023"
+pubDate: "Sep 29 2023"
 heroImage: "/blog/hotw-001-obsidian-archiver-plugin/demo_grouped.gif"
 ---
 

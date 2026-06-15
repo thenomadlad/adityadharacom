@@ -1,5 +1,4 @@
 ---
-layout: "../../layouts/BlogPostLayout.astro"
 title: "Hack of the week - Server Driven MUI"
 description: "Having a server decide layout of material UI components in a page"
 pubDate: "Dec 3 2023"

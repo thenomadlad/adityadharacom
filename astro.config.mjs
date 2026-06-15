@@ -12,12 +12,12 @@ export default defineConfig({
 
   markdown: {
     syntaxHighlight: {
-      type: 'shiki',
-      excludeLangs: ['mermaid', 'math'],
+      type: "shiki",
+      excludeLangs: ["mermaid", "math"],
     },
   },
 
   vite: {
-    plugins: [tailwindcss()]
-  }
+    plugins: [tailwindcss()],
+  },
 });
