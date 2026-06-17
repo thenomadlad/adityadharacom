@@ -2,7 +2,7 @@
 title: "Hack of the week - Obsidian archiver plugin"
 description: "Experiments with buliding an obsidian plugin"
 pubDate: "Sep 29 2023"
-heroImage: "/blog/hotw-001-obsidian-archiver-plugin/demo_grouped.gif"
+heroImage: "./demo_grouped.gif"
 ---
 
 I use obsidian for note taking and I thought it'd be a good idea to create an
@@ -55,7 +55,7 @@ me test out the UX of the elements I was building out before adding any more
 complications. I sketched out this UX and built it out using the sample code in
 the forked repo:
 
-![UX for archive action](/blog/hotw-001-obsidian-archiver-plugin/commands_and_menu_items.png)
+![UX for archive action](./commands_and_menu_items.png)
 
 ### Step 3: Trying it for a while and thinking of complications
 
@@ -71,7 +71,7 @@ month)
 I created a settings page with which you could decide if and how to group your
 archived notes:
 
-![Settings page for grouping](/blog/hotw-001-obsidian-archiver-plugin/demo_grouped.gif)
+![Settings page for grouping](./demo_grouped.gif)
 
 ### Step 4: posting for publishing, fixing some bugs from feedback
 

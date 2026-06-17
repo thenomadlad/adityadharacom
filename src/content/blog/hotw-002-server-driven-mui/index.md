@@ -2,7 +2,7 @@
 title: "Hack of the week - Server Driven MUI"
 description: "Having a server decide layout of material UI components in a page"
 pubDate: "Dec 3 2023"
-heroImage: "/blog/hotw-002-server-driven-mui/nice-table-component-demo.png"
+heroImage: "./nice-table-component-demo.png"
 ---
 
 I became curious about server-driven UI patterns as a way to improve the
@@ -109,7 +109,7 @@ I created a simple nextjs server serving a page with a few sample elements
 creating a table of calorie information. This was the target - what I wanted to
 dynamically create with layout information sent from a backend server:
 
-![final-layout](/blog/hotw-002-server-driven-mui/final-layout.png)
+![final-layout](./final-layout.png)
 
 I used the example code presented in
 [this example here](https://mui.com/material-ui/react-table/), the component
@@ -238,11 +238,11 @@ http://localhost:3000/http/127.0.0.1:5000/raw_structure_demo
 This just needed me to configure the nextjs app to handle a dynamic route with
 all those parts:
 
-![Dynamic routes folder structure](/blog/hotw-002-server-driven-mui/dynamic-route-folder-structure.png)
+![Dynamic routes folder structure](./dynamic-route-folder-structure.png)
 
 This results in an experience like so:
 
-![URL pattern](/blog/hotw-002-server-driven-mui/url-pattern.png)
+![URL pattern](./url-pattern.png)
 
 #### Step 4 - adding another component to he mix
 
@@ -301,7 +301,7 @@ const SDUI_COMPONENTS = {
 And.. that was it! When I went to the url
 `localhost:3000/http/localhost:5000/nice_table_demo`, I saw this:
 
-![Nice table component demo](/blog/hotw-002-server-driven-mui/nice-table-component-demo.png)
+![Nice table component demo](./nice-table-component-demo.png)
 
 That was really satisfying to see, however, there must be an easier way for
 developers to register the components that can be rendered by the frontend

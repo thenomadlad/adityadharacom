@@ -2,7 +2,7 @@
 title: "My site runs on astro"
 description: "I have become an astronaut (the frontend dev kind)"
 pubDate: "Jun 29 2023"
-heroImage: "/blog/my-site-runs-on-astro/placeholder-hero.jpg"
+heroImage: "./placeholder-hero.jpg"
 ---
 
 I've been wanting to create my own website and showcase my work, any dev diaries
@@ -32,7 +32,7 @@ Over a few weeks I was exploring svelte and I decided to animate my simple
 static site. With two icon links for my linkedin and github profiles, and some
 tailwind css, I had something simple and personal up and running:
 
-![My first animated site](/blog/my-site-runs-on-astro/first_version.gif)
+![My first animated site](./first_version.gif)
 
 I surprised myself by how long it took me. As a primarily backend developer, it
 was very easy for me to get started with everything and setting up the build
@@ -56,7 +56,7 @@ with repo name, language and create date. Then all I had to do was use tailwind
 to create a card for each repo. Since I didn't set up my sveltekit configuration
 for dynamic rendering, this only happens at build time.
 
-![second version with github repo cards](/blog/first-post/second_version.png)
+![second version with github repo cards](./second_version.png)
 
 One of the awesome features of github actions is that it can run on a schedule.
 I now have it run everyday on the `main` branch, so anytime I work on something
