@@ -9,7 +9,8 @@ interface Props {
   description?: string;
 }
 
-const { title = SITE_DESCRIPTION, description = SITE_DESCRIPTION } = Astro.props;
+const { title = SITE_DESCRIPTION, description = SITE_DESCRIPTION } =
+  Astro.props;
 ---
 
 <!doctype html>
@@ -25,5 +26,3 @@ const { title = SITE_DESCRIPTION, description = SITE_DESCRIPTION } = Astro.props
     <Footer />
   </body>
 </html>
-
-    

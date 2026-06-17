@@ -25,7 +25,7 @@ export async function load(): Promise<{
   const response = await call_github();
   const github_repo_responses = (await response.json()) as GithubRepoResponse[];
   try {
-    const repos = github_repo_responses 
+    const repos = github_repo_responses
       .filter((repo) => !repo.private)
       .map(
         (repo): RepoDeets => ({
@@ -45,7 +45,10 @@ export async function load(): Promise<{
       repos,
     };
   } catch (e) {
-    throw new Error(`Unable to parse github response: ${JSON.stringify(github_repo_responses)}`, { cause: e });
+    throw new Error(
+      `Unable to parse github response: ${JSON.stringify(github_repo_responses)}`,
+      { cause: e },
+    );
   }
 }
 

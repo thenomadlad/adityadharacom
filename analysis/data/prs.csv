@@ -1,0 +1,101 @@
+repo,slug,number,title,state,created_at,closed_at,merged_at,draft,body_length,claude_mentioned,time_to_merge_days
+adityadharacom,thenomadlad/adityadharacom,32,Working and updated,merged,2026-06-14 22:08:50+00:00,2026-06-15 07:38:14+00:00,2026-06-15 07:38:14+00:00,False,0,False,0.3954166666666667
+adityadharacom,thenomadlad/adityadharacom,30,Removed tag build condition,merged,2026-03-17 08:39:02+00:00,2026-03-17 08:42:10+00:00,2026-03-17 08:42:10+00:00,False,0,False,0.0021759259259259258
+adityadharacom,thenomadlad/adityadharacom,29,Removed mermaid and moved to netlify,merged,2026-03-17 08:15:04+00:00,2026-03-17 08:35:53+00:00,2026-03-17 08:35:52+00:00,False,0,False,0.014444444444444444
+adityadharacom,thenomadlad/adityadharacom,28,Update deploy strategy,merged,2026-03-17 07:06:14+00:00,2026-03-17 07:10:42+00:00,2026-03-17 07:10:42+00:00,False,0,False,0.0031018518518518517
+adityadharacom,thenomadlad/adityadharacom,27,Move to solid,merged,2026-03-13 18:41:02+00:00,2026-03-17 06:37:58+00:00,2026-03-17 06:37:58+00:00,False,0,False,3.49787037037037
+adityadharacom,thenomadlad/adityadharacom,26,New design,merged,2025-12-27 10:07:49+00:00,2025-12-28 09:04:47+00:00,2025-12-28 09:04:47+00:00,False,11,False,0.9562268518518519
+adityadharacom,thenomadlad/adityadharacom,23,Upgraded astro,merged,2025-10-28 04:12:15+00:00,2025-11-29 08:12:46+00:00,2025-11-29 08:12:46+00:00,False,11,False,32.16702546296296
+adityadharacom,thenomadlad/adityadharacom,21,Upgrades to all packages etc,closed,2025-06-09 06:33:40+00:00,2025-10-28 04:28:08+00:00,,False,0,False,
+adityadharacom,thenomadlad/adityadharacom,20,Added hotw 2 server driven mui,merged,2023-12-24 11:53:13+00:00,2023-12-25 20:32:43+00:00,2023-12-25 20:32:43+00:00,False,0,False,1.3607638888888889
+adityadharacom,thenomadlad/adityadharacom,19,Added manifest route rule,merged,2023-11-05 17:39:49+00:00,2023-11-05 18:59:48+00:00,2023-11-05 18:59:48+00:00,False,0,False,0.05554398148148148
+adityadharacom,thenomadlad/adityadharacom,18,Update firebase.json,merged,2023-11-05 07:46:38+00:00,2023-11-05 17:09:01+00:00,2023-11-05 17:09:01+00:00,False,0,False,0.3905439814814815
+adityadharacom,thenomadlad/adityadharacom,17,Add headers,merged,2023-11-05 07:07:44+00:00,2023-11-05 07:27:28+00:00,2023-11-05 07:27:28+00:00,False,0,False,0.013703703703703704
+adityadharacom,thenomadlad/adityadharacom,16,Added manifest and other SEO things,merged,2023-11-05 06:21:51+00:00,2023-11-05 06:38:56+00:00,2023-11-05 06:38:56+00:00,False,0,False,0.011863425925925927
+adityadharacom,thenomadlad/adityadharacom,15,Update README.md,merged,2023-11-05 05:57:58+00:00,2023-11-05 06:02:34+00:00,2023-11-05 06:02:34+00:00,False,0,False,0.0031944444444444446
+adityadharacom,thenomadlad/adityadharacom,14,Use astro,merged,2023-11-05 02:21:24+00:00,2023-11-05 05:39:12+00:00,2023-11-05 05:39:12+00:00,False,8,False,0.1373611111111111
+adityadharacom,thenomadlad/adityadharacom,13,Grid layout adjustments for responsive layouts,merged,2023-06-03 17:59:10+00:00,2023-06-04 01:46:11+00:00,2023-06-04 01:46:11+00:00,False,0,False,0.3243171296296296
+adityadharacom,thenomadlad/adityadharacom,12,Updated favicon,merged,2023-04-08 20:39:14+00:00,2023-04-08 20:42:08+00:00,2023-04-08 20:42:08+00:00,False,0,False,0.002013888888888889
+adityadharacom,thenomadlad/adityadharacom,11,Add github repos on homepage,merged,2023-04-08 19:03:29+00:00,2023-04-08 20:00:03+00:00,2023-04-08 20:00:03+00:00,False,0,False,0.039282407407407405
+adityadharacom,thenomadlad/adityadharacom,10,Add upgraded sveltekit,merged,2023-04-04 03:26:52+00:00,2023-04-04 04:35:09+00:00,2023-04-04 04:35:09+00:00,False,0,False,0.04741898148148148
+adityadharacom,thenomadlad/adityadharacom,9,Remove card from home page,merged,2023-02-13 07:23:43+00:00,2023-02-13 07:27:17+00:00,2023-02-13 07:27:17+00:00,False,0,False,0.002476851851851852
+adityadharacom,thenomadlad/adityadharacom,8,Adding netlify cms,closed,2022-03-07 10:46:09+00:00,2022-03-07 11:09:30+00:00,,False,0,False,
+adityadharacom,thenomadlad/adityadharacom,7,Add first testrs ever woo,merged,2022-03-07 10:20:16+00:00,2022-03-07 10:31:42+00:00,2022-03-07 10:31:42+00:00,False,0,False,0.007939814814814814
+adityadharacom,thenomadlad/adityadharacom,6,Upgrade packages and add blag,merged,2022-03-07 09:44:01+00:00,2022-03-07 10:02:43+00:00,2022-03-07 10:02:43+00:00,False,0,False,0.012986111111111111
+adityadharacom,thenomadlad/adityadharacom,5,Make the handwave interval a var and a css var,merged,2021-12-29 07:32:20+00:00,2021-12-29 07:43:15+00:00,2021-12-29 07:43:15+00:00,False,0,False,0.007581018518518518
+adityadharacom,thenomadlad/adityadharacom,4,Add click event on handwave for phone,closed,2021-12-25 03:59:04+00:00,2021-12-25 04:10:02+00:00,,False,0,False,
+adityadharacom,thenomadlad/adityadharacom,3,Adding a hand wave coz why not,merged,2021-12-25 03:16:11+00:00,2021-12-25 03:38:47+00:00,2021-12-25 03:38:46+00:00,False,7,False,0.01568287037037037
+adityadharacom,thenomadlad/adityadharacom,2,Let's just use svelte and firebase for everything,merged,2021-12-09 23:31:45+00:00,2021-12-11 07:28:43+00:00,2021-12-11 07:28:43+00:00,False,0,False,1.3312268518518517
+adityadharacom,thenomadlad/adityadharacom,1,Add firebase things - try to call the nextjs server in a function,merged,2021-02-27 00:24:14+00:00,2021-03-08 05:21:44+00:00,2021-03-08 05:21:44+00:00,False,0,False,9.206597222222221
+retrofit-ui,retrofit-ui/retrofit-ui,103,feat: Statistic / KPI display view,merged,2026-06-14 19:18:34+00:00,2026-06-14 20:41:28+00:00,2026-06-14 20:41:28+00:00,False,18208,False,0.057569444444444444
+retrofit-ui,retrofit-ui/retrofit-ui,102,"feat: feat: datetime, date, and time picker field types",merged,2026-06-14 12:47:39+00:00,2026-06-14 20:54:44+00:00,2026-06-14 20:54:44+00:00,False,22228,False,0.3382523148148148
+retrofit-ui,retrofit-ui/retrofit-ui,101,feat: Calendar view for event/scheduling data (CalendarSpec),merged,2026-06-14 12:36:27+00:00,2026-06-14 20:54:17+00:00,2026-06-14 20:54:17+00:00,False,28893,False,0.3457175925925926
+retrofit-ui,retrofit-ui/retrofit-ui,100,feat: Timeline view for activity logs and event history (TimelineSpec),merged,2026-06-14 12:25:45+00:00,2026-06-14 20:17:20+00:00,2026-06-14 20:17:20+00:00,False,20789,False,0.3274884259259259
+retrofit-ui,retrofit-ui/retrofit-ui,99,feat: Statistic / KPI display view,closed,2026-06-14 12:15:50+00:00,2026-06-14 18:53:03+00:00,,False,34,False,
+retrofit-ui,retrofit-ui/retrofit-ui,98,feat: Tree view for hierarchical resources (sl-tree),merged,2026-06-14 12:07:50+00:00,2026-06-14 18:51:30+00:00,2026-06-14 18:51:30+00:00,False,25058,False,0.28032407407407406
+retrofit-ui,retrofit-ui/retrofit-ui,97,feat: Field tooltip for contextual help text (sl-tooltip),merged,2026-06-14 11:59:09+00:00,2026-06-14 18:49:33+00:00,2026-06-14 18:49:33+00:00,False,14440,False,0.285
+retrofit-ui,retrofit-ui/retrofit-ui,96,feat: Server-side pagination in TableSpec,merged,2026-06-14 11:49:51+00:00,2026-06-14 18:14:27+00:00,2026-06-14 18:14:27+00:00,False,15910,False,0.26708333333333334
+retrofit-ui,retrofit-ui/retrofit-ui,95,"feat: Formatted number columns (sl-format-number, sl-format-bytes)",merged,2026-06-14 11:34:21+00:00,2026-06-14 18:41:20+00:00,2026-06-14 18:41:20+00:00,False,8880,False,0.2965162037037037
+retrofit-ui,retrofit-ui/retrofit-ui,94,"feat: Formatted number columns (sl-format-number, sl-format-bytes)",closed,2026-06-14 11:02:20+00:00,2026-06-14 11:10:30+00:00,,False,34,False,
+retrofit-ui,retrofit-ui/retrofit-ui,92,feat: Relative time display for date columns (sl-relative-time),closed,2026-06-14 10:05:47+00:00,2026-06-14 10:08:31+00:00,,False,9714,False,
+retrofit-ui,retrofit-ui/retrofit-ui,91,feat: Status badges on enum columns (sl-badge),merged,2026-06-14 07:33:59+00:00,2026-06-14 10:46:43+00:00,2026-06-14 10:46:43+00:00,False,12715,False,0.1338425925925926
+retrofit-ui,retrofit-ui/retrofit-ui,90,feat: Star rating field type (sl-rating),merged,2026-06-14 06:55:08+00:00,2026-06-14 10:40:58+00:00,2026-06-14 10:40:58+00:00,False,10362,False,0.1568287037037037
+retrofit-ui,retrofit-ui/retrofit-ui,89,feat: Tags input field type for multi-value string arrays,merged,2026-06-14 03:52:38+00:00,2026-06-14 10:25:47+00:00,2026-06-14 10:25:47+00:00,False,12032,False,0.2730208333333333
+retrofit-ui,retrofit-ui/retrofit-ui,88,feat: Color picker field type (sl-color-picker),merged,2026-06-14 03:23:24+00:00,2026-06-14 07:22:57+00:00,2026-06-14 07:22:57+00:00,False,8348,False,0.16635416666666666
+retrofit-ui,retrofit-ui/retrofit-ui,87,feat: Segmented control for small enum fields (sl-radio-button),merged,2026-06-14 02:52:18+00:00,2026-06-14 06:57:52+00:00,2026-06-14 06:57:52+00:00,False,10838,False,0.1705324074074074
+retrofit-ui,retrofit-ui/retrofit-ui,86,feat: sl-switch as alternative boolean field type in forms (closes #42),closed,2026-06-13 20:11:04+00:00,2026-06-13 20:12:11+00:00,,False,390,False,
+retrofit-ui,retrofit-ui/retrofit-ui,85,feat: sl-switch as alternative boolean field type in forms,merged,2026-06-13 19:54:45+00:00,2026-06-13 19:55:54+00:00,2026-06-13 19:55:54+00:00,False,811,False,0.0007986111111111112
+retrofit-ui,retrofit-ui/retrofit-ui,84,"feat: sl-skeleton loading states in table, form, and markdown views",merged,2026-06-13 19:12:53+00:00,2026-06-13 19:41:26+00:00,2026-06-13 19:41:26+00:00,False,1417,True,0.01982638888888889
+retrofit-ui,retrofit-ui/retrofit-ui,83,feat: replace confirm() with sl-dialog for delete confirmation,merged,2026-06-13 01:22:19+00:00,2026-06-13 18:21:38+00:00,2026-06-13 18:21:38+00:00,False,1040,True,0.7078587962962963
+retrofit-ui,retrofit-ui/retrofit-ui,82,feat: toast notifications via sl-alert after mutations,merged,2026-06-12 23:26:40+00:00,2026-06-13 01:16:03+00:00,2026-06-13 01:16:03+00:00,False,1254,True,0.07596064814814815
+retrofit-ui,retrofit-ui/retrofit-ui,81,chore: use closedByPullRequestsReferences for PR lookup,merged,2026-06-12 09:57:08+00:00,2026-06-12 09:57:11+00:00,2026-06-12 09:57:11+00:00,False,147,False,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,80,chore: check existing PRs for CI/conflict status,merged,2026-06-12 09:48:57+00:00,2026-06-12 09:49:00+00:00,2026-06-12 09:49:00+00:00,False,110,True,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,79,chore: add implement-issues script,merged,2026-06-12 09:37:40+00:00,2026-06-12 09:37:43+00:00,2026-06-12 09:37:43+00:00,False,92,True,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,78,chore: remove Claude GitHub Action workflows,merged,2026-06-12 09:32:58+00:00,2026-06-12 09:33:02+00:00,2026-06-12 09:33:02+00:00,False,41,True,4.6296296296296294e-05
+retrofit-ui,retrofit-ui/retrofit-ui,77,"fix(ci): cap turns on clarify/plan, document no-output root cause",merged,2026-06-12 07:52:15+00:00,2026-06-12 07:52:18+00:00,2026-06-12 07:52:18+00:00,False,567,True,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,76,ci: merge official Claude app setup with conversational workflow,merged,2026-06-12 07:47:55+00:00,2026-06-12 07:47:58+00:00,2026-06-12 07:47:58+00:00,False,677,True,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,75,Add Claude Code GitHub Workflow,closed,2026-06-12 07:44:53+00:00,2026-06-12 07:48:02+00:00,,False,1781,True,
+retrofit-ui,retrofit-ui/retrofit-ui,74,fix(ci): add id-token: write for claude-code-action,merged,2026-06-12 07:36:28+00:00,2026-06-12 07:36:32+00:00,2026-06-12 07:36:32+00:00,False,147,False,4.6296296296296294e-05
+retrofit-ui,retrofit-ui/retrofit-ui,73,fix(ci): restrict Claude workflow to thenomadlad only,merged,2026-06-12 07:32:43+00:00,2026-06-12 07:32:46+00:00,2026-06-12 07:32:46+00:00,False,163,False,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,72,fix(ci): allow MEMBER association on Claude workflow,merged,2026-06-12 07:29:22+00:00,2026-06-12 07:29:25+00:00,2026-06-12 07:29:25+00:00,False,153,False,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,71,ci: conversational Claude workflow — clarify → plan → implement,merged,2026-06-12 07:17:28+00:00,2026-06-12 07:17:31+00:00,2026-06-12 07:17:31+00:00,False,566,True,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,70,ci: add Claude Code GitHub Action,merged,2026-06-12 06:48:23+00:00,2026-06-12 06:48:26+00:00,2026-06-12 06:48:26+00:00,False,593,True,3.472222222222222e-05
+retrofit-ui,retrofit-ui/retrofit-ui,69,feat: form autoSubmit + stacked/dashboard layout views,merged,2026-06-12 06:26:18+00:00,2026-06-12 06:42:25+00:00,2026-06-12 06:42:25+00:00,False,974,True,0.01119212962962963
+retrofit-ui,retrofit-ui/retrofit-ui,68,feat: form autoSubmit + stacked form/table views,merged,2026-06-11 02:58:04+00:00,2026-06-11 03:20:55+00:00,2026-06-11 03:20:55+00:00,False,2968,True,0.015868055555555555
+retrofit-ui,retrofit-ui/retrofit-ui,67,demo(blog): author field as server-populated select (closes #60),merged,2026-06-11 00:42:37+00:00,2026-06-11 00:43:26+00:00,2026-06-11 00:43:26+00:00,False,401,False,0.0005671296296296297
+retrofit-ui,retrofit-ui/retrofit-ui,65,"feat: SPA split, Java support, forRows/values inline data",merged,2026-06-11 00:36:41+00:00,2026-06-11 00:36:57+00:00,2026-06-11 00:36:57+00:00,False,908,True,0.00018518518518518518
+retrofit-ui,retrofit-ui/retrofit-ui,37,"feat: per-example redesign — inline editing, markdown view, narrow table, form builder",merged,2026-06-08 22:16:14+00:00,2026-06-08 22:16:20+00:00,2026-06-08 22:16:20+00:00,False,1804,True,6.944444444444444e-05
+retrofit-ui,retrofit-ui/retrofit-ui,36,feat: TableFormWorkflowBundle — Bevy-style split table/form endpoints,merged,2026-06-08 21:50:41+00:00,2026-06-08 21:50:47+00:00,2026-06-08 21:50:47+00:00,False,1277,True,6.944444444444444e-05
+retrofit-ui,retrofit-ui/retrofit-ui,35,feat: URL-directive API (retrofitUi + TableView builder),merged,2026-06-08 21:13:41+00:00,2026-06-08 21:13:58+00:00,2026-06-08 21:13:58+00:00,False,1195,True,0.00019675925925925926
+retrofit-ui,retrofit-ui/retrofit-ui,34,test: Playwright e2e tests for all examples,merged,2026-06-05 03:53:13+00:00,2026-06-05 06:19:32+00:00,2026-06-05 06:19:32+00:00,False,1292,True,0.1016087962962963
+retrofit-ui,retrofit-ui/retrofit-ui,33,test: Playwright e2e tests for blog example,closed,2026-06-04 09:26:51+00:00,2026-06-05 03:53:25+00:00,,False,1263,True,
+retrofit-ui,retrofit-ui/retrofit-ui,32,test: Playwright e2e tests for expenses example,closed,2026-06-04 09:25:59+00:00,2026-06-05 03:53:23+00:00,,False,1281,True,
+retrofit-ui,retrofit-ui/retrofit-ui,31,test: Playwright e2e tests for todos example,closed,2026-06-04 09:25:49+00:00,2026-06-05 03:53:21+00:00,,False,1088,True,
+retrofit-ui,retrofit-ui/retrofit-ui,30,test: Playwright e2e tests for contacts example,closed,2026-06-04 09:21:57+00:00,2026-06-05 03:53:19+00:00,,False,982,True,
+retrofit-ui,retrofit-ui/retrofit-ui,29,example: expense tracker — validation and filterable status,closed,2026-06-04 08:58:16+00:00,2026-06-05 06:39:02+00:00,,False,1394,True,
+retrofit-ui,retrofit-ui/retrofit-ui,28,example: blog post queue — textarea and status lifecycle,closed,2026-06-04 08:57:16+00:00,2026-06-05 06:39:00+00:00,,False,1725,True,
+retrofit-ui,retrofit-ui/retrofit-ui,27,example: contacts — form field variety showcase,closed,2026-06-04 08:57:14+00:00,2026-06-05 06:38:58+00:00,,False,888,True,
+retrofit-ui,retrofit-ui/retrofit-ui,26,feat: ui-shell SPA served by server at /retrofit-ui/*,closed,2026-06-04 08:50:57+00:00,2026-06-05 06:38:56+00:00,,False,1384,True,
+retrofit-ui,retrofit-ui/retrofit-ui,25,feat: schema-builder-zod package and todos example,merged,2026-06-04 08:39:21+00:00,2026-06-04 08:40:56+00:00,2026-06-04 08:40:56+00:00,False,1346,True,0.001099537037037037
+retrofit-ui,retrofit-ui/retrofit-ui,24,feat: schema-builder-zod package and todos example,closed,2026-06-04 08:18:56+00:00,2026-06-04 08:39:19+00:00,,False,1346,True,
+retrofit-ui,retrofit-ui/retrofit-ui,17,feat: scaffold @retrofit-ui/server,merged,2026-06-03 08:35:55+00:00,2026-06-04 04:52:12+00:00,2026-06-04 04:52:12+00:00,False,920,True,0.8446412037037037
+retrofit-ui,retrofit-ui/retrofit-ui,16,feat: scaffold @retrofit-ui/renderers-solid with Table and Form renderers,merged,2026-06-03 08:32:59+00:00,2026-06-04 04:47:35+00:00,2026-06-04 04:47:35+00:00,False,1428,True,0.8434722222222222
+retrofit-ui,retrofit-ui/retrofit-ui,15,feat: implement DetailViewSchema and ListSchema,merged,2026-06-03 08:29:28+00:00,2026-06-04 04:22:54+00:00,2026-06-04 04:22:54+00:00,False,834,True,0.8287731481481482
+retrofit-ui,retrofit-ui/retrofit-ui,14,feat: implement FormSchema type definition,merged,2026-06-03 08:27:51+00:00,2026-06-04 04:21:33+00:00,2026-06-04 04:21:33+00:00,False,796,True,0.8289583333333334
+retrofit-ui,retrofit-ui/retrofit-ui,13,feat: implement TableSchema type definition,merged,2026-06-03 08:26:25+00:00,2026-06-04 04:19:35+00:00,2026-06-04 04:19:35+00:00,False,742,True,0.828587962962963
+retrofit-ui,retrofit-ui/retrofit-ui,12,feat: scaffold @retrofit-ui/core package,merged,2026-06-03 08:25:11+00:00,2026-06-04 03:19:58+00:00,2026-06-04 03:19:58+00:00,False,677,True,0.7880439814814815
+retrofit-ui,retrofit-ui/retrofit-ui,11,feat: initialize monorepo with pnpm workspaces,merged,2026-06-03 08:24:09+00:00,2026-06-04 01:31:24+00:00,2026-06-04 01:31:24+00:00,False,784,False,0.7133680555555556
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,9,Add wdio integration tests,merged,2026-06-01 10:09:12+00:00,2026-06-01 10:18:29+00:00,2026-06-01 10:18:29+00:00,False,1153,True,0.006446759259259259
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,8,Add grouping by note creation date,open,2026-06-01 09:52:02+00:00,,,False,884,True,
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,7,Ability to manage hidden folders as an archive,merged,2025-01-03 13:53:50+00:00,2026-06-01 09:59:11+00:00,2026-06-01 09:59:11+00:00,False,222,False,513.8370486111111
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,2,Update manifest.json,merged,2023-05-28 20:04:38+00:00,2023-05-28 20:06:00+00:00,2023-05-28 20:06:00+00:00,False,0,False,0.0009490740740740741
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,1,Fixed manifest and added workflow,merged,2023-05-28 19:44:24+00:00,2023-05-28 19:44:57+00:00,2023-05-28 19:44:57+00:00,False,0,False,0.00038194444444444446
+rust-tauri-skill-tree,thenomadlad/rust-tauri-skill-tree,1,Update README.md,closed,2024-04-15 06:52:37+00:00,2024-04-15 06:52:45+00:00,,False,0,False,
+spacechat,thenomadlad/spacechat,6,Move everything to `front/`,open,2022-03-25 03:43:36+00:00,,,False,0,False,
+spacechat,thenomadlad/spacechat,5,Simplifying PR pipeline,merged,2022-02-16 22:49:57+00:00,2022-02-16 23:01:06+00:00,2022-02-16 23:01:06+00:00,False,0,False,0.007743055555555556
+spacechat,thenomadlad/spacechat,4,Update lint steps,closed,2022-02-16 21:07:35+00:00,2022-02-16 22:54:14+00:00,,False,0,False,
+spacechat,thenomadlad/spacechat,3,Add github actions,merged,2022-02-16 19:18:54+00:00,2022-02-16 20:33:20+00:00,2022-02-16 20:33:20+00:00,False,0,False,0.05168981481481481
+spacechat,thenomadlad/spacechat,2,Let's just use some mock data,merged,2022-02-15 09:09:31+00:00,2022-02-15 09:09:37+00:00,2022-02-15 09:09:37+00:00,False,0,False,6.944444444444444e-05
+spacechat,thenomadlad/spacechat,1,Whatever,merged,2022-02-15 07:22:02+00:00,2022-02-15 07:25:16+00:00,2022-02-15 07:25:16+00:00,False,0,False,0.0022453703703703702
+tcg-python,thenomadlad/tcg-python,1,Bump jinja2 from 2.10.1 to 2.11.3,open,2021-03-20 01:36:13+00:00,,,False,9542,False,
+tf-models,thenomadlad/tf-models,1,Bump pillow from 6.1 to 6.2.0,closed,2020-01-15 04:14:23+00:00,2020-09-13 16:29:14+00:00,,False,7052,False,

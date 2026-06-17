@@ -70,7 +70,7 @@ multiple component frameworks
 
 > The term “Astro Island” refers to an interactive UI component on an otherwise static page of HTML. Multiple islands can exist on a page, and an island always renders in isolation. Think of them as islands in a sea of static, non-interactive HTML.
 
-- Astro's documentation on islands](https://docs.astro.build/en/concepts/islands/)
+- Astro's documentation on islands](<https://docs.astro.build/en/concepts/islands/>)
 
 Just a tangent for a second: micro-frontends are to frontend teams what microservices are to backend teams.
 [Spotify](https://engineering.atspotify.com/2021/04/building-the-future-of-our-desktop-apps/) and [IKEA](https://www.infoq.com/news/2018/08/experiences-micro-frontends/) are companies that use microfrontend architectures: systems in which different parts of one website or application or even a single page in a website, are built by composing independently built frontend systems that can be iterated on and deployed independently. Granted they probably have a lot of component library shared across their micro-frontends, each team still decides how the interactivity and data fetching occurs for each piece of the UI they own, and therefore can introduce any amount of dyanmism or static behavior they need
@@ -89,7 +89,7 @@ In fact, Astro isn't even opinionated about which framework you use:
 
 > Astro generates every website with zero client-side JavaScript, by default. Use a frontend UI component built with React, Preact, Svelte, Vue, SolidJS, AlpineJS, or Lit and Astro will automatically render it to HTML ahead of time and then strip out all of the JavaScript. This keeps every site fast by default by removing all unused JavaScript from the page.
 
-- Astro's documentation on islands](https://docs.astro.build/en/concepts/islands/)
+- Astro's documentation on islands](<https://docs.astro.build/en/concepts/islands/>)
 
 I've held you on this article for this long repeating the same thing - when a program or system does one thing well, it can excel in it - and what's amazing about Astro's flexibility in which framework to use is that we can put these different systems together under one meta-framework (and associated plugins for each other UI framework you use, but this design is still to Astro's credit)
 

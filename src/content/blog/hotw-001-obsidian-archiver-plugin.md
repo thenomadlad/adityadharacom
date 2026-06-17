@@ -31,7 +31,7 @@ The documentation for [obsidian](https://docs.obsidian.md/Home) had a thorough w
 
 ### Step 1: Forking the sample repo and trying it out
 
-Just as their tutorial said to, I created a fork of the sample repo: https://github.com/obsidianmd/obsidian-sample-plugin and went through their example code. There were samples for hooking into various UI elements, including dropdown menus and the command pallette
+Just as their tutorial said to, I created a fork of the sample repo: <https://github.com/obsidianmd/obsidian-sample-plugin> and went through their example code. There were samples for hooking into various UI elements, including dropdown menus and the command pallette
 
 A little poking around helps get ideas on what can be built. There were also steps to test out a plugin under development (and I'd highly recommend the hot reload option) in this page [here](https://docs.obsidian.md/Plugins/Getting+started/Development+workflow)
 
@@ -51,7 +51,7 @@ I created a settings page with which you could decide if and how to group your a
 
 ### Step 4: posting for publishing, fixing some bugs from feedback
 
-The steps for publishing include contributing to a list in a json file: https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin#Step+3+Submit+your+plugin+for+review
+The steps for publishing include contributing to a list in a json file: <https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin#Step+3+Submit+your+plugin+for+review>
 
 This was the most painful part because I was not the only plugin trying to get published and the file I needed to contribute to kept changing
 

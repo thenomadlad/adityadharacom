@@ -15,7 +15,8 @@
     "astro": "astro",
     "check": "astro check",
     "lint": "eslint src",
-    "prettier:write": "prettier --write . --plugin=prettier-plugin-astro"
+    "format:md": "prettier --write 'src/**/*.md'",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",

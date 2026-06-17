@@ -45,40 +45,30 @@ A react component representation is made using a createElement method (which is 
 
 ```jsx
 // JSX like this
-<h1>Hack of the week - Server Driven MUI</h1>
+<h1>Hack of the week - Server Driven MUI</h1>;
 
 // becomes
-createElement(
-  "h1",
-  null,
-  "Hack of the week - Server Driven MUI"
-)
+createElement("h1", null, "Hack of the week - Server Driven MUI");
 ```
 
 A functional component can be given to the `createElement` function also, and the children can be a string, undefined, or a list of react elements:
 
 ```jsx
 function FancyTitle({ props, children }) {
-  return <div style={{ fontSize: props.size }}>
-    {children}
-  </div>
+  return <div style={{ fontSize: props.size }}>{children}</div>;
 }
 
 // JSX like this
 <FancyTitle size="5em">
   <h1>Heading</h1>
   <p>text</p>
-</FancyTitle>
+</FancyTitle>;
 
 // becomes
-createElement(
-  FancyTitle,
-  {"size": "5em"},
-  [
-    createElement("h1", null, "Heading"),
-    createElement("p", null, "text")
-  ]
-)
+createElement(FancyTitle, { size: "5em" }, [
+  createElement("h1", null, "Heading"),
+  createElement("p", null, "text"),
+]);
 ```
 
 We can leverage this to render items dynamically from the server. We'll have the server return the name of the
@@ -113,12 +103,13 @@ a page with components based on that json response body
 
 Before I built a python service, I created a mock json response with enough information I'd need to render the above
 table correctly. To render a component, I need:
- * a string html element name, string body, or component class
- * some props
- * a list of children
-This can be done with a simple enough representation model. Something that looked like this (you can see the full tree
-of components represented in json
-[here](https://github.com/thenomadlad/server-driven-mui/blob/main/sdmui-python/app.py#L34)):
+
+- a string html element name, string body, or component class
+- some props
+- a list of children
+  This can be done with a simple enough representation model. Something that looked like this (you can see the full tree
+  of components represented in json
+  [here](https://github.com/thenomadlad/server-driven-mui/blob/main/sdmui-python/app.py#L34)):
 
 ```json
 [
@@ -168,15 +159,15 @@ SDUI_COMPONENTS = {
   Table: Table,
   TableBody: TableBody,
   // ... more component classes
-}
+};
 
 // ...
 
 createElement(
   SDUI_COMPONENTS[sdui_data.component] as FunctionalComponent,
   sdui_piece.props,
-  renderSduiComponent(sdui_piece.children)
-)
+  renderSduiComponent(sdui_piece.children),
+);
 ```
 
 Once I got the above to work, I made a simple python flask server which returns the comopnent tree in json format:
@@ -273,8 +264,8 @@ could be rendered:
 ```tsx
 const SDUI_COMPONENTS = {
   // ... other components
-  NiceTable: NiceTable
-}
+  NiceTable: NiceTable,
+};
 ```
 
 And.. that was it! When I went to the url `localhost:3000/http/localhost:5000/nice_table_demo`, I saw this:
@@ -300,7 +291,7 @@ the system, that a backend system defines the components necessarily means that 
 
 One additional downside to this approach has to do with the dynamic nature of this system, we could introduce security
 issues when dynamically loading modules
-  
+
 ## Next steps
 
 There are some large parts of the common contract that still need to be defined, specifically the language to define

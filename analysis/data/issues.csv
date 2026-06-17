@@ -1,0 +1,65 @@
+repo,slug,number,title,state,created_at,closed_at,author,comments,is_mine
+adityadharacom,thenomadlad/adityadharacom,31,HOTW: obsidian alternative,open,2026-05-05 09:06:35+00:00,,thenomadlad,0,True
+adityadharacom,thenomadlad/adityadharacom,25,Revamp design,closed,2025-11-29 07:30:45+00:00,2025-12-28 09:04:48+00:00,thenomadlad,0,True
+adityadharacom,thenomadlad/adityadharacom,24,Upgrade astro,closed,2025-11-29 07:29:52+00:00,2025-11-29 08:13:23+00:00,thenomadlad,0,True
+adityadharacom,thenomadlad/adityadharacom,22,Use llms to generate blogs,open,2025-10-15 19:43:48+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,93,"feat: datetime, date, and time picker field types",closed,2026-06-14 10:28:57+00:00,2026-06-14 20:54:45+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,66,feat: autocomplete field type for server-searched reference data,open,2026-06-11 00:39:56+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,64,Calendar view for event/scheduling data (CalendarSpec),closed,2026-06-09 09:22:35+00:00,2026-06-14 20:54:18+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,63,Timeline view for activity logs and event history (TimelineSpec),closed,2026-06-09 09:22:09+00:00,2026-06-14 20:17:21+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,62,Repeatable field groups (ArrayInput),open,2026-06-09 09:10:45+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,61,Search and filter toolbar for table view,closed,2026-06-09 09:10:45+00:00,2026-06-11 03:20:56+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,60,Reference (foreign key) autocomplete field type,closed,2026-06-09 09:10:22+00:00,2026-06-11 00:43:27+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,59,Statistic / KPI display view,closed,2026-06-09 09:10:22+00:00,2026-06-14 20:41:29+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,58,Breadcrumb navigation in the SPA (sl-breadcrumb),open,2026-06-09 09:09:59+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,57,Tree view for hierarchical resources (sl-tree),closed,2026-06-09 09:09:59+00:00,2026-06-14 18:51:31+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,56,Collapsible form sections (sl-details),open,2026-06-09 09:09:34+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,55,Field tooltip for contextual help text (sl-tooltip),closed,2026-06-09 09:09:34+00:00,2026-06-14 18:49:34+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,54,Tabbed form layout (sl-tab-group),open,2026-06-09 09:09:14+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,53,Bulk row selection and bulk actions,open,2026-06-09 09:09:14+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,52,Copy-to-clipboard button on columns (sl-copy-button),open,2026-06-09 09:08:53+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,51,Server-side pagination in TableSpec,closed,2026-06-09 09:08:51+00:00,2026-06-14 18:14:28+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,50,"Formatted number columns (sl-format-number, sl-format-bytes)",closed,2026-06-09 09:08:29+00:00,2026-06-14 18:41:21+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,49,Relative time display for date columns (sl-relative-time),closed,2026-06-09 09:08:29+00:00,2026-06-14 10:09:14+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,48,File upload field type,open,2026-06-09 09:08:11+00:00,,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,47,Status badges on enum columns (sl-badge),closed,2026-06-09 09:08:11+00:00,2026-06-14 10:46:44+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,46,Star rating field type (sl-rating),closed,2026-06-09 09:07:52+00:00,2026-06-14 10:40:59+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,45,Tags input field type for multi-value string arrays,closed,2026-06-09 09:07:52+00:00,2026-06-14 10:25:48+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,44,Color picker field type (sl-color-picker),closed,2026-06-09 09:07:31+00:00,2026-06-14 07:22:58+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,43,Segmented control for small enum fields (sl-radio-button),closed,2026-06-09 09:07:31+00:00,2026-06-14 06:57:53+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,41,"sl-skeleton loading states in table, form, and markdown views",closed,2026-06-09 09:07:09+00:00,2026-06-13 19:41:27+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,42,sl-switch as an alternative boolean field type in forms,closed,2026-06-09 09:07:09+00:00,2026-06-13 19:55:55+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,40,sl-drawer side-panel edit mode (edit without leaving the table),open,2026-06-09 09:06:46+00:00,,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,39,Replace browser confirm() with sl-dialog for delete confirmation,closed,2026-06-09 09:06:34+00:00,2026-06-13 18:21:39+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,38,Toast notifications via sl-alert after mutations,closed,2026-06-09 09:06:25+00:00,2026-06-13 01:16:04+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,23,feat: generic UI shell — pre-built renderer served by @retrofit-ui/server at /retrofit-ui/*,closed,2026-06-04 05:27:09+00:00,2026-06-05 06:41:46+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,22,"example: blog post queue — textarea, status lifecycle, and server-driven state transitions",closed,2026-06-04 05:16:43+00:00,2026-06-05 06:41:44+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,21,example: expense tracker — validation rules and server-controlled business logic,closed,2026-06-04 05:16:29+00:00,2026-06-05 06:41:41+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,20,"example: contacts — form field variety showcase (text, email, phone, select)",closed,2026-06-04 05:16:15+00:00,2026-06-05 06:41:40+00:00,thenomadlad,1,True
+retrofit-ui,retrofit-ui/retrofit-ui,19,example: todo list — end-to-end CRUD with Form and Table renderers,closed,2026-06-04 05:16:03+00:00,2026-06-04 08:40:57+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,18,feat: @retrofit-ui/schema-builder-zod — derive Form/Table specs from Zod schemas,closed,2026-06-04 05:15:50+00:00,2026-06-04 08:40:57+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,10,feat: scaffold @retrofit-ui/server package,closed,2026-06-03 08:10:45+00:00,2026-06-04 04:52:13+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,9,feat: implement SolidJS FormRenderer,closed,2026-06-03 08:10:43+00:00,2026-06-04 04:47:37+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,8,feat: implement SolidJS TableRenderer,closed,2026-06-03 08:10:42+00:00,2026-06-04 04:47:37+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,7,feat: scaffold @retrofit-ui/renderers-solid package,closed,2026-06-03 08:10:40+00:00,2026-06-04 04:47:36+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,6,feat: implement ListSchema type definition,closed,2026-06-03 08:10:38+00:00,2026-06-04 04:22:55+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,5,feat: implement DetailViewSchema type definition,closed,2026-06-03 08:10:36+00:00,2026-06-04 04:22:55+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,4,feat: implement FormSchema type definition,closed,2026-06-03 08:10:35+00:00,2026-06-04 04:21:34+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,3,feat: implement TableSchema type definition,closed,2026-06-03 08:10:33+00:00,2026-06-04 04:19:36+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,2,feat: scaffold @retrofit-ui/core package,closed,2026-06-03 08:10:31+00:00,2026-06-04 03:19:59+00:00,thenomadlad,0,True
+retrofit-ui,retrofit-ui/retrofit-ui,1,feat: initialize monorepo with pnpm workspaces,closed,2026-06-03 08:10:30+00:00,2026-06-04 01:31:25+00:00,thenomadlad,0,True
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,6,Button to return note to original location.,open,2024-06-21 15:16:55+00:00,,connradolisboa,2,False
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,5,Archive under heading / select to archive,open,2024-01-05 04:37:29+00:00,,neins,0,False
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,4,Allow config option of turning off copying folder path when archiving,open,2023-12-17 18:43:47+00:00,,skullbunnygalaxy,1,False
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,3,Archive by note creation date,open,2023-08-14 05:45:29+00:00,,jeff-h,0,False
+bevy-gear-slip,thenomadlad/bevy-gear-slip,1,"Complete a prototype of the gears game, post to bevy discord, and share with jeo and aarthi",closed,2024-09-02 19:24:27+00:00,2024-09-02 23:43:55+00:00,thenomadlad,1,True
+RA-Scheduler,thenomadlad/RA-Scheduler,10,Preproduction stuff: Post here for any notes,open,2015-01-31 20:48:38+00:00,,thenomadlad,1,True
+RA-Scheduler,thenomadlad/RA-Scheduler,9,Create ability to fill in empty data fields if db is re-implemented,open,2015-01-31 06:49:08+00:00,,thenomadlad,1,True
+RA-Scheduler,thenomadlad/RA-Scheduler,8,Automatic database migrate on model change ,closed,2015-01-30 22:58:11+00:00,2015-01-30 22:59:01+00:00,thenomadlad,0,True
+RA-Scheduler,thenomadlad/RA-Scheduler,7,"Complete Login imp - requires model changes, some backend hashing",closed,2015-01-30 17:49:19+00:00,2015-01-31 09:07:54+00:00,thenomadlad,0,True
+RA-Scheduler,thenomadlad/RA-Scheduler,6,Change custom validation for registration form,closed,2015-01-30 07:24:55+00:00,2015-01-31 09:07:54+00:00,thenomadlad,0,True
+RA-Scheduler,thenomadlad/RA-Scheduler,5,Question: Should we implement OpenID at all?,closed,2015-01-30 07:15:25+00:00,2015-01-30 18:52:42+00:00,thenomadlad,5,True
+RA-Scheduler,thenomadlad/RA-Scheduler,4,Implement settings page/view,closed,2015-01-30 07:05:43+00:00,2015-02-02 00:23:16+00:00,thenomadlad,0,True
+RA-Scheduler,thenomadlad/RA-Scheduler,3,Menu bar positions should highlight the active page,closed,2015-01-29 21:43:44+00:00,2015-01-30 04:44:44+00:00,gbrova,2,False
+RA-Scheduler,thenomadlad/RA-Scheduler,2,Display schedules relevant to a user,open,2015-01-29 20:06:31+00:00,,gbrova,2,False
+RA-Scheduler,thenomadlad/RA-Scheduler,1,Implement user login,closed,2015-01-29 19:43:31+00:00,2015-01-30 07:02:24+00:00,gbrova,2,False
