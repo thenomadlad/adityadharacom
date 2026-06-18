@@ -1,33 +1,23 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Card from "../../components/Card.astro";
+import BlogGrid from "../../components/BlogGrid";
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const posts = (await getCollection("blog"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .map((p) => ({
+    id: p.id,
+    title: p.data.title,
+    pubDate: p.data.pubDate.toISOString(),
+    heroImage: p.data.heroImage,
+    tags: p.data.tags,
+  }));
 ---
 
 <BaseLayout>
   <div class="flex">
-    <div class="m-auto inline-grid gap-y-20 justify-center items-center">
-      <div
-        class="inline-grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-x-4 gap-y-4 mb-4"
-      >
-        {
-          posts.map((post) => (
-            <a class="block first:col-span-2" href={`/blog/${post.id}`}>
-              <Card heading={post.data.title} date={post.data.pubDate}>
-                <img
-                  class="block object-cover h-full w-full aspect-3/2"
-                  src={post.data.heroImage}
-                  alt={post.data.title}
-                />
-              </Card>
-            </a>
-          ))
-        }
-      </div>
+    <div class="m-auto w-full">
+      <BlogGrid posts={posts} client:load />
     </div>
   </div>
 </BaseLayout>
