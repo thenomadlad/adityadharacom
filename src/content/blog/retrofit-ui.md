@@ -1,5 +1,5 @@
 ---
-title: "Hack of the week - Retrofit UI"
+title: "Retrofit UI"
 description: "Revisiting server-driven UI, this time properly"
 pubDate: "Jun 17 2026"
 heroImage: "/blog/my-site-runs-on-astro/placeholder-hero.jpg"
