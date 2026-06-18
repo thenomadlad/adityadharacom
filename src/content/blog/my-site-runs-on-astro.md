@@ -3,6 +3,7 @@ title: "My site runs on astro"
 description: "I have become an astronaut (the frontend dev kind)"
 pubDate: "Jun 29 2023"
 heroImage: "/blog/my-site-runs-on-astro/placeholder-hero.jpg"
+tags: ["Typescript", "Frontend", "Astro"]
 ---
 
 I've been wanting to create my own website and showcase my work, any dev diaries and blogs on development. I've tried
