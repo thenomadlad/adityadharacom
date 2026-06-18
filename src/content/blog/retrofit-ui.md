@@ -18,15 +18,14 @@ The core of it: the backend derives a UI spec from its own data schema and serve
 Here's what a table view endpoint looks like:
 
 ```ts
-import { zodToJsonSchema } from 'zod-to-json-schema';
+import { zodToJsonSchema } from "zod-to-json-schema";
 
 const jsonSchema = zodToJsonSchema(BookSchema);
 const updateSchema = zodToJsonSchema(UpdateBookSchema);
 
-const view = TableView
-  .fromSchema(jsonSchema, 'Books')
+const view = TableView.fromSchema(jsonSchema, "Books")
   .forUpdateCommand(updateSchema)
-  .editUrlTemplate('/sdmui/book/{$.isbn}')
+  .editUrlTemplate("/sdmui/book/{$.isbn}")
   .buildForPage(page);
 
 return res.json(view);
@@ -42,10 +41,9 @@ Editability is controlled by passing a separate schema for what can be updated. 
 // Full schema has `isbn`, `name`, `author`, `year`, `purchaseLink`
 // Update schema only has `name`, `year`, `purchaseLink`
 // → isbn and author render as read-only automatically
-FormView
-  .fromSchema(fullSchema, 'Book')
+FormView.fromSchema(fullSchema, "Book")
   .forUpdateCommand(updateSchema)
-  .buildForEntity(book)
+  .buildForEntity(book);
 ```
 
 ## How it's different from the original
@@ -58,7 +56,7 @@ The original worked by having the backend manually construct a JSON tree of comp
 
 The frontend walked that tree and called `createElement` on each node, mapping component name strings to actual React components. It was clever but brittle — adding a component meant updating the map, and the JSON had no validation.
 
-The new version inverts this. Instead of describing components, the backend describes *data*. The frontend figures out how to render it.
+The new version inverts this. Instead of describing components, the backend describes _data_. The frontend figures out how to render it.
 
 Three other differences worth noting:
 
@@ -74,22 +72,21 @@ Three other differences worth noting:
 
 The frontend then walked that tree and called `createElement` on each node, with a lookup table mapping component name strings to actual React components. It was clever but brittle — adding a new component meant updating the map, and the JSON structure had no validation.
 
-The new version inverts this. Instead of describing components, the backend describes *data*. The frontend figures out how to render it.
+The new version inverts this. Instead of describing components, the backend describes _data_. The frontend figures out how to render it.
 
 ### JSON Schema as the contract
 
 The key insight is that the backend already has a schema for its data — usually as a Zod or TypeScript type. Rather than inventing a component language, you derive the UI spec from that schema:
 
 ```ts
-import { zodToJsonSchema } from 'zod-to-json-schema';
+import { zodToJsonSchema } from "zod-to-json-schema";
 
 const jsonSchema = zodToJsonSchema(BookSchema);
 const updateSchema = zodToJsonSchema(UpdateBookSchema);
 
-const view = TableView
-  .fromSchema(jsonSchema, 'Books')
+const view = TableView.fromSchema(jsonSchema, "Books")
   .forUpdateCommand(updateSchema)
-  .editUrlTemplate('/sdmui/book/{$.isbn}')
+  .editUrlTemplate("/sdmui/book/{$.isbn}")
   .buildForPage(page);
 
 return res.json(view);
@@ -99,16 +96,15 @@ The frontend receives a `TableViewSpec` (or `FormViewSpec`) and a page of data, 
 
 ### The `forUpdateCommand` pattern
 
-One thing I liked a lot: editability is controlled by passing a *separate* schema for what can be updated. Fields present in the full schema but absent from the update schema render as read-only. You never annotate individual fields; the constraint comes naturally from the type system.
+One thing I liked a lot: editability is controlled by passing a _separate_ schema for what can be updated. Fields present in the full schema but absent from the update schema render as read-only. You never annotate individual fields; the constraint comes naturally from the type system.
 
 ```ts
 // Full schema has `isbn`, `name`, `author`, `year`, `purchaseLink`
 // Update schema only has `name`, `year`, `purchaseLink`
 // → isbn and author render as read-only automatically
-FormView
-  .fromSchema(fullSchema, 'Book')
+FormView.fromSchema(fullSchema, "Book")
   .forUpdateCommand(updateSchema)
-  .buildForEntity(book)
+  .buildForEntity(book);
 ```
 
 ### TypeScript all the way down
