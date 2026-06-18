@@ -1,19 +1,72 @@
 ---
-title: "Retrofit UI"
-description: "Revisiting server-driven UI, this time properly"
+title: "Introducing Retrofit UI"
+description: "A server-driven UI framework for developers — point it at an API, get a working admin interface without writing UI code"
 pubDate: "Jun 17 2026"
 heroImage: "/blog/my-site-runs-on-astro/placeholder-hero.jpg"
 ---
 
-<!-- TODO: Add context here — what prompted the return to this project? Was there a real use case at work, a pain point that made the original proof-of-concept feel unfinished, or just unfinished-business itch? This section should be personal. -->
+Retrofit UI is a server-driven UI framework aimed at developers. The idea: a backend developer should be able to expose an admin interface for their service by adding a few endpoints — no frontend code required. Point the app at those endpoints and it renders forms, tables, and navigation from the data the backend describes.
 
-A while back I wrote about [server-driven MUI](/blog/hotw-002-server-driven-mui) — an experiment in having a Python backend describe a React UI in JSON. The idea was that a developer should be able to point the frontend at an API endpoint and get a working admin interface without writing any UI code. I got it working well enough to demo, then let it sit.
+<!-- TODO: Add context here — what prompted this project? Was there a real use case at work, a recurring pain point with admin UIs, or something else? This section should be personal. -->
 
-I came back to it in late December 2025 and rebuilt it from scratch. This post is about what changed and what the build looked like.
+This is a rebuild of an earlier experiment called [server-driven MUI](/blog/hotw-002-server-driven-mui). That version got the idea working but was rough — Python backend, no tests, manually constructed JSON component trees. I came back to it in late December 2025 and started over with a clearer design.
 
-## What's different
+## How it works
 
-The original was a proof of concept. It worked by having the Python backend manually construct a JSON tree of component names and props:
+The core of it: the backend derives a UI spec from its own data schema and serves it alongside the data. The frontend reads the spec and renders accordingly — no hardcoded component knowledge on the backend, no custom JSON format to invent.
+
+Here's what a table view endpoint looks like:
+
+```ts
+import { zodToJsonSchema } from 'zod-to-json-schema';
+
+const jsonSchema = zodToJsonSchema(BookSchema);
+const updateSchema = zodToJsonSchema(UpdateBookSchema);
+
+const view = TableView
+  .fromSchema(jsonSchema, 'Books')
+  .forUpdateCommand(updateSchema)
+  .editUrlTemplate('/sdmui/book/{$.isbn}')
+  .buildForPage(page);
+
+return res.json(view);
+```
+
+The frontend receives a `TableViewSpec` (or `FormViewSpec`) and a page of data, and renders accordingly. No component name strings, no manual JSON construction.
+
+### The `forUpdateCommand` pattern
+
+Editability is controlled by passing a separate schema for what can be updated. Fields present in the full schema but absent from the update schema render as read-only — no per-field annotations needed, the constraint comes from the type system.
+
+```ts
+// Full schema has `isbn`, `name`, `author`, `year`, `purchaseLink`
+// Update schema only has `name`, `year`, `purchaseLink`
+// → isbn and author render as read-only automatically
+FormView
+  .fromSchema(fullSchema, 'Book')
+  .forUpdateCommand(updateSchema)
+  .buildForEntity(book)
+```
+
+## How it's different from the original
+
+The original worked by having the backend manually construct a JSON tree of component names and props:
+
+```json
+[{ "component": "NiceTable", "props": { ... }, "children": [...] }]
+```
+
+The frontend walked that tree and called `createElement` on each node, mapping component name strings to actual React components. It was clever but brittle — adding a component meant updating the map, and the JSON had no validation.
+
+The new version inverts this. Instead of describing components, the backend describes *data*. The frontend figures out how to render it.
+
+Three other differences worth noting:
+
+**TypeScript all the way down.** The original needed a Python backend to generate the JSON. The new version is pure TypeScript/Express — everything runs with one `pnpm` invocation.
+
+**Test infrastructure from day one.** The original had no tests. Retrofit UI starts with Playwright E2E tests that spin up a test server and exercise the rendered UI. Each prototype has a spec document listing test scenarios before any implementation.
+
+**JSON Schema as the contract.** Rather than a bespoke component language, the backend derives the UI spec from its existing Zod types. The schema is already there; Retrofit UI just uses it.
 
 ```json
 [{ "component": "NiceTable", "props": { ... }, "children": [...] }]
