@@ -1,4 +1,6 @@
 ---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 
@@ -6,7 +8,7 @@ interface Props {
   title: string;
   description: string;
   pubDate: Date;
-  heroImage: string;
+  heroImage?: ImageMetadata;
 }
 
 const { title, description, pubDate, heroImage } = Astro.props;
@@ -17,9 +19,7 @@ const { title, description, pubDate, heroImage } = Astro.props;
     <div class="w-full">
       {
         heroImage && (
-          <img
-            width={1020}
-            height={510}
+          <Image
             src={heroImage}
             alt=""
             class="block mx-auto rounded-xl shadow-md"

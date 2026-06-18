@@ -1,0 +1,642 @@
+repo,slug,sha,date,author,message,claude_coauthored,is_merge,additions,deletions,year,month,lines_changed
+adityadharacom,thenomadlad/adityadharacom,fc7dd778,2026-06-15 07:38:13+00:00,Aditya Dhara,Merge pull request #32 from thenomadlad/move_to_solid,False,True,932,985,2026,2026-06,1917
+adityadharacom,thenomadlad/adityadharacom,0a1d69a5,2026-06-15 07:34:07+00:00,Someone Somewhere,"CI: drop Playwright e2e, run build instead",True,False,3,19,2026,2026-06,22
+adityadharacom,thenomadlad/adityadharacom,e5c532cf,2026-06-15 07:26:00+00:00,Someone Somewhere,CI: add 20m timeout and cache Playwright browsers,True,False,7,0,2026,2026-06,7
+adityadharacom,thenomadlad/adityadharacom,8e9399ed,2026-06-14 22:32:56+00:00,Someone Somewhere,Upgrade CI to Node 26 + pnpm 11 via corepack,True,False,59,44,2026,2026-06,103
+adityadharacom,thenomadlad/adityadharacom,57d1572c,2026-06-14 22:08:13+00:00,Someone Somewhere,Working and updated,False,False,900,959,2026,2026-06,1859
+adityadharacom,thenomadlad/adityadharacom,580fc954,2026-03-17 08:42:08+00:00,Aditya Dhara,Merge pull request #30 from thenomadlad/remove_tag_build_condition,False,True,0,1,2026,2026-03,1
+adityadharacom,thenomadlad/adityadharacom,d9330e30,2026-03-17 08:38:45+00:00,Aditya Dhara,Removed tag build condition,False,False,0,1,2026,2026-03,1
+adityadharacom,thenomadlad/adityadharacom,7486f837,2026-03-17 08:35:52+00:00,Aditya Dhara,Merge pull request #29 from thenomadlad/move_to_netlify,False,True,61,1130,2026,2026-03,1191
+adityadharacom,thenomadlad/adityadharacom,b709e1c8,2026-03-17 08:32:38+00:00,Aditya Dhara,Added scheduled build,False,False,1,1,2026,2026-03,2
+adityadharacom,thenomadlad/adityadharacom,f5d3e636,2026-03-17 08:28:04+00:00,Aditya Dhara,Fix lockfile,False,False,3,1014,2026,2026-03,1017
+adityadharacom,thenomadlad/adityadharacom,74f39ae7,2026-03-17 08:24:24+00:00,Aditya Dhara,Fix playwright tests,False,False,2,4,2026,2026-03,6
+adityadharacom,thenomadlad/adityadharacom,17147241,2026-03-17 08:21:05+00:00,Aditya Dhara,Update lefthook,False,False,1,1,2026,2026-03,2
+adityadharacom,thenomadlad/adityadharacom,d56189c8,2026-03-17 08:19:37+00:00,Aditya Dhara,Upgrade to node 24,False,False,5,2,2026,2026-03,7
+adityadharacom,thenomadlad/adityadharacom,293be07f,2026-03-17 08:14:37+00:00,Aditya Dhara,Removed mermaid and moved to netlify,False,False,54,113,2026,2026-03,167
+adityadharacom,thenomadlad/adityadharacom,d62dd0a8,2026-03-17 07:10:41+00:00,Aditya Dhara,Merge pull request #28 from thenomadlad/deploy_on_tag,False,True,9,4,2026,2026-03,13
+adityadharacom,thenomadlad/adityadharacom,80b57c20,2026-03-17 07:03:36+00:00,Aditya Dhara,Update deploy strategy,False,False,9,4,2026,2026-03,13
+adityadharacom,thenomadlad/adityadharacom,4053b5e9,2026-03-17 06:37:58+00:00,Aditya Dhara,Merge pull request #27 from thenomadlad/move_to_solid,False,True,835,451,2026,2026-03,1286
+adityadharacom,thenomadlad/adityadharacom,1a6f94f6,2026-03-16 09:12:33+00:00,Aditya Dhara,Added test for blag,False,False,56,0,2026,2026-03,56
+adityadharacom,thenomadlad/adityadharacom,41482471,2026-03-16 09:05:31+00:00,Aditya Dhara,Fixed test,False,False,2,1,2026,2026-03,3
+adityadharacom,thenomadlad/adityadharacom,5d58f0d5,2026-03-13 10:39:44+00:00,Someone Somewhere,Updated tests and removed playwright as a gate for merge,False,False,6,11,2026,2026-03,17
+adityadharacom,thenomadlad/adityadharacom,1fd005a8,2026-03-13 09:53:58+00:00,Someone Somewhere,Updated playwright tests,False,False,3,2,2026,2026-03,5
+adityadharacom,thenomadlad/adityadharacom,0a8c2417,2026-03-13 09:43:07+00:00,Someone Somewhere,Update lefthook to remove install,False,False,0,3,2026,2026-03,3
+adityadharacom,thenomadlad/adityadharacom,a7a93034,2026-03-13 09:33:01+00:00,Someone Somewhere,Update lefthook,False,False,1,1,2026,2026-03,2
+adityadharacom,thenomadlad/adityadharacom,949c8c52,2026-03-13 09:28:33+00:00,Someone Somewhere,Moved to solid,False,False,787,453,2026,2026-03,1240
+adityadharacom,thenomadlad/adityadharacom,6c3145f4,2025-12-28 09:04:47+00:00,Aditya Dhara,Merge pull request #26 from thenomadlad/new_design,False,True,518,1020,2025,2025-12,1538
+adityadharacom,thenomadlad/adityadharacom,f759caa1,2025-12-28 08:57:32+00:00,Aditya Dhara,Update lock file,False,False,0,123,2025,2025-12,123
+adityadharacom,thenomadlad/adityadharacom,62c6a56c,2025-12-28 08:54:06+00:00,Aditya Dhara,Add new design with all tailwind css everything,False,False,105,182,2025,2025-12,287
+adityadharacom,thenomadlad/adityadharacom,e974e785,2025-12-27 10:07:32+00:00,Aditya Dhara,Ok first attempt,False,False,429,731,2025,2025-12,1160
+adityadharacom,thenomadlad/adityadharacom,f35a786c,2025-11-29 08:12:46+00:00,Aditya Dhara,Merge pull request #23 from thenomadlad/upgrade_astro,False,True,6957,6303,2025,2025-11,13260
+adityadharacom,thenomadlad/adityadharacom,abcb91a0,2025-11-29 07:57:23+00:00,Aditya Dhara,Info level log for getting from github with token,False,False,2,1,2025,2025-11,3
+adityadharacom,thenomadlad/adityadharacom,b512c98e,2025-11-29 07:49:06+00:00,Aditya Dhara,Lets try the github token,False,False,2,2,2025,2025-11,4
+adityadharacom,thenomadlad/adityadharacom,6d64375f,2025-11-29 07:41:52+00:00,Aditya Dhara,Trying to fix build,False,False,2,2,2025,2025-11,4
+adityadharacom,thenomadlad/adityadharacom,afc38d5c,2025-11-29 07:37:52+00:00,Aditya Dhara,Ok,False,False,21,32,2025,2025-11,53
+adityadharacom,thenomadlad/adityadharacom,4c1245df,2025-11-29 07:26:42+00:00,Aditya Dhara,Got lints working,False,False,45,30,2025,2025-11,75
+adityadharacom,thenomadlad/adityadharacom,f4dada77,2025-11-29 07:02:18+00:00,Aditya Dhara,Fixed lint stuff,False,False,397,489,2025,2025-11,886
+adityadharacom,thenomadlad/adityadharacom,6d40d1fd,2025-11-29 06:10:10+00:00,Aditya Dhara,Made it all work woo,False,False,890,1240,2025,2025-11,2130
+adityadharacom,thenomadlad/adityadharacom,ca193559,2025-10-28 04:27:32+00:00,Aditya Dhara,Upgraded github actions try 2,False,False,4,4,2025,2025-10,8
+adityadharacom,thenomadlad/adityadharacom,abda2538,2025-10-28 04:22:47+00:00,Aditya Dhara,Upgraded github actions,False,False,11,8,2025,2025-10,19
+adityadharacom,thenomadlad/adityadharacom,6402f9c7,2025-10-28 04:11:35+00:00,Aditya Dhara,Upgraded astro,False,False,6599,5511,2025,2025-10,12110
+adityadharacom,thenomadlad/adityadharacom,da18c980,2023-12-25 20:32:43+00:00,Aditya Dhara,Merge pull request #20 from thenomadlad/hotw2,False,True,3459,4538,2023,2023-12,7997
+adityadharacom,thenomadlad/adityadharacom,2adeab6c,2023-12-25 08:26:47+00:00,Aditya Dhara,Remove the h1s,False,False,0,4,2023,2023-12,4
+adityadharacom,thenomadlad/adityadharacom,694069eb,2023-12-24 11:52:49+00:00,Aditya Dhara,Added hotw 2 server driven mui,False,False,3461,4536,2023,2023-12,7997
+adityadharacom,thenomadlad/adityadharacom,8e1fda0a,2023-11-05 18:59:48+00:00,Aditya Dhara,Merge pull request #19 from thenomadlad/fix_csp,False,True,9,9,2023,2023-11,18
+adityadharacom,thenomadlad/adityadharacom,71d462a2,2023-11-05 18:46:40+00:00,Aditya Dhara,Move csp to header,False,False,4,4,2023,2023-11,8
+adityadharacom,thenomadlad/adityadharacom,984c0cb1,2023-11-05 18:38:28+00:00,Aditya Dhara,I bet it was the html meta tag I added,False,False,1,5,2023,2023-11,6
+adityadharacom,thenomadlad/adityadharacom,938e6b61,2023-11-05 17:44:18+00:00,Aditya Dhara,Prettier stuff,False,False,6,4,2023,2023-11,10
+adityadharacom,thenomadlad/adityadharacom,86e51929,2023-11-05 17:42:19+00:00,Aditya Dhara,Added unsafe-inline csp,False,False,1,1,2023,2023-11,2
+adityadharacom,thenomadlad/adityadharacom,80a3a593,2023-11-05 17:36:07+00:00,Aditya Dhara,Added manifest route rule,False,False,7,5,2023,2023-11,12
+adityadharacom,thenomadlad/adityadharacom,00d081a8,2023-11-05 17:09:01+00:00,Aditya Dhara,Merge pull request #18 from thenomadlad/thenomadlad-patch-1,False,True,2,15,2023,2023-11,17
+adityadharacom,thenomadlad/adityadharacom,9b9b04c3,2023-11-05 16:47:46+00:00,Aditya Dhara,Another try at CSP,False,False,1,1,2023,2023-11,2
+adityadharacom,thenomadlad/adityadharacom,4ac0ebe3,2023-11-05 08:08:22+00:00,Aditya Dhara,add more stuff with headers,False,False,2,15,2023,2023-11,17
+adityadharacom,thenomadlad/adityadharacom,94482bc3,2023-11-05 07:56:19+00:00,Aditya Dhara,Update firebase.json,False,False,1,1,2023,2023-11,2
+adityadharacom,thenomadlad/adityadharacom,efbcef15,2023-11-05 07:46:35+00:00,Aditya Dhara,Update firebase.json,False,False,1,1,2023,2023-11,2
+adityadharacom,thenomadlad/adityadharacom,84cfdb06,2023-11-05 07:27:28+00:00,Aditya Dhara,Merge pull request #17 from thenomadlad/fix_response_headers,False,True,24,1,2023,2023-11,25
+adityadharacom,thenomadlad/adityadharacom,6609f94d,2023-11-05 07:23:22+00:00,Aditya Dhara,An additional response header for content-security-policy,False,False,4,0,2023,2023-11,4
+adityadharacom,thenomadlad/adityadharacom,5081dbe5,2023-11-05 07:15:26+00:00,Aditya Dhara,Prettier stuff,False,False,2,1,2023,2023-11,3
+adityadharacom,thenomadlad/adityadharacom,2e60e6f1,2023-11-05 07:12:35+00:00,Aditya Dhara,Added meta tag,False,False,3,0,2023,2023-11,3
+adityadharacom,thenomadlad/adityadharacom,d0fd7700,2023-11-05 07:07:21+00:00,Aditya Dhara,Add headers,False,False,16,1,2023,2023-11,17
+adityadharacom,thenomadlad/adityadharacom,945a8e8c,2023-11-05 06:38:56+00:00,Aditya Dhara,Merge pull request #16 from thenomadlad/fix_manifest,False,True,4087,1635,2023,2023-11,5722
+adityadharacom,thenomadlad/adityadharacom,ea9fb61c,2023-11-05 06:32:11+00:00,Aditya Dhara,More manifest mixes,False,False,7,2,2023,2023-11,9
+adityadharacom,thenomadlad/adityadharacom,4dbfa1ec,2023-11-05 06:23:59+00:00,Aditya Dhara,Prettier things,False,False,4077,1655,2023,2023-11,5732
+adityadharacom,thenomadlad/adityadharacom,dd2c2b17,2023-11-05 06:21:41+00:00,Aditya Dhara,Added manifest and other SEO things,False,False,25,0,2023,2023-11,25
+adityadharacom,thenomadlad/adityadharacom,1129e8c1,2023-11-05 06:02:33+00:00,Aditya Dhara,Merge pull request #15 from thenomadlad/thenomadlad-patch-1,False,True,7,7,2023,2023-11,14
+adityadharacom,thenomadlad/adityadharacom,80c8aecb,2023-11-05 05:57:55+00:00,Aditya Dhara,Update README.md,False,False,7,7,2023,2023-11,14
+adityadharacom,thenomadlad/adityadharacom,74eeb67c,2023-11-05 05:39:11+00:00,Aditya Dhara,Merge pull request #14 from thenomadlad/use_astro,False,True,6511,2186,2023,2023-11,8697
+adityadharacom,thenomadlad/adityadharacom,2d1bd0c2,2023-11-05 05:02:33+00:00,Aditya Dhara,Added more seo friendliness and accessibility,False,False,1636,4059,2023,2023-11,5695
+adityadharacom,thenomadlad/adityadharacom,b864686f,2023-11-05 04:59:22+00:00,Aditya Dhara,Fixed contrast hopefully,False,False,1,1,2023,2023-11,2
+adityadharacom,thenomadlad/adityadharacom,9bf3a149,2023-11-05 04:29:37+00:00,Aditya Dhara,Prettier,False,False,4,2,2023,2023-11,6
+adityadharacom,thenomadlad/adityadharacom,159ff32b,2023-11-05 04:21:47+00:00,Aditya Dhara,Formatting fixes,False,False,4112,1844,2023,2023-11,5956
+adityadharacom,thenomadlad/adityadharacom,adf5fef8,2023-11-05 02:43:50+00:00,Aditya Dhara,Fixed up actions versions,False,False,10,6,2023,2023-11,16
+adityadharacom,thenomadlad/adityadharacom,40cfcc45,2023-11-05 02:36:14+00:00,Aditya Dhara,Fixed up playwright configs,False,False,373,9,2023,2023-11,382
+adityadharacom,thenomadlad/adityadharacom,c99cbb5b,2023-11-05 02:16:52+00:00,Aditya Dhara,Got playwright working,False,False,1697,3811,2023,2023-11,5508
+adityadharacom,thenomadlad/adityadharacom,c9128674,2023-11-05 00:44:38+00:00,Aditya Dhara,Everything is up to date minus some formatting,False,False,4348,1592,2023,2023-11,5940
+adityadharacom,thenomadlad/adityadharacom,758ce21c,2023-11-03 08:03:07+00:00,Aditya Dhara,tailwinds,False,False,1690,3570,2023,2023-11,5260
+adityadharacom,thenomadlad/adityadharacom,f657bea0,2023-11-03 08:01:59+00:00,Aditya Dhara,Cleaned up the site a wee bit,False,False,5,84,2023,2023-11,89
+adityadharacom,thenomadlad/adityadharacom,59e85d70,2023-11-03 07:30:10+00:00,Aditya Dhara,Blags,False,False,263,2,2023,2023-11,265
+adityadharacom,thenomadlad/adityadharacom,df029e96,2023-10-18 06:14:00+00:00,Aditya Dhara,Lints and prettier,False,False,5477,1729,2023,2023-10,7206
+adityadharacom,thenomadlad/adityadharacom,dcf55ef1,2023-10-18 05:48:27+00:00,Aditya Dhara,Added basics for astro site,False,False,4362,2944,2023,2023-10,7306
+adityadharacom,thenomadlad/adityadharacom,6ee6d0dd,2023-06-04 01:46:10+00:00,Aditya Dhara,Merge pull request #13 from thenomadlad/make_mobile_friendly,False,True,984,932,2023,2023-06,1916
+adityadharacom,thenomadlad/adityadharacom,bfc802ff,2023-06-04 01:42:27+00:00,Aditya Dhara,formatting',False,False,45,45,2023,2023-06,90
+adityadharacom,thenomadlad/adityadharacom,b5f85e2e,2023-06-04 01:35:42+00:00,Aditya Dhara,made tests work - seems we need a particular file name,False,False,58,47,2023,2023-06,105
+adityadharacom,thenomadlad/adityadharacom,0d644e41,2023-06-03 18:34:05+00:00,Aditya Dhara,I can't imagine this is the fix but lets see,False,False,1,1,2023,2023-06,2
+adityadharacom,thenomadlad/adityadharacom,024e07c9,2023-06-03 18:28:43+00:00,Aditya Dhara,Lock file,False,False,1,1,2023,2023-06,2
+adityadharacom,thenomadlad/adityadharacom,114366b7,2023-06-03 18:27:50+00:00,Aditya Dhara,"Update playwright, hopefully that works",False,False,615,568,2023,2023-06,1183
+adityadharacom,thenomadlad/adityadharacom,181c3e3c,2023-06-03 18:11:54+00:00,Aditya Dhara,Update lock,False,False,1,1,2023,2023-06,2
+adityadharacom,thenomadlad/adityadharacom,8ae3cd89,2023-06-03 18:11:26+00:00,Aditya Dhara,Set playwright version to latest 1.x,False,False,552,558,2023,2023-06,1110
+adityadharacom,thenomadlad/adityadharacom,2311f93e,2023-06-03 18:03:13+00:00,Aditya Dhara,Removed blog link right now,False,False,1,4,2023,2023-06,5
+adityadharacom,thenomadlad/adityadharacom,cc6cf5c4,2023-06-03 17:58:48+00:00,Aditya Dhara,Added everything,False,False,37,34,2023,2023-06,71
+adityadharacom,thenomadlad/adityadharacom,b0b2c508,2023-04-08 20:42:07+00:00,Aditya Dhara,Merge pull request #12 from thenomadlad/update_favicon,False,True,0,0,2023,2023-04,0
+adityadharacom,thenomadlad/adityadharacom,5213e2fe,2023-04-08 20:39:05+00:00,Aditya Dhara,Updated favicon,False,False,0,0,2023,2023-04,0
+adityadharacom,thenomadlad/adityadharacom,f47c2165,2023-04-08 20:00:02+00:00,Aditya Dhara,Merge pull request #11 from thenomadlad/add_github_repos,False,True,149,28,2023,2023-04,177
+adityadharacom,thenomadlad/adityadharacom,175dd2e9,2023-04-08 19:15:30+00:00,Aditya Dhara,Add a little more margin in the cards,False,False,1,1,2023,2023-04,2
+adityadharacom,thenomadlad/adityadharacom,73242f1a,2023-04-08 19:12:01+00:00,Aditya Dhara,Lint and check fixxes,False,False,69,61,2023,2023-04,130
+adityadharacom,thenomadlad/adityadharacom,7bfea3aa,2023-04-08 19:03:16+00:00,Aditya Dhara,Add github repos on homepage,False,False,140,27,2023,2023-04,167
+adityadharacom,thenomadlad/adityadharacom,5e954c38,2023-04-04 04:35:09+00:00,Aditya Dhara,Merge pull request #10 from thenomadlad/upgrade_svelte,False,True,3341,12598,2023,2023-04,15939
+adityadharacom,thenomadlad/adityadharacom,a67fbafa,2023-04-04 04:32:14+00:00,Aditya Dhara,Static adapter by default,False,False,10,5,2023,2023-04,15
+adityadharacom,thenomadlad/adityadharacom,f2f6e3ee,2023-04-04 04:20:20+00:00,Aditya Dhara,Formatting,False,False,1,1,2023,2023-04,2
+adityadharacom,thenomadlad/adityadharacom,2538f780,2023-04-04 04:18:56+00:00,Aditya Dhara,Build directory,False,False,6,1,2023,2023-04,7
+adityadharacom,thenomadlad/adityadharacom,4a7cefd5,2023-04-04 03:58:10+00:00,Aditya Dhara,Test setup,False,False,4,4,2023,2023-04,8
+adityadharacom,thenomadlad/adityadharacom,45744132,2023-04-04 03:49:07+00:00,Aditya Dhara,Formatting,False,False,9,9,2023,2023-04,18
+adityadharacom,thenomadlad/adityadharacom,dddd16e8,2023-04-04 03:46:23+00:00,Aditya Dhara,No such command as pnpm ci (part 2),False,False,1,1,2023,2023-04,2
+adityadharacom,thenomadlad/adityadharacom,acbdf70f,2023-04-04 03:45:06+00:00,Aditya Dhara,No such command as pnpm ci,False,False,2,2,2023,2023-04,4
+adityadharacom,thenomadlad/adityadharacom,22ffc4c3,2023-04-04 03:43:42+00:00,Aditya Dhara,Add pnpm install step,False,False,11,3,2023,2023-04,14
+adityadharacom,thenomadlad/adityadharacom,b62c5f46,2023-04-04 03:37:50+00:00,Aditya Dhara,Apparently we need to install pnpm,False,False,3,4,2023,2023-04,7
+adityadharacom,thenomadlad/adityadharacom,7a484dac,2023-04-04 03:35:12+00:00,Aditya Dhara,Update github workflow,False,False,4,4,2023,2023-04,8
+adityadharacom,thenomadlad/adityadharacom,e5f82374,2023-04-04 03:26:36+00:00,Aditya Dhara,Add upgraded sveltekit,False,False,3320,12594,2023,2023-04,15914
+adityadharacom,thenomadlad/adityadharacom,fa4950b4,2023-02-13 07:27:17+00:00,Aditya Dhara,Merge pull request #9 from thenomadlad/remove_cards_for_now,False,True,0,4,2023,2023-02,4
+adityadharacom,thenomadlad/adityadharacom,c08c7c55,2023-02-13 07:23:27+00:00,Aditya Dhara,Remove card from home page,False,False,0,4,2023,2023-02,4
+adityadharacom,thenomadlad/adityadharacom,725d5ae9,2022-03-07 10:31:41+00:00,Aditya Dhara,Merge pull request #7 from thenomadlad/add_tests_woo,False,True,8,1,2022,2022-03,9
+adityadharacom,thenomadlad/adityadharacom,7f9c241c,2022-03-07 10:28:01+00:00,Aditya Dhara,Fine lets install all the testing tools,False,False,1,1,2022,2022-03,2
+adityadharacom,thenomadlad/adityadharacom,11b27719,2022-03-07 10:18:25+00:00,Aditya Dhara,Add first testrs ever woo,False,False,8,1,2022,2022-03,9
+adityadharacom,thenomadlad/adityadharacom,36d720d1,2022-03-07 10:02:42+00:00,Aditya Dhara,Merge pull request #6 from thenomadlad/update_svelte_version_and_add_blag,False,True,6813,3902,2022,2022-03,10715
+adityadharacom,thenomadlad/adityadharacom,62b6cc26,2022-03-07 09:59:41+00:00,Aditya Dhara,Update package versions,False,False,1242,637,2022,2022-03,1879
+adityadharacom,thenomadlad/adityadharacom,d802a317,2022-03-07 09:51:39+00:00,Aditya Dhara,Ok lets remove 12 and 14 node versions,False,False,1,1,2022,2022-03,2
+adityadharacom,thenomadlad/adityadharacom,ad7bbbf7,2022-03-07 09:43:36+00:00,Aditya Dhara,Upgrade packages and add blag,False,False,7662,5356,2022,2022-03,13018
+adityadharacom,thenomadlad/adityadharacom,c8c52c22,2021-12-29 07:43:15+00:00,Aditya Dhara,Merge pull request #5 from thenomadlad/more_vars,False,True,15,5,2021,2021-12,20
+adityadharacom,thenomadlad/adityadharacom,b8554ab9,2021-12-29 07:37:03+00:00,Aditya Dhara,Prettifier,False,False,8,3,2021,2021-12,11
+adityadharacom,thenomadlad/adityadharacom,3716e3d4,2021-12-29 07:31:58+00:00,Aditya Dhara,Make the handwave interval a var and a css var,False,False,10,5,2021,2021-12,15
+adityadharacom,thenomadlad/adityadharacom,5f2d09de,2021-12-25 03:47:53+00:00,Aditya Dhara,Add focus change,False,False,7,3,2021,2021-12,10
+adityadharacom,thenomadlad/adityadharacom,8bfebc0a,2021-12-25 03:38:46+00:00,Aditya Dhara,Merge pull request #3 from thenomadlad/add_hand_wave_lol,False,True,58,5,2021,2021-12,63
+adityadharacom,thenomadlad/adityadharacom,55b6aeaa,2021-12-25 03:31:57+00:00,Aditya Dhara,More lint fixes,False,False,1,1,2021,2021-12,2
+adityadharacom,thenomadlad/adityadharacom,50a12f91,2021-12-25 03:29:13+00:00,Aditya Dhara,Lint changes,False,False,16,18,2021,2021-12,34
+adityadharacom,thenomadlad/adityadharacom,b708691a,2021-12-25 03:15:43+00:00,Aditya Dhara,Adding a hand wave coz why not,False,False,58,3,2021,2021-12,61
+adityadharacom,thenomadlad/adityadharacom,1a227fd2,2021-12-11 07:28:43+00:00,Aditya Dhara,Merge pull request #2 from thenomadlad/all_firebase_everything,False,True,9900,9393,2021,2021-12,19293
+adityadharacom,thenomadlad/adityadharacom,7a6871b2,2021-12-09 23:42:36+00:00,Aditya Dhara,Try 2 make everything sequential,False,False,1,0,2021,2021-12,1
+adityadharacom,thenomadlad/adityadharacom,b48434e9,2021-12-09 23:39:48+00:00,Aditya Dhara,Make the deploy happen only on successful lint,False,False,0,1,2021,2021-12,1
+adityadharacom,thenomadlad/adityadharacom,261d2db0,2021-12-09 23:36:46+00:00,Aditya Dhara,Something went wrong with the last merge,False,False,0,22,2021,2021-12,22
+adityadharacom,thenomadlad/adityadharacom,ab90979f,2021-12-09 23:33:01+00:00,Aditya Dhara,Merge branch 'main' into all_firebase_everything,False,True,22,0,2021,2021-12,22
+adityadharacom,thenomadlad/adityadharacom,11f396d1,2021-12-09 23:31:06+00:00,Aditya Dhara,Fixing up code and lints,False,False,2120,96,2021,2021-12,2216
+adityadharacom,thenomadlad/adityadharacom,a9623bc5,2021-12-09 23:20:32+00:00,Aditya Dhara,Checking out the pull request action,False,False,16,0,2021,2021-12,16
+adityadharacom,thenomadlad/adityadharacom,29bd9830,2021-12-09 18:35:29+00:00,Aditya Dhara,Added everything,False,False,16,92,2021,2021-12,108
+adityadharacom,thenomadlad/adityadharacom,8306c638,2021-12-07 04:27:29+00:00,Aditya Dhara,Use sveltekit and simplify your website's face,False,False,7773,5178,2021,2021-12,12951
+adityadharacom,thenomadlad/adityadharacom,3ce34758,2021-11-22 22:40:42+00:00,Aditya Dhara,Update with local,False,False,34,2,2021,2021-11,36
+adityadharacom,thenomadlad/adityadharacom,f9ef561c,2021-11-22 15:34:54+00:00,Aditya Dhara,Stop being a todo app and start being a chat,False,False,389,253,2021,2021-11,642
+adityadharacom,thenomadlad/adityadharacom,531c8b1a,2021-11-14 18:38:44+00:00,Aditya Dhara,Added helpful npm deploy step,False,False,2,1,2021,2021-11,3
+adityadharacom,thenomadlad/adityadharacom,bb6b8bcd,2021-11-14 17:39:36+00:00,Aditya Dhara,Firebase works ok now,False,False,23,5,2021,2021-11,28
+adityadharacom,thenomadlad/adityadharacom,c662a548,2021-11-14 12:34:59+00:00,Aditya Dhara,Some firebase shit,False,False,1,0,2021,2021-11,1
+adityadharacom,thenomadlad/adityadharacom,30417188,2021-11-14 12:25:44+00:00,Aditya Dhara,Add firebase emulator config,False,False,13,0,2021,2021-11,13
+adityadharacom,thenomadlad/adityadharacom,f337b65e,2021-11-14 12:14:00+00:00,Aditya Dhara,All firebase and Svelte everything,False,False,240,39,2021,2021-11,279
+adityadharacom,thenomadlad/adityadharacom,b96ebd80,2021-11-14 09:56:06+00:00,Aditya Dhara,Initialize with svelte,False,False,4957,0,2021,2021-11,4957
+adityadharacom,thenomadlad/adityadharacom,ee6eb13a,2021-11-10 22:01:50+00:00,Aditya Dhara,Ok fuck it let's remove everything,False,False,0,9413,2021,2021-11,9413
+adityadharacom,thenomadlad/adityadharacom,6b256833,2021-03-08 05:21:44+00:00,Aditya Dhara,Merge pull request #1 from ocamlmycaml/all_firebase_everything,False,True,6985,8126,2021,2021-03,15111
+adityadharacom,thenomadlad/adityadharacom,513bb620,2021-03-08 05:24:29+00:00,Tim Cook,Finally made functions work but its slow af,False,False,3,5,2021,2021-03,8
+adityadharacom,thenomadlad/adityadharacom,bcaf5515,2021-02-28 19:11:42+00:00,Tim Cook,Finally made things work,False,False,9060,57,2021,2021-02,9117
+adityadharacom,thenomadlad/adityadharacom,f251f83f,2021-02-28 03:24:05+00:00,Tim Cook,Maybe stop using yarn,False,False,30,9156,2021,2021-02,9186
+adityadharacom,thenomadlad/adityadharacom,a7646fc8,2021-02-27 00:23:40+00:00,Aditya Dhara,Add firebase things - try to call the nextjs server in a function,False,False,2500,3516,2021,2021-02,6016
+adityadharacom,thenomadlad/adityadharacom,6f2e954b,2021-01-18 03:18:00+00:00,Aditya Dhara,Add gcloud deploy crap,False,False,44,3,2021,2021-01,47
+adityadharacom,thenomadlad/adityadharacom,77e2f655,2021-01-18 01:54:37+00:00,Aditya Dhara,Add build stuff,False,False,3,0,2021,2021-01,3
+adityadharacom,thenomadlad/adityadharacom,9546ec72,2021-01-18 01:44:12+00:00,Aditya Dhara,Upgrade nextjs,False,False,5371,1,2021,2021-01,5372
+adityadharacom,thenomadlad/adityadharacom,ff1d352d,2020-09-12 07:13:56+00:00,Aditya Dhara,Fuck it lets use typescript,False,False,64,0,2020,2020-09,64
+adityadharacom,thenomadlad/adityadharacom,28f8532d,2020-09-12 07:07:12+00:00,Aditya Dhara,Initial commit from Create Next App,False,False,5124,0,2020,2020-09,5124
+retrofit-ui,retrofit-ui/retrofit-ui,b6df07e0,2026-06-15 03:57:08+00:00,Someone Somewhere,Added new events example,False,False,507,0,2026,2026-06,507
+retrofit-ui,retrofit-ui/retrofit-ui,b507ad16,2026-06-14 20:54:44+00:00,Aditya Dhara,"feat: feat: datetime, date, and time picker field types (#102)",True,False,884,12,2026,2026-06,896
+retrofit-ui,retrofit-ui/retrofit-ui,3db19828,2026-06-14 20:54:16+00:00,Aditya Dhara,feat: Calendar view for event/scheduling data (CalendarSpec) (#101),True,False,1153,1,2026,2026-06,1154
+retrofit-ui,retrofit-ui/retrofit-ui,d92bfd36,2026-06-14 20:41:28+00:00,Aditya Dhara,feat: Statistic / KPI display view (#103),True,False,935,4,2026,2026-06,939
+retrofit-ui,retrofit-ui/retrofit-ui,2ffbf48e,2026-06-14 20:17:19+00:00,Aditya Dhara,feat: Timeline view for activity logs and event history (TimelineSpec) (#100),True,False,848,0,2026,2026-06,848
+retrofit-ui,retrofit-ui/retrofit-ui,9c2fb05f,2026-06-14 18:51:30+00:00,Aditya Dhara,feat: Tree view for hierarchical resources (sl-tree) (#98),True,False,1937,3,2026,2026-06,1940
+retrofit-ui,retrofit-ui/retrofit-ui,26dd3413,2026-06-14 18:49:33+00:00,Aditya Dhara,feat: Field tooltip for contextual help text (sl-tooltip) (#97),True,False,623,31,2026,2026-06,654
+retrofit-ui,retrofit-ui/retrofit-ui,34f3b442,2026-06-14 18:41:19+00:00,Aditya Dhara,"feat: Formatted number columns (sl-format-number, sl-format-bytes) (#95)",True,False,475,18,2026,2026-06,493
+retrofit-ui,retrofit-ui/retrofit-ui,11850df0,2026-06-14 18:38:46+00:00,Someone Somewhere,Updated design philosophy,False,False,8,0,2026,2026-06,8
+retrofit-ui,retrofit-ui/retrofit-ui,e5641dfe,2026-06-14 18:22:41+00:00,Someone Somewhere,docs: add design philosophy doc and update AGENTS.md pointer,False,False,90,45,2026,2026-06,135
+retrofit-ui,retrofit-ui/retrofit-ui,3e2736a5,2026-06-14 18:22:41+00:00,Someone Somewhere,docs: document server-side display formatting philosophy in AGENTS.md,False,False,49,0,2026,2026-06,49
+retrofit-ui,retrofit-ui/retrofit-ui,95f1b71a,2026-06-14 18:14:26+00:00,Aditya Dhara,feat: Server-side pagination in TableSpec (#96),True,False,786,26,2026,2026-06,812
+retrofit-ui,retrofit-ui/retrofit-ui,09073549,2026-06-14 11:43:18+00:00,Someone Somewhere,Add pnpm install step,False,False,5,0,2026,2026-06,5
+retrofit-ui,retrofit-ui/retrofit-ui,4eb35860,2026-06-14 11:15:46+00:00,Someone Somewhere,Implementing issues,False,False,47,20,2026,2026-06,67
+retrofit-ui,retrofit-ui/retrofit-ui,22b8de0a,2026-06-14 10:53:15+00:00,Someone Somewhere,Fixed script,False,False,14,2,2026,2026-06,16
+retrofit-ui,retrofit-ui/retrofit-ui,fa6cd9dc,2026-06-14 10:46:43+00:00,Aditya Dhara,feat: Status badges on enum columns (sl-badge) (#91),True,False,486,10,2026,2026-06,496
+retrofit-ui,retrofit-ui/retrofit-ui,97ac4c95,2026-06-14 10:40:58+00:00,Aditya Dhara,feat: Star rating field type (sl-rating) (#90),True,False,655,2,2026,2026-06,657
+retrofit-ui,retrofit-ui/retrofit-ui,e79069e6,2026-06-14 10:25:46+00:00,Aditya Dhara,feat: Tags input field type for multi-value string arrays (#89),True,False,524,9,2026,2026-06,533
+retrofit-ui,retrofit-ui/retrofit-ui,75d80c11,2026-06-14 10:01:06+00:00,Someone Somewhere,Impeovements,False,False,25,0,2026,2026-06,25
+retrofit-ui,retrofit-ui/retrofit-ui,3ac2863d,2026-06-14 07:22:57+00:00,Aditya Dhara,feat: Color picker field type (sl-color-picker) (#88),True,False,320,2,2026,2026-06,322
+retrofit-ui,retrofit-ui/retrofit-ui,f14a3591,2026-06-14 07:21:22+00:00,Aditya Dhara,Safer conflict handling,False,False,4,1,2026,2026-06,5
+retrofit-ui,retrofit-ui/retrofit-ui,9fb0006c,2026-06-14 07:07:40+00:00,Aditya Dhara,Checkign dirty,False,False,2,2,2026,2026-06,4
+retrofit-ui,retrofit-ui/retrofit-ui,caa3728b,2026-06-14 07:04:03+00:00,Aditya Dhara,FIxing stdin consumption,False,False,3,3,2026,2026-06,6
+retrofit-ui,retrofit-ui/retrofit-ui,b896a3f4,2026-06-14 06:57:52+00:00,Aditya Dhara,feat: Segmented control for small enum fields (sl-radio-button) (#87),True,False,350,2,2026,2026-06,352
+retrofit-ui,retrofit-ui/retrofit-ui,39ca1323,2026-06-14 06:30:04+00:00,Aditya Dhara,moving between worktrees are hard,False,False,1,1,2026,2026-06,2
+retrofit-ui,retrofit-ui/retrofit-ui,e84585e9,2026-06-14 06:00:38+00:00,Aditya Dhara,Better error handling for iterating over issues,False,False,66,70,2026,2026-06,136
+retrofit-ui,retrofit-ui/retrofit-ui,a4a27961,2026-06-14 03:37:03+00:00,Aditya Dhara,Removing redundant ci work on main,False,False,0,11,2026,2026-06,11
+retrofit-ui,retrofit-ui/retrofit-ui,9032815b,2026-06-14 03:31:53+00:00,Aditya Dhara,Plan only and non-only commits and checks in the implement script,False,False,6,2,2026,2026-06,8
+retrofit-ui,retrofit-ui/retrofit-ui,e053b6c3,2026-06-14 03:24:13+00:00,Aditya Dhara,Fixing implement script hopefully,False,False,36,26,2026,2026-06,62
+retrofit-ui,retrofit-ui/retrofit-ui,ee60d7ad,2026-06-14 03:14:13+00:00,Aditya Dhara,Fix plan skipping logic,False,False,26,36,2026,2026-06,62
+retrofit-ui,retrofit-ui/retrofit-ui,ee2dd58d,2026-06-14 03:02:58+00:00,Aditya Dhara,Rebase instead of merge,False,False,4,2,2026,2026-06,6
+retrofit-ui,retrofit-ui/retrofit-ui,2a86384b,2026-06-14 03:00:16+00:00,Aditya Dhara,Updated lefthook,False,False,1,1,2026,2026-06,2
+retrofit-ui,retrofit-ui/retrofit-ui,4ffef859,2026-06-14 02:59:25+00:00,Aditya Dhara,Retry loop on ci failure for code changes,False,False,26,3,2026,2026-06,29
+retrofit-ui,retrofit-ui/retrofit-ui,faf66026,2026-06-14 02:08:52+00:00,Aditya Dhara,chore: skip pre-push CI when only docs/ changed,False,False,12,2,2026,2026-06,14
+retrofit-ui,retrofit-ui/retrofit-ui,0ea3da3a,2026-06-13 20:35:51+00:00,Aditya Dhara,docs: add HTTP response typing guidance to AGENTS.md,False,False,16,0,2026,2026-06,16
+retrofit-ui,retrofit-ui/retrofit-ui,9b06f3ec,2026-06-13 20:33:53+00:00,Aditya Dhara,fix: resolve array index type errors introduced by explicit response types,True,False,3,3,2026,2026-06,6
+retrofit-ui,retrofit-ui/retrofit-ui,018f0edd,2026-06-13 20:17:32+00:00,Aditya Dhara,fix: resolve all biome lint warnings,True,False,33,23,2026,2026-06,56
+retrofit-ui,retrofit-ui/retrofit-ui,906ee6c0,2026-06-13 20:14:14+00:00,Aditya Dhara,Updated workflow,False,False,154,155,2026,2026-06,309
+retrofit-ui,retrofit-ui/retrofit-ui,259205c0,2026-06-13 19:55:54+00:00,Aditya Dhara,feat: sl-switch as alternative boolean field type in forms (#85),True,False,98,2,2026,2026-06,100
+retrofit-ui,retrofit-ui/retrofit-ui,aa0824a6,2026-06-13 19:41:25+00:00,Aditya Dhara,"feat: sl-skeleton loading states in table, form, and markdown views (#84)",True,False,102,5,2026,2026-06,107
+retrofit-ui,retrofit-ui/retrofit-ui,b0e0920e,2026-06-13 18:37:41+00:00,Aditya Dhara,fix: repair e2e tests broken by sl-dialog and toast changes,True,False,25,6,2026,2026-06,31
+retrofit-ui,retrofit-ui/retrofit-ui,b827daea,2026-06-13 18:22:23+00:00,Aditya Dhara,Update implement issues script,False,False,21,5,2026,2026-06,26
+retrofit-ui,retrofit-ui/retrofit-ui,60d75895,2026-06-13 18:21:38+00:00,Aditya Dhara,feat: replace confirm() with sl-dialog for delete confirmation (#83),True,False,144,99,2026,2026-06,243
+retrofit-ui,retrofit-ui/retrofit-ui,34d1d13e,2026-06-13 01:16:03+00:00,Aditya Dhara,feat: toast notifications via sl-alert after mutations (#82),True,False,190,3,2026,2026-06,193
+retrofit-ui,retrofit-ui/retrofit-ui,92c511ac,2026-06-13 01:03:11+00:00,Aditya Dhara,Update implement issues script,False,False,4,0,2026,2026-06,4
+retrofit-ui,retrofit-ui/retrofit-ui,08507317,2026-06-13 00:49:40+00:00,Aditya Dhara,fix: use .author not .author.login in fix_context (already a string),True,False,1,1,2026,2026-06,2
+retrofit-ui,retrofit-ui/retrofit-ui,ae0d5908,2026-06-12 23:54:53+00:00,Aditya Dhara,"fix: pipe to jq for --arg support, add review/inline comment detection",True,False,8,10,2026,2026-06,18
+retrofit-ui,retrofit-ui/retrofit-ui,60d05203,2026-06-12 23:52:18+00:00,Aditya Dhara,Updating implement-issues,False,False,53,8,2026,2026-06,61
+retrofit-ui,retrofit-ui/retrofit-ui,7e80304b,2026-06-12 10:14:19+00:00,Aditya Dhara,UPdate implement script,False,False,36,13,2026,2026-06,49
+retrofit-ui,retrofit-ui/retrofit-ui,a7530ef8,2026-06-12 09:57:10+00:00,Aditya Dhara,chore: use closedByPullRequestsReferences for PR lookup (#81),False,False,5,14,2026,2026-06,19
+retrofit-ui,retrofit-ui/retrofit-ui,90ae978d,2026-06-12 09:48:59+00:00,Aditya Dhara,chore: check existing PRs for CI/conflict status (#80),False,False,91,13,2026,2026-06,104
+retrofit-ui,retrofit-ui/retrofit-ui,1447a56d,2026-06-12 09:45:58+00:00,Aditya Dhara,"chore: use git worktrees per issue, add --jobs for parallelism",False,False,78,37,2026,2026-06,115
+retrofit-ui,retrofit-ui/retrofit-ui,a961c1a3,2026-06-12 09:37:43+00:00,Aditya Dhara,chore: add implement-issues script (#79),False,False,85,0,2026,2026-06,85
+retrofit-ui,retrofit-ui/retrofit-ui,a3781acf,2026-06-12 09:33:01+00:00,Aditya Dhara,chore: remove Claude GitHub Action workflows (#78),False,False,0,182,2026,2026-06,182
+retrofit-ui,retrofit-ui/retrofit-ui,01bb8dbe,2026-06-12 07:52:18+00:00,Aditya Dhara,"fix(ci): cap turns on clarify/plan, document no-output root cause (#77)",False,False,2,0,2026,2026-06,2
+retrofit-ui,retrofit-ui/retrofit-ui,f2ce7f6d,2026-06-12 07:47:58+00:00,Aditya Dhara,ci: merge official Claude app setup with conversational workflow (#76),False,False,73,24,2026,2026-06,97
+retrofit-ui,retrofit-ui/retrofit-ui,65d7b5cb,2026-06-12 07:36:31+00:00,Aditya Dhara,fix(ci): add id-token: write for claude-code-action (#74),False,False,1,0,2026,2026-06,1
+retrofit-ui,retrofit-ui/retrofit-ui,15c89d17,2026-06-12 07:32:46+00:00,Aditya Dhara,fix(ci): restrict Claude workflow to thenomadlad only (#73),False,False,6,12,2026,2026-06,18
+retrofit-ui,retrofit-ui/retrofit-ui,7ddb6d93,2026-06-12 07:29:24+00:00,Aditya Dhara,fix(ci): allow MEMBER association on Claude workflow (#72),False,False,20,10,2026,2026-06,30
+retrofit-ui,retrofit-ui/retrofit-ui,0a607350,2026-06-12 07:17:31+00:00,Aditya Dhara,ci: conversational Claude workflow — clarify → plan → implement (#71),False,False,103,17,2026,2026-06,120
+retrofit-ui,retrofit-ui/retrofit-ui,11d51015,2026-06-12 06:48:25+00:00,Aditya Dhara,ci: add Claude Code GitHub Action (#70),False,False,40,0,2026,2026-06,40
+retrofit-ui,retrofit-ui/retrofit-ui,0a105a42,2026-06-12 06:42:25+00:00,Aditya Dhara,feat: form autoSubmit + stacked/dashboard layout views (#69),True,False,440,78,2026,2026-06,518
+retrofit-ui,retrofit-ui/retrofit-ui,8dbabf85,2026-06-11 03:20:55+00:00,Aditya Dhara,feat: form autoSubmit + stacked form/table views (#68),True,False,120,50,2026,2026-06,170
+retrofit-ui,retrofit-ui/retrofit-ui,8639b870,2026-06-11 00:43:25+00:00,Aditya Dhara,demo(blog): author field as server-populated select (closes #60) (#67),True,False,14,4,2026,2026-06,18
+retrofit-ui,retrofit-ui/retrofit-ui,eb1ada69,2026-06-11 00:36:56+00:00,Aditya Dhara,"feat: SPA split, Java support, forRows/values inline data (#65)",True,False,9047,471,2026,2026-06,9518
+retrofit-ui,retrofit-ui/retrofit-ui,e5386ac4,2026-06-08 22:16:20+00:00,Aditya Dhara,"feat: per-example redesign — inline editing, markdown view, narrow table, form builder (#37)",True,False,906,761,2026,2026-06,1667
+retrofit-ui,retrofit-ui/retrofit-ui,58f145a1,2026-06-08 21:50:47+00:00,Aditya Dhara,feat: TableFormWorkflowBundle — Bevy-style split table/form endpoints (#36),True,False,296,96,2026,2026-06,392
+retrofit-ui,retrofit-ui/retrofit-ui,e118cf49,2026-06-08 21:13:58+00:00,Aditya Dhara,feat: URL-directive API (retrofitUi + TableView builder) (#35),True,False,497,186,2026,2026-06,683
+retrofit-ui,retrofit-ui/retrofit-ui,67afe650,2026-06-07 22:35:02+00:00,Aditya Dhara,rearch,False,False,1693,2369,2026,2026-06,4062
+retrofit-ui,retrofit-ui/retrofit-ui,83721276,2026-06-05 06:19:31+00:00,Aditya Dhara,test: Playwright e2e tests for all examples (#34),True,False,3652,111,2026,2026-06,3763
+retrofit-ui,retrofit-ui/retrofit-ui,5b9470d4,2026-06-04 08:40:55+00:00,Aditya Dhara,feat: schema-builder-zod package and todos example (#25),True,False,1295,39,2026,2026-06,1334
+retrofit-ui,retrofit-ui/retrofit-ui,a22b1a46,2026-06-04 04:52:11+00:00,Aditya Dhara,feat: scaffold @retrofit-ui/server (#17),True,False,998,18,2026,2026-06,1016
+retrofit-ui,retrofit-ui/retrofit-ui,6e8090a8,2026-06-04 04:47:35+00:00,Aditya Dhara,feat: scaffold @retrofit-ui/renderers-solid with Table and Form renderers (#16),True,False,1664,7,2026,2026-06,1671
+retrofit-ui,retrofit-ui/retrofit-ui,db51d857,2026-06-04 04:22:53+00:00,Aditya Dhara,feat: implement DetailViewSchema and ListSchema (#15),True,False,175,0,2026,2026-06,175
+retrofit-ui,retrofit-ui/retrofit-ui,e76c02e3,2026-06-04 04:21:32+00:00,Aditya Dhara,feat: implement FormSchema type definition (#14),True,False,122,0,2026,2026-06,122
+retrofit-ui,retrofit-ui/retrofit-ui,00d33829,2026-06-04 04:19:34+00:00,Aditya Dhara,feat: implement TableSchema type definition (#13),True,False,100,1,2026,2026-06,101
+retrofit-ui,retrofit-ui/retrofit-ui,d3a6ab7b,2026-06-04 03:19:57+00:00,Aditya Dhara,feat: scaffold @retrofit-ui/core package (#12),True,False,1654,12,2026,2026-06,1666
+retrofit-ui,retrofit-ui/retrofit-ui,ed6b7825,2026-06-04 01:31:23+00:00,Aditya Dhara,feat: initialize monorepo with pnpm workspaces (#11),True,False,1118,0,2026,2026-06,1118
+retrofit-ui,retrofit-ui/retrofit-ui,404c9ce8,2026-06-03 08:36:06+00:00,Aditya Dhara,Add MIT License to the project,False,False,21,0,2026,2026-06,21
+retrofit-ui,retrofit-ui/retrofit-ui,e9e9d0ad,2026-06-03 08:23:07+00:00,Aditya Dhara,docs: add README and AGENTS.md,True,False,533,0,2026,2026-06,533
+dotfiles,thenomadlad/dotfiles,5bc9f792,2026-06-11 02:44:30+00:00,Aditya Dhara,Reverted back to alias based stuff,False,False,22,29,2026,2026-06,51
+dotfiles,thenomadlad/dotfiles,20c30efb,2026-06-11 01:50:08+00:00,Aditya Dhara,Improved wproj,False,False,39,33,2026,2026-06,72
+dotfiles,thenomadlad/dotfiles,ac6a5144,2026-06-07 07:52:52+00:00,Aditya Dhara,stickier neovim,False,False,8,4,2026,2026-06,12
+dotfiles,thenomadlad/dotfiles,3176ef1a,2026-06-05 07:11:12+00:00,Aditya Dhara,stickier neovim,False,False,15,2,2026,2026-06,17
+dotfiles,thenomadlad/dotfiles,88fa0c13,2026-06-05 06:11:41+00:00,Aditya Dhara,Fix agent url and added github url things,False,False,58,6,2026,2026-06,64
+dotfiles,thenomadlad/dotfiles,83f3ca44,2026-06-03 19:59:52+00:00,thenomadlad,Added yank position for agents function,False,False,49,0,2026,2026-06,49
+dotfiles,thenomadlad/dotfiles,51cac3fb,2026-06-03 09:10:58+00:00,Aditya Dhara,Updated wezterm cmds,False,False,24,0,2026,2026-06,24
+dotfiles,thenomadlad/dotfiles,326b6163,2026-06-03 09:00:36+00:00,Aditya Dhara,Updated wproj commands,False,False,20,7,2026,2026-06,27
+dotfiles,thenomadlad/dotfiles,9cb2ae90,2026-06-03 05:50:24+00:00,Aditya Dhara,Updated stuff,False,False,35,30,2026,2026-06,65
+dotfiles,thenomadlad/dotfiles,64a168d8,2026-05-27 02:52:05+00:00,thenomadlad,Some tweaks,False,False,45,24,2026,2026-05,69
+dotfiles,thenomadlad/dotfiles,f04752fc,2026-05-23 01:07:19+00:00,Aditya Dhara,Check which agent exists,False,False,5,1,2026,2026-05,6
+dotfiles,thenomadlad/dotfiles,dc032200,2026-05-23 01:00:29+00:00,Aditya Dhara,Merge branch 'main' of github.com:thenomadlad/dotfiles,False,True,7,0,2026,2026-05,7
+dotfiles,thenomadlad/dotfiles,2034a774,2026-05-22 21:39:32+00:00,thenomadlad,Added little wproj function,False,False,13,31,2026,2026-05,44
+dotfiles,thenomadlad/dotfiles,f1197664,2026-05-22 20:03:05+00:00,thenomadlad,wezconfig,False,False,31,6,2026,2026-05,37
+dotfiles,thenomadlad/dotfiles,289f178e,2026-05-22 06:06:23+00:00,Aditya Dhara,Claudito,False,False,7,1,2026,2026-05,8
+dotfiles,thenomadlad/dotfiles,9c98d504,2026-05-21 23:03:12+00:00,thenomadlad,Adjusted nav more because.. why am i so obsessed with it,False,False,17,2,2026,2026-05,19
+dotfiles,thenomadlad/dotfiles,7cf218cc,2026-05-21 06:07:49+00:00,Aditya Dhara,Neovim is no longer lazy,False,False,1,0,2026,2026-05,1
+dotfiles,thenomadlad/dotfiles,6076b228,2026-05-19 06:47:52+00:00,Aditya Dhara,Stuff,False,False,6,10,2026,2026-05,16
+dotfiles,thenomadlad/dotfiles,336958c9,2026-05-18 11:02:40+00:00,Aditya Dhara,Stuff,False,False,133,67,2026,2026-05,200
+dotfiles,thenomadlad/dotfiles,d8e2fa61,2026-05-18 10:47:48+00:00,Aditya Dhara,Lets gooo,False,False,409,33,2026,2026-05,442
+dotfiles,thenomadlad/dotfiles,6d9ede00,2026-05-18 08:53:59+00:00,Aditya Dhara,Working keyboard drawer,False,False,450,188,2026,2026-05,638
+dotfiles,thenomadlad/dotfiles,b5c7c0e9,2026-05-17 22:06:30+00:00,Aditya Dhara,long filename problems,False,False,224,200,2026,2026-05,424
+dotfiles,thenomadlad/dotfiles,882ea957,2026-05-17 19:21:27+00:00,thenomadlad,Fix up java config a bit,False,False,81,11,2026,2026-05,92
+dotfiles,thenomadlad/dotfiles,adbd7bac,2026-05-17 04:58:14+00:00,Aditya Dhara,Changed up the keyguide,False,False,356,404,2026,2026-05,760
+dotfiles,thenomadlad/dotfiles,6605763b,2026-05-17 03:16:32+00:00,Aditya Dhara,Changing it up a whole lot,False,False,754,169,2026,2026-05,923
+dotfiles,thenomadlad/dotfiles,c75a2049,2026-05-16 05:47:46+00:00,Aditya Dhara,donezo,False,False,196,298,2026,2026-05,494
+dotfiles,thenomadlad/dotfiles,f187f759,2026-05-16 01:12:24+00:00,Aditya Dhara,Let's gooo,False,False,466,425,2026,2026-05,891
+dotfiles,thenomadlad/dotfiles,7aef692f,2026-05-15 08:20:38+00:00,Aditya Dhara,Sruff,False,False,53,49,2026,2026-05,102
+dotfiles,thenomadlad/dotfiles,6d752b10,2026-05-12 07:50:25+00:00,Aditya Dhara,Md plugin and other plugins,False,False,19,3,2026,2026-05,22
+dotfiles,thenomadlad/dotfiles,bd2bc44c,2026-05-12 06:26:29+00:00,Aditya Dhara,Moved to different markdown plugin,False,False,8,17,2026,2026-05,25
+dotfiles,thenomadlad/dotfiles,1c777d0c,2026-05-12 04:55:43+00:00,Aditya Dhara,Added stuff,False,False,72,7,2026,2026-05,79
+dotfiles,thenomadlad/dotfiles,e4d06a81,2026-05-11 21:45:34+00:00,Someone Somewhere,Remove rainbow delims,False,False,0,3,2026,2026-05,3
+dotfiles,thenomadlad/dotfiles,dc2877f7,2026-03-18 20:22:54+00:00,Someone Somewhere,Make claude more bearable,False,False,12,12,2026,2026-03,24
+dotfiles,thenomadlad/dotfiles,daebac4e,2026-03-15 16:38:44+00:00,Someone Somewhere,Git repo check,False,False,1,1,2026,2026-03,2
+dotfiles,thenomadlad/dotfiles,d3b97478,2026-03-15 16:04:12+00:00,Someone Somewhere,Added webdev stuff,False,False,6,0,2026,2026-03,6
+dotfiles,thenomadlad/dotfiles,372b2775,2026-03-15 05:30:18+00:00,Aditya Dhara,Moved claude config to top level .claude dir,False,False,0,0,2026,2026-03,0
+dotfiles,thenomadlad/dotfiles,7c54b73e,2026-03-15 05:20:32+00:00,Aditya Dhara,Added claude configs,False,False,478,0,2026,2026-03,478
+dotfiles,thenomadlad/dotfiles,ec864b74,2026-03-13 21:58:51+00:00,Aditya Dhara,Added gitignore,False,False,96,0,2026,2026-03,96
+dotfiles,thenomadlad/dotfiles,00311dc9,2026-03-09 18:09:38+00:00,Someone Somewhere,"Removed avante, we shall now use agents like claude code the unix way",False,False,0,48,2026,2026-03,48
+dotfiles,thenomadlad/dotfiles,fe8bf07a,2026-03-08 15:49:44+00:00,Someone Somewhere,Added nvim here,False,False,555,0,2026,2026-03,555
+dotfiles,thenomadlad/dotfiles,57338d5b,2025-07-27 09:35:24+00:00,Aditya Dhara,Added back nvm,False,False,4,4,2025,2025-07,8
+dotfiles,thenomadlad/dotfiles,98d5203b,2024-12-21 05:55:26+00:00,Aditya Dhara,"Down with tmux, long live wezterm",False,False,54,64,2024,2024-12,118
+dotfiles,thenomadlad/dotfiles,98dd2c05,2024-12-18 08:44:38+00:00,Aditya Dhara,Merge branch 'main' of github.com:thenomadlad/dotfiles,False,True,56,33,2024,2024-12,89
+dotfiles,thenomadlad/dotfiles,b314a00d,2024-12-18 08:08:31+00:00,Aditya Dhara,Some more tweaks,False,False,3,1,2024,2024-12,4
+dotfiles,thenomadlad/dotfiles,703858fd,2024-12-18 08:02:39+00:00,Aditya Dhara,Added wezterm,False,False,51,46,2024,2024-12,97
+dotfiles,thenomadlad/dotfiles,4b2ec725,2024-10-25 05:37:45+00:00,thenomadlad,Added some stuff,False,False,19,7,2024,2024-10,26
+dotfiles,thenomadlad/dotfiles,58061da5,2024-06-22 00:05:34+00:00,thenomadlad,Made it more cross platform,False,False,35,19,2024,2024-06,54
+dotfiles,thenomadlad/dotfiles,496bff97,2024-05-28 19:28:06+00:00,Aditya Dhara,Added tmux,False,False,54,0,2024,2024-05,54
+dotfiles,thenomadlad/dotfiles,a0fc9386,2024-05-28 19:23:12+00:00,Aditya Dhara,Using home envvar more,False,False,4,3,2024,2024-05,7
+dotfiles,thenomadlad/dotfiles,602cc0fb,2024-05-27 08:54:55+00:00,Aditya Dhara,Added README,False,False,28,0,2024,2024-05,28
+dotfiles,thenomadlad/dotfiles,dcf9bbd2,2024-05-27 08:49:40+00:00,Aditya Dhara,Added all stowages,False,False,153,0,2024,2024-05,153
+bevy-grease-fire,thenomadlad/bevy-grease-fire,f2bdf63e,2026-06-01 08:04:31+00:00,Aditya Dhara,Added assets,False,False,699,103,2026,2026-06,802
+bevy-grease-fire,thenomadlad/bevy-grease-fire,451d3bac,2026-05-30 21:58:57+00:00,Aditya Dhara,Added layers to the items that collide,False,False,22,21,2026,2026-05,43
+bevy-grease-fire,thenomadlad/bevy-grease-fire,10fed9ef,2026-05-30 11:02:01+00:00,Aditya Dhara,Updated to include instructions on screen,False,False,86,3,2026,2026-05,89
+bevy-grease-fire,thenomadlad/bevy-grease-fire,8714bbf0,2026-05-30 10:16:19+00:00,Aditya Dhara,Lint and clippy,False,False,4,4,2026,2026-05,8
+bevy-grease-fire,thenomadlad/bevy-grease-fire,6b8eb610,2026-05-30 10:14:50+00:00,Aditya Dhara,Removed ducky,False,False,2,77,2026,2026-05,79
+bevy-grease-fire,thenomadlad/bevy-grease-fire,c99a4e05,2026-05-30 10:08:47+00:00,Aditya Dhara,Clippy lints,False,False,5,8,2026,2026-05,13
+bevy-grease-fire,thenomadlad/bevy-grease-fire,75cb672f,2026-05-30 10:08:18+00:00,Aditya Dhara,Credits,False,False,1,5,2026,2026-05,6
+bevy-grease-fire,thenomadlad/bevy-grease-fire,84f88b8d,2026-05-30 10:06:06+00:00,Aditya Dhara,Lint,False,False,25,7,2026,2026-05,32
+bevy-grease-fire,thenomadlad/bevy-grease-fire,3da05677,2026-05-30 10:01:30+00:00,Aditya Dhara,Stuff,False,False,13,12,2026,2026-05,25
+bevy-grease-fire,thenomadlad/bevy-grease-fire,9441d6e3,2026-05-30 10:01:30+00:00,Aditya Dhara,Actually working daaaang,False,False,38,45,2026,2026-05,83
+bevy-grease-fire,thenomadlad/bevy-grease-fire,3854c435,2026-05-30 10:01:30+00:00,Aditya Dhara,Let's build,False,False,392,125,2026,2026-05,517
+bevy-grease-fire,thenomadlad/bevy-grease-fire,d11787ef,2026-05-30 10:01:30+00:00,Aditya Dhara,First draft,False,False,9471,0,2026,2026-05,9471
+bevy-grease-fire,thenomadlad/bevy-grease-fire,ca842caa,2026-05-30 10:00:37+00:00,Aditya Dhara,Initial commit,False,False,21,0,2026,2026-05,21
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,0025a05d,2026-06-01 10:18:29+00:00,Aditya Dhara,Merge pull request #9 from thenomadlad/integration-tests,False,True,5017,864,2026,2026-06,5881
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,e3f347ab,2026-06-01 10:17:23+00:00,Aditya Dhara,Tests for archiving to hidden folders,False,False,60,0,2026,2026-06,60
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,3dfdf936,2026-06-01 10:08:57+00:00,Aditya Dhara,Add wdio integration test scaffold,True,False,4957,864,2026,2026-06,5821
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,a73a0811,2026-06-01 09:59:11+00:00,Aditya Dhara,Merge pull request #7 from dirtdawn777/main,False,True,29,23,2026,2026-06,52
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,e422b3d9,2025-01-03 14:39:43+00:00,abaroni,Updated the command icon and text for consistency with Obsidian UI,False,False,4,4,2025,2025-01,8
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,2b84accb,2025-01-03 13:42:00+00:00,abaroni,"eslint fix, make the plugin work with hidden directories",False,False,25,19,2025,2025-01,44
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,2c169bce,2023-06-04 21:41:01+00:00,Aditya Dhara,Remove node specific functions,False,False,4,9,2023,2023-06,13
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,acd4d5ba,2023-06-03 07:05:42+00:00,Aditya Dhara,putting back path for now,False,False,1,0,2023,2023-06,1
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,5e76933a,2023-06-03 07:03:01+00:00,Aditya Dhara,Remove redundant parts of command id,False,False,2,4,2023,2023-06,6
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,669afa99,2023-05-28 20:05:59+00:00,Aditya Dhara,Merge pull request #2 from thenomadlad/thenomadlad-patch-1,False,True,1,1,2023,2023-05,2
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,fd62c97e,2023-05-28 20:04:35+00:00,Aditya Dhara,Update manifest.json,False,False,1,1,2023,2023-05,2
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,21f2d36a,2023-05-28 19:44:57+00:00,Aditya Dhara,Merge pull request #1 from thenomadlad/add_release_workflow,False,True,34,1,2023,2023-05,35
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,02843d4b,2023-05-28 19:41:04+00:00,Aditya Dhara,Fixed manifest and added workflow,False,False,34,1,2023,2023-05,35
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,0cc8f6c3,2023-05-28 19:37:05+00:00,Aditya Dhara,Updated gifs,False,False,0,0,2023,2023-05,0
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,9f86e054,2023-05-28 19:27:24+00:00,Aditya Dhara,Create LICENSE,False,False,21,0,2023,2023-05,21
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,2921dfb4,2023-05-28 19:26:25+00:00,Aditya Dhara,Removed unnecessary headings in plugin,False,False,0,2,2023,2023-05,2
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,d17e9e76,2023-05-28 19:19:32+00:00,Aditya Dhara,Remove all console logs,False,False,0,4,2023,2023-05,4
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,55c7ee27,2023-05-28 01:47:38+00:00,Aditya Dhara,Added an actual readme,False,False,86,87,2023,2023-05,173
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,a494c12a,2023-05-28 01:03:23+00:00,Aditya Dhara,Added version to settings,False,False,83,54,2023,2023-05,137
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,e00d0520,2023-05-27 23:14:55+00:00,Aditya Dhara,"Initial draft, making the basics work",False,False,1443,94,2023,2023-05,1537
+obsidian-note-archiver,thenomadlad/obsidian-note-archiver,2e0ba378,2023-05-24 22:15:07+00:00,Aditya Dhara,Initial commit,False,False,423,0,2023,2023-05,423
+build-your-own-x-in-rust,thenomadlad/build-your-own-x-in-rust,3256a29b,2026-02-22 09:23:32+00:00,Someone Somewhere,Upgraded rust and pkgs,False,False,91,66,2026,2026-02,157
+build-your-own-x-in-rust,thenomadlad/build-your-own-x-in-rust,edd7e7e2,2026-02-22 09:11:03+00:00,Someone Somewhere,ome fixes,False,False,1,1,2026,2026-02,2
+build-your-own-x-in-rust,thenomadlad/build-your-own-x-in-rust,60aeac94,2026-02-22 09:08:18+00:00,Someone Somewhere,pkg vers,False,False,146,56,2026,2026-02,202
+build-your-own-x-in-rust,thenomadlad/build-your-own-x-in-rust,d932ac5e,2022-11-15 08:15:25+00:00,Aditya Dhara,Marginally more efficient,False,False,5,5,2022,2022-11,10
+build-your-own-x-in-rust,thenomadlad/build-your-own-x-in-rust,2919551b,2022-11-13 03:25:06+00:00,Aditya Dhara,Added lighting,False,False,24,10,2022,2022-11,34
+build-your-own-x-in-rust,thenomadlad/build-your-own-x-in-rust,245b104e,2022-10-29 21:40:19+00:00,Aditya Dhara,Update README.md,False,False,1,1,2022,2022-10,2
+build-your-own-x-in-rust,thenomadlad/build-your-own-x-in-rust,83f7dc6a,2022-10-29 21:36:40+00:00,Aditya Dhara,Added readme,False,False,14,0,2022,2022-10,14
+build-your-own-x-in-rust,thenomadlad/build-your-own-x-in-rust,3208e1db,2022-10-29 21:30:43+00:00,Aditya Dhara,Working ray tracer with basic lighting (still need work for directional light etc.),False,False,969,0,2022,2022-10,969
+nvim,thenomadlad/nvim,d329b482,2026-02-22 08:42:31+00:00,Someone Somewhere,API change for treesitter,False,False,1,1,2026,2026-02,2
+nvim,thenomadlad/nvim,1c71c7c4,2025-11-25 08:11:52+00:00,Aditya Dhara,Add stuff,False,False,5,4,2025,2025-11,9
+nvim,thenomadlad/nvim,a7a1f90c,2025-09-11 16:19:54+00:00,thenomadlad,Added avante and removed some cruft,False,False,49,39,2025,2025-09,88
+nvim,thenomadlad/nvim,9433ceb5,2025-08-01 01:58:47+00:00,Aditya Dhara,Add numbering config back,False,False,7,0,2025,2025-08,7
+nvim,thenomadlad/nvim,0e3a29bb,2025-08-01 01:54:46+00:00,Aditya Dhara,"Added code companion, removed modicator",False,False,20,20,2025,2025-08,40
+nvim,thenomadlad/nvim,56400236,2025-05-08 02:31:25+00:00,thenomadlad,Updated to 0.11 and also added line numbering,False,False,24,5,2025,2025-05,29
+nvim,thenomadlad/nvim,62a88a43,2025-03-28 06:16:19+00:00,Aditya Dhara,Moving to blink,False,False,13,86,2025,2025-03,99
+nvim,thenomadlad/nvim,d4e9b216,2024-12-23 23:20:22+00:00,thenomadlad,Removed lazy-lock,False,False,1,42,2024,2024-12,43
+nvim,thenomadlad/nvim,e86a936a,2024-12-23 23:19:28+00:00,thenomadlad,Multicurors,False,False,33,13,2024,2024-12,46
+nvim,thenomadlad/nvim,27ae2085,2024-12-21 07:24:04+00:00,Aditya Dhara,Added wezterm no more tmux,False,False,13,16,2024,2024-12,29
+nvim,thenomadlad/nvim,6803df89,2024-12-21 03:43:36+00:00,Aditya Dhara,Added rust to mason,False,False,14,12,2024,2024-12,26
+nvim,thenomadlad/nvim,7e3a305a,2024-12-05 04:47:46+00:00,thenomadlad,Nice completions now,False,False,127,34,2024,2024-12,161
+nvim,thenomadlad/nvim,54b9e716,2024-11-30 08:05:44+00:00,Aditya Dhara,Added some more changes to gitsigns,False,False,4,15,2024,2024-11,19
+nvim,thenomadlad/nvim,e188055a,2024-11-29 09:30:40+00:00,Aditya Dhara,Improved descriptions for gitsigns,False,False,14,14,2024,2024-11,28
+nvim,thenomadlad/nvim,8caa95c5,2024-11-29 09:07:46+00:00,Aditya Dhara,"Added tmux nav, gisigns, comments",False,False,98,15,2024,2024-11,113
+nvim,thenomadlad/nvim,1e3f158b,2024-11-27 07:09:42+00:00,Aditya Dhara,So much play,False,False,282,69,2024,2024-11,351
+nvim,thenomadlad/nvim,72043bf2,2024-11-24 11:55:04+00:00,Aditya Dhara,Lets play,False,False,131,644,2024,2024-11,775
+nvim,thenomadlad/nvim,94c8baec,2024-11-18 04:18:29+00:00,Aditya Dhara,Updated lock,False,False,41,35,2024,2024-11,76
+nvim,thenomadlad/nvim,97fa62b9,2024-11-01 06:16:55+00:00,Aditya Dhara,Upgrades,False,False,51,55,2024,2024-11,106
+nvim,thenomadlad/nvim,f2a1bd13,2024-08-16 20:31:57+00:00,thenomadlad,Added terraform,False,False,1,0,2024,2024-08,1
+nvim,thenomadlad/nvim,4bd570f7,2024-07-23 05:55:35+00:00,thenomadlad,Improved type hints and save experience,False,False,58,56,2024,2024-07,114
+nvim,thenomadlad/nvim,3f82fab4,2024-05-28 15:43:44+00:00,Aditya Dhara,Updated neo-tree,False,False,24,5,2024,2024-05,29
+nvim,thenomadlad/nvim,a6cac3fd,2024-05-26 03:30:46+00:00,Aditya Dhara,Add all community plugins from old repo,False,False,122,2,2024,2024-05,124
+nvim,thenomadlad/nvim,6e0e35c6,2024-05-26 03:19:47+00:00,Aditya Dhara,Initial commit,False,False,538,0,2024,2024-05,538
+definitions,retrofit-ui/definitions,e81b9ff8,2026-02-16 14:11:38+00:00,Aditya Dhara,Added stuff to main,False,False,408,4,2026,2026-02,412
+definitions,retrofit-ui/definitions,9eb084e5,2026-02-16 13:30:52+00:00,Aditya Dhara,Initial commit,False,False,2363,0,2026,2026-02,2363
+server-driven-mui,thenomadlad/server-driven-mui,09d34efc,2026-01-24 05:40:27+00:00,Aditya Dhara,What did i even do,False,False,69,56,2026,2026-01,125
+server-driven-mui,thenomadlad/server-driven-mui,402295a9,2026-01-13 16:18:32+00:00,Aditya Dhara,Partial impl new button,False,False,175,29,2026,2026-01,204
+server-driven-mui,thenomadlad/server-driven-mui,24d40a4c,2026-01-11 16:42:02+00:00,Aditya Dhara,Table view works,False,False,846,31,2026,2026-01,877
+server-driven-mui,thenomadlad/server-driven-mui,947dc6c9,2026-01-08 01:19:53+00:00,Aditya Dhara,Finally got it all working for proto1,False,False,417,158,2026,2026-01,575
+server-driven-mui,thenomadlad/server-driven-mui,caf3abf0,2026-01-06 09:33:18+00:00,Aditya Dhara,Updated test?,False,False,6,6,2026,2026-01,12
+server-driven-mui,thenomadlad/server-driven-mui,006edce9,2026-01-06 09:32:11+00:00,Aditya Dhara,Added stuff,False,False,47,58,2026,2026-01,105
+server-driven-mui,thenomadlad/server-driven-mui,68be00a2,2026-01-06 08:40:38+00:00,Aditya Dhara,Delete array kinda works now,False,False,59,43,2026,2026-01,102
+server-driven-mui,thenomadlad/server-driven-mui,9dbe7354,2026-01-06 05:52:07+00:00,Aditya Dhara,Reversions,False,False,26,104,2026,2026-01,130
+server-driven-mui,thenomadlad/server-driven-mui,2084212a,2026-01-06 05:45:14+00:00,Aditya Dhara,Partial update,False,False,104,26,2026,2026-01,130
+server-driven-mui,thenomadlad/server-driven-mui,f740834d,2026-01-06 04:47:11+00:00,Aditya Dhara,Partial changes,False,False,164,124,2026,2026-01,288
+server-driven-mui,thenomadlad/server-driven-mui,067c7011,2025-12-30 04:25:23+00:00,Aditya Dhara,Have stuff,False,False,244,10,2025,2025-12,254
+server-driven-mui,thenomadlad/server-driven-mui,74bc20c5,2025-12-29 21:08:47+00:00,Aditya Dhara,Global delete button partially working i guess,False,False,97,7,2025,2025-12,104
+server-driven-mui,thenomadlad/server-driven-mui,82263978,2025-12-29 20:54:21+00:00,Aditya Dhara,Most of the first prototype is done woo,False,False,762,357,2025,2025-12,1119
+server-driven-mui,thenomadlad/server-driven-mui,6da2737e,2025-12-29 09:19:28+00:00,Aditya Dhara,Added new deps,False,False,21,7,2025,2025-12,28
+server-driven-mui,thenomadlad/server-driven-mui,2c793c99,2025-12-29 06:10:53+00:00,Aditya Dhara,First attempt at prototype-1,False,False,1772,35,2025,2025-12,1807
+server-driven-mui,thenomadlad/server-driven-mui,c0d45cf5,2025-12-28 22:11:21+00:00,Aditya Dhara,Removed test results dir,False,False,1,4,2025,2025-12,5
+server-driven-mui,thenomadlad/server-driven-mui,1c61cac7,2025-12-28 22:08:36+00:00,Aditya Dhara,Tests work and everything seems upgraded,False,False,2077,1573,2025,2025-12,3650
+server-driven-mui,thenomadlad/server-driven-mui,9d26562d,2025-12-28 21:27:33+00:00,Aditya Dhara,Added skeleton setup,False,False,35,78,2025,2025-12,113
+server-driven-mui,thenomadlad/server-driven-mui,052e40f7,2025-12-28 21:09:37+00:00,Aditya Dhara,Added github action,False,False,108,0,2025,2025-12,108
+server-driven-mui,thenomadlad/server-driven-mui,191c7fbf,2025-12-28 10:58:09+00:00,Aditya Dhara,Added tests,False,False,5792,2187,2025,2025-12,7979
+server-driven-mui,thenomadlad/server-driven-mui,dc53f23e,2025-12-28 10:46:21+00:00,Aditya Dhara,Added docs and removed old stuff,False,False,134,150,2025,2025-12,284
+server-driven-mui,thenomadlad/server-driven-mui,b657df11,2025-12-28 09:20:45+00:00,Aditya Dhara,Removed python library for now,False,False,0,723,2025,2025-12,723
+server-driven-mui,thenomadlad/server-driven-mui,ded01200,2023-12-12 08:31:15+00:00,Aditya Dhara,Used react createelement instead of manually hardcoded rendering stuff,False,False,17,47,2023,2023-12,64
+server-driven-mui,thenomadlad/server-driven-mui,5d5163f1,2023-11-12 08:51:00+00:00,Aditya Dhara,Add roadmap,False,False,6,6,2023,2023-11,12
+server-driven-mui,thenomadlad/server-driven-mui,e28248bd,2023-10-28 09:15:18+00:00,Aditya Dhara,Add a plan doc,False,False,116,3,2023,2023-10,119
+server-driven-mui,thenomadlad/server-driven-mui,f8c8f078,2023-10-27 20:57:12+00:00,Aditya Dhara,Added gitignore for python,False,False,483,74,2023,2023-10,557
+server-driven-mui,thenomadlad/server-driven-mui,86478d6e,2023-10-27 18:21:01+00:00,Aditya Dhara,Create LICENSE,False,False,21,0,2023,2023-10,21
+server-driven-mui,thenomadlad/server-driven-mui,6d6d7cdd,2023-10-27 01:51:18+00:00,Aditya Dhara,Added working version,False,False,1308,154,2023,2023-10,1462
+server-driven-mui,thenomadlad/server-driven-mui,bd37841a,2023-10-26 22:57:03+00:00,Aditya Dhara,Initial commit from Create Next App,False,False,2950,0,2023,2023-10,2950
+sick-tracks,thenomadlad/sick-tracks,e1360a3c,2025-12-01 03:20:26+00:00,Aditya Dhara,First loop,False,False,16,0,2025,2025-12,16
+caraml-examples,caramlops/caraml-examples,5d5aea19,2024-12-08 23:52:07+00:00,Aditya Dhara,"Added a stupid example of serving, without caraml",False,False,1097,0,2024,2024-12,1097
+caraml-examples,caramlops/caraml-examples,3d105ebf,2024-07-15 10:39:33+00:00,Aditya Dhara,Initial commit,False,False,183,0,2024,2024-07,183
+bevy-aunty-survivor,thenomadlad/bevy-aunty-survivor,64ef038e,2024-10-18 07:43:05+00:00,thenomadlad,First commit,False,False,8065,0,2024,2024-10,8065
+bevy-gear-slip,thenomadlad/bevy-gear-slip,7ed19c98,2024-09-02 22:26:46+00:00,thenomadlad,Ok actually working,False,False,15,5,2024,2024-09,20
+bevy-gear-slip,thenomadlad/bevy-gear-slip,f967b02e,2024-09-02 22:19:41+00:00,thenomadlad,3 gears,False,False,23,3,2024,2024-09,26
+bevy-gear-slip,thenomadlad/bevy-gear-slip,a02b5452,2024-09-02 20:01:04+00:00,thenomadlad,Make clippy happy,False,False,3,3,2024,2024-09,6
+bevy-gear-slip,thenomadlad/bevy-gear-slip,b14b01e8,2024-08-25 21:15:09+00:00,thenomadlad,What is this,False,False,0,0,2024,2024-08,0
+bevy-gear-slip,thenomadlad/bevy-gear-slip,f09ad193,2024-08-22 06:29:10+00:00,thenomadlad,Added basic movements,False,False,278,93,2024,2024-08,371
+bevy-gear-slip,thenomadlad/bevy-gear-slip,0d458d8a,2024-07-25 05:32:58+00:00,thenomadlad,Make game work a little,False,False,85,3,2024,2024-07,88
+bevy-gear-slip,thenomadlad/bevy-gear-slip,9b2b9903,2024-07-23 10:41:53+00:00,thenomadlad,Make bevy-inspector-egui only dev,False,False,2,1,2024,2024-07,3
+bevy-gear-slip,thenomadlad/bevy-gear-slip,a118a757,2024-07-23 09:31:40+00:00,thenomadlad,Removing windows,False,False,6,9,2024,2024-07,15
+bevy-gear-slip,thenomadlad/bevy-gear-slip,c49b7775,2024-07-23 09:28:39+00:00,thenomadlad,Lets try this,False,False,234,231,2024,2024-07,465
+bevy-gear-slip,thenomadlad/bevy-gear-slip,0e77679e,2024-07-23 09:16:56+00:00,thenomadlad,Added some gears woo,False,False,665,37,2024,2024-07,702
+bevy-gear-slip,thenomadlad/bevy-gear-slip,c7337e2e,2024-07-21 04:06:54+00:00,Aditya Dhara,Create LICENSE,False,False,21,0,2024,2024-07,21
+bevy-gear-slip,thenomadlad/bevy-gear-slip,9c798901,2024-07-21 03:48:37+00:00,thenomadlad,Initial commit,False,False,7434,0,2024,2024-07,7434
+project-euler-solutions,thenomadlad/project-euler-solutions,cccde1d0,2024-08-31 03:15:31+00:00,Aditya Dhara,Solved 23 faster,False,False,41,21,2024,2024-08,62
+project-euler-solutions,thenomadlad/project-euler-solutions,c72ed401,2024-08-31 02:47:28+00:00,Aditya Dhara,Solved 23,False,False,34,0,2024,2024-08,34
+project-euler-solutions,thenomadlad/project-euler-solutions,6709b5f5,2024-08-31 01:22:38+00:00,Aditya Dhara,All the clippies,False,False,7,4,2024,2024-08,11
+project-euler-solutions,thenomadlad/project-euler-solutions,1731d79d,2024-08-31 01:10:33+00:00,Aditya Dhara,Added data and stuff,False,False,37,0,2024,2024-08,37
+project-euler-solutions,thenomadlad/project-euler-solutions,d41af519,2024-02-07 06:21:17+00:00,Aditya Dhara,Clippied and formatted,False,False,31,40,2024,2024-02,71
+project-euler-solutions,thenomadlad/project-euler-solutions,b6aff620,2024-02-07 06:17:37+00:00,Aditya Dhara,"Everything working, but code partially fixed",False,False,214,181,2024,2024-02,395
+project-euler-solutions,thenomadlad/project-euler-solutions,cd8e0752,2024-01-08 09:04:28+00:00,Aditya Dhara,Implemented a bignum type to solve 16 and 20,False,False,290,16,2024,2024-01,306
+project-euler-solutions,thenomadlad/project-euler-solutions,27ef8443,2024-01-02 22:30:12+00:00,Aditya Dhara,Padded numbering and solutions until 19,False,False,93,62,2024,2024-01,155
+project-euler-solutions,thenomadlad/project-euler-solutions,dd48d045,2023-12-26 08:36:38+00:00,Aditya Dhara,Solved 19,False,False,229,0,2023,2023-12,229
+project-euler-solutions,thenomadlad/project-euler-solutions,149428e1,2023-12-25 02:25:35+00:00,Aditya Dhara,Solved to 17,False,False,120,3,2023,2023-12,123
+project-euler-solutions,thenomadlad/project-euler-solutions,af537717,2023-02-12 01:00:59+00:00,Aditya Dhara,Solved 14 znd 15,False,False,59,1,2023,2023-02,60
+project-euler-solutions,thenomadlad/project-euler-solutions,732e519e,2023-01-30 14:11:28+00:00,Aditya Dhara,Added more solutions,False,False,497,28,2023,2023-01,525
+project-euler-solutions,thenomadlad/project-euler-solutions,cbc4aed0,2022-03-29 07:58:33+00:00,Aditya Dhara,Using rust - so far learning iterators and mods,False,False,86,1,2022,2022-03,87
+project-euler-solutions,thenomadlad/project-euler-solutions,288d412f,2022-01-08 00:23:19+00:00,Aditya Dhara,Add initial files,False,False,27,0,2022,2022-01,27
+course-upenn-cis1940-haskell,thenomadlad/course-upenn-cis1940-haskell,49a5e288,2024-07-12 09:05:31+00:00,Aditya Dhara,Initial commit,False,False,24,0,2024,2024-07,24
+rust-tauri-skill-tree,thenomadlad/rust-tauri-skill-tree,c9d80728,2024-03-13 08:28:35+00:00,Aditya Dhara,Cleaned out the app of default code,False,False,7,167,2024,2024-03,174
+rust-tauri-skill-tree,thenomadlad/rust-tauri-skill-tree,938a83d9,2024-03-12 08:23:14+00:00,Aditya Dhara,Scaffolding for tailwindcss 🔨,False,False,5637,4,2024,2024-03,5641
+rust-tauri-skill-tree,thenomadlad/rust-tauri-skill-tree,f1d00d9d,2024-03-12 07:16:44+00:00,Aditya Dhara,Initial commit,False,False,380,0,2024,2024-03,380
+fireship-stripe,thenomadlad/fireship-stripe,b34625d2,2023-01-31 00:08:39+00:00,Aditya Dhara,Add codes,False,False,44,27,2023,2023-01,71
+fireship-stripe,thenomadlad/fireship-stripe,23a0ce5c,2022-04-17 22:14:08+00:00,Aditya Dhara,Remove env,False,False,1,3,2022,2022-04,4
+fireship-stripe,thenomadlad/fireship-stripe,9f242b05,2022-04-14 23:46:29+00:00,Aditya Dhara,Kinda works?,False,False,178,68,2022,2022-04,246
+fireship-stripe,thenomadlad/fireship-stripe,bfbd7d79,2022-04-14 20:44:43+00:00,Aditya Dhara,Added stuff,False,False,391,226,2022,2022-04,617
+fireship-stripe,thenomadlad/fireship-stripe,25f76639,2022-04-10 21:00:08+00:00,Aditya Dhara,Initial commit from Create Next App,False,False,5179,0,2022,2022-04,5179
+feast-experiments,thenomadlad/feast-experiments,fbde21f0,2023-01-30 23:57:46+00:00,Aditya Dhara,Whatever,False,False,2515,0,2023,2023-01,2515
+feast-experiments,thenomadlad/feast-experiments,e3a33810,2022-08-27 23:01:11+00:00,Aditya Dhara,First commit,False,False,14,0,2022,2022-08,14
+spacechat,thenomadlad/spacechat,6a67bcf1,2022-02-16 23:01:06+00:00,Aditya Dhara,Merge pull request #5 from thenomadlad/simplify_actions,False,True,47,44,2022,2022-02,91
+spacechat,thenomadlad/spacechat,812fb713,2022-02-16 22:57:48+00:00,Aditya Dhara,Rename yaml file,False,False,0,0,2022,2022-02,0
+spacechat,thenomadlad/spacechat,32d9a326,2022-02-16 22:56:36+00:00,Aditya Dhara,Fix up something,False,False,1,1,2022,2022-02,2
+spacechat,thenomadlad/spacechat,5e306b3f,2022-02-16 22:54:42+00:00,Aditya Dhara,Update src/app.html,False,False,1,1,2022,2022-02,2
+spacechat,thenomadlad/spacechat,5fc14b21,2022-02-16 22:51:44+00:00,Aditya Dhara,Add canary problem and needs condition,False,False,2,1,2022,2022-02,3
+spacechat,thenomadlad/spacechat,1a182974,2022-02-16 22:48:41+00:00,Aditya Dhara,Removing stuff,False,False,22,20,2022,2022-02,42
+spacechat,thenomadlad/spacechat,9c09e2b5,2022-02-16 20:33:20+00:00,Aditya Dhara,Merge pull request #3 from thenomadlad/add_github_actions,False,True,35,22,2022,2022-02,57
+spacechat,thenomadlad/spacechat,3cfb9bcd,2022-02-16 20:29:21+00:00,Aditya Dhara,Fix formatting,False,False,16,17,2022,2022-02,33
+spacechat,thenomadlad/spacechat,75481171,2022-02-16 20:20:03+00:00,Aditya Dhara,Apply suggestions from code review,False,False,3,2,2022,2022-02,5
+spacechat,thenomadlad/spacechat,88f47932,2022-02-16 20:16:22+00:00,Aditya Dhara,Updated actions,False,False,24,11,2022,2022-02,35
+spacechat,thenomadlad/spacechat,d05e15b4,2022-02-16 19:29:26+00:00,Aditya Dhara,Updated to include correct lint steps,False,False,3,30,2022,2022-02,33
+spacechat,thenomadlad/spacechat,3decb3b9,2022-02-16 19:27:10+00:00,Aditya Dhara,Add github actions set to fail,False,False,30,3,2022,2022-02,33
+spacechat,thenomadlad/spacechat,f22bc09d,2022-02-16 19:26:25+00:00,Aditya Dhara,Create node.js.yml,False,False,31,0,2022,2022-02,31
+spacechat,thenomadlad/spacechat,eb576143,2022-02-15 09:09:37+00:00,Aditya Dhara,Merge pull request #2 from thenomadlad/remove_gun_js,False,True,1702,3339,2022,2022-02,5041
+spacechat,thenomadlad/spacechat,d6ae5146,2022-02-15 09:09:15+00:00,Aditya Dhara,Let's just use some mock data,False,False,1702,3339,2022,2022-02,5041
+spacechat,thenomadlad/spacechat,5f9a0e70,2022-02-15 07:25:16+00:00,Aditya Dhara,Merge pull request #1 from thenomadlad/add_formatting,False,True,308,66,2022,2022-02,374
+spacechat,thenomadlad/spacechat,94987a36,2022-02-15 07:21:37+00:00,Aditya Dhara,Whatever,False,False,308,66,2022,2022-02,374
+spacechat,thenomadlad/spacechat,46c6b6c1,2022-01-02 01:52:35+00:00,Aditya Dhara,Followed tutorial for basic gun app with no firebase,False,False,1318,2,2022,2022-01,1320
+spacechat,thenomadlad/spacechat,4d1195c6,2021-12-21 02:55:34+00:00,Aditya Dhara,Add initial fles,False,False,6639,0,2021,2021-12,6639
+fireship-nextfire,thenomadlad/fireship-nextfire,b6de2264,2022-03-03 03:41:39+00:00,Aditya Dhara,Completed course,False,False,5452,140,2022,2022-03,5592
+fireship-nextfire,thenomadlad/fireship-nextfire,b5fb747c,2022-02-23 23:34:56+00:00,Aditya Dhara,Initial commit from Create Next App,False,False,5143,0,2022,2022-02,5143
+hackattic-solutions,thenomadlad/hackattic-solutions,b11d4257,2022-01-08 00:22:22+00:00,Aditya Dhara,Add all first sols,False,False,204,0,2022,2022-01,204
+projecteuler,thenomadlad/projecteuler,bde3563b,2021-10-01 04:12:44+00:00,Aditya Dhara,Rename p010/solution.py to p010.py,False,False,0,0,2021,2021-10,0
+projecteuler,thenomadlad/projecteuler,2c4f4d3c,2021-10-01 04:12:15+00:00,Aditya Dhara,Create p009.py,False,False,6,0,2021,2021-10,6
+projecteuler,thenomadlad/projecteuler,c61aca1e,2021-10-01 04:09:17+00:00,Aditya Dhara,Create solution.py,False,False,10,0,2021,2021-10,10
+projecteuler,thenomadlad/projecteuler,f8dd012c,2021-10-01 04:06:49+00:00,Aditya Dhara,Initial commit,False,False,1,0,2021,2021-10,1
+rust-lispy,thenomadlad/rust-lispy,3f0a8251,2021-05-10 04:39:41+00:00,Aditya Dhara,Fix line numbers in a few test cases,False,False,6,6,2021,2021-05,12
+rust-lispy,thenomadlad/rust-lispy,2f6ab368,2021-04-27 17:44:36+00:00,Aditya Dhara,Fix links,False,False,1,1,2021,2021-04,2
+rust-lispy,thenomadlad/rust-lispy,0edd4aa0,2021-04-27 17:18:26+00:00,Aditya Dhara,"First step to documentation, add a README",False,False,99,2,2021,2021-04,101
+rust-lispy,thenomadlad/rust-lispy,aea01fb5,2021-04-24 06:31:10+00:00,Tim Cook,We can parse functinos now yayy,False,False,248,73,2021,2021-04,321
+rust-lispy,thenomadlad/rust-lispy,a2d6b714,2021-04-21 08:20:45+00:00,Tim Cook,Fixed bug with how we're handling newlines,False,False,29,53,2021,2021-04,82
+rust-lispy,thenomadlad/rust-lispy,9a3a3b25,2021-04-21 07:51:37+00:00,Tim Cook,We can do def statements now woo!,False,False,338,475,2021,2021-04,813
+rust-lispy,thenomadlad/rust-lispy,08fa6bb7,2021-03-30 06:48:47+00:00,Tim Cook,"Lots of progress, we can parse thigns now",False,False,666,25,2021,2021-03,691
+rust-lispy,thenomadlad/rust-lispy,891e6100,2021-03-25 05:16:27+00:00,Tim Cook,Fix names for tokenizer and create cli helper for seeing tokenization,False,False,427,67,2021,2021-03,494
+rust-lispy,thenomadlad/rust-lispy,a9863600,2021-03-19 04:45:23+00:00,Tim Cook,Add lexer for clojure-like lisp,False,False,817,10,2021,2021-03,827
+rust-lispy,thenomadlad/rust-lispy,ce4aa766,2021-03-18 01:30:20+00:00,Aditya Dhara,Initial commit,False,False,32,0,2021,2021-03,32
+tcg-python,thenomadlad/tcg-python,3d1708ee,2019-08-28 11:24:56+00:00,Aditya Dhara,Move backend to python3,False,False,175,157,2019,2019-08,332
+tcg-python,thenomadlad/tcg-python,7aced806,2018-07-30 23:28:53+00:00,Aditya Dhara,2to3,False,False,5,5,2018,2018-07,10
+tcg-python,thenomadlad/tcg-python,4baadc91,2017-05-09 03:14:14+00:00,Aditya Dhara,Used vanilla facebook react for now,False,False,1744,9,2017,2017-05,1753
+tcg-python,thenomadlad/tcg-python,149868a1,2017-05-06 04:55:30+00:00,Aditya Dhara,Created parse api,False,False,104,0,2017,2017-05,104
+tcg-python,thenomadlad/tcg-python,88c1743c,2017-03-10 04:20:37+00:00,Aditya Dhara,Added readme,False,False,12,0,2017,2017-03,12
+tcg-python,thenomadlad/tcg-python,4303b0a4,2016-02-27 19:32:31+00:00,Aditya Dhara,Dunno what I did there,False,False,2,106,2016,2016-02,108
+tcg-python,thenomadlad/tcg-python,096466f2,2015-11-28 17:56:25+00:00,Aditya Dhara,Make a simple flask server,False,False,293,152,2015,2015-11,445
+tcg-python,thenomadlad/tcg-python,59c4dd70,2015-11-25 04:54:09+00:00,Aditya,Initialize,False,False,515,0,2015,2015-11,515
+tf-models,thenomadlad/tf-models,d17e6b33,2020-09-13 16:28:24+00:00,Aditya Dhara,Add newer ipynbs,False,False,2220,2,2020,2020-09,2222
+tf-models,thenomadlad/tf-models,42a952eb,2020-01-15 04:13:51+00:00,Aditya Dhara,"Add torch, transformers and CIFAR",False,False,3038,0,2020,2020-01,3038
+tf-models,thenomadlad/tf-models,9bc75385,2019-12-16 03:01:26+00:00,Aditya Dhara,Add fully trained model output for seq2seq,False,False,411,90,2019,2019-12,501
+tf-models,thenomadlad/tf-models,b1eb9fc0,2019-11-27 05:32:04+00:00,Aditya Dhara,seq2seq,False,False,793,56,2019,2019-11,849
+tf-models,thenomadlad/tf-models,6e4270e2,2019-11-12 06:05:05+00:00,Aditya Dhara,Bengio implementation,False,False,218,6,2019,2019-11,224
+tf-models,thenomadlad/tf-models,44f59eaf,2019-11-11 13:27:16+00:00,Aditya Dhara,WORKING MNIST WOO,False,False,500,4,2019,2019-11,504
+tf-models,thenomadlad/tf-models,d89f017f,2019-10-11 04:23:28+00:00,Aditya Dhara,Add word2vec impl,False,False,566,0,2019,2019-10,566
+rust-pong,thenomadlad/rust-pong,96ecefc1,2020-09-13 16:25:34+00:00,Aditya Dhara,Follow tutorial and make a pong,False,False,1146,0,2020,2020-09,1146
+learn-nasm,thenomadlad/learn-nasm,db7967ad,2020-06-03 03:50:41+00:00,Aditya Dhara,Added readme,False,False,3,0,2020,2020-06,3
+learn-nasm,thenomadlad/learn-nasm,025c2d3f,2020-06-03 03:50:10+00:00,Aditya Dhara,Lesson 36: download a page,False,False,294,0,2020,2020-06,294
+learn-nasm,thenomadlad/learn-nasm,a0139384,2020-06-03 03:24:13+00:00,Aditya Dhara,Lesson 35: Add socket file descriptor closing before process end,False,False,320,0,2020,2020-06,320
+learn-nasm,thenomadlad/learn-nasm,015287b5,2020-06-03 03:13:44+00:00,Aditya Dhara,Lesson 34: write to socket too,False,False,315,0,2020,2020-06,315
+learn-nasm,thenomadlad/learn-nasm,0be00875,2020-06-03 03:13:20+00:00,Aditya Dhara,Lesson 33 - read from the socket,False,False,302,0,2020,2020-06,302
+learn-nasm,thenomadlad/learn-nasm,2cfeb2a9,2020-06-01 19:45:41+00:00,Aditya Dhara,Lesson 32: accepting a socket,False,False,278,0,2020,2020-06,278
+learn-nasm,thenomadlad/learn-nasm,8f637a9f,2020-06-01 19:42:07+00:00,Aditya Dhara,Lesson 31: listen to socket,False,False,269,0,2020,2020-06,269
+learn-nasm,thenomadlad/learn-nasm,08391f3b,2020-06-01 17:33:46+00:00,Aditya Dhara,Learned to bind,False,False,260,0,2020,2020-06,260
+learn-nasm,thenomadlad/learn-nasm,03cc5558,2020-06-01 17:17:02+00:00,Aditya Dhara,Add lesson 29 creating a socket fd,False,False,248,0,2020,2020-06,248
+learn-nasm,thenomadlad/learn-nasm,603d8082,2020-06-01 07:25:44+00:00,Aditya Dhara,Lesson 28: unlink file,False,False,240,0,2020,2020-06,240
+learn-nasm,thenomadlad/learn-nasm,52114277,2020-06-01 07:23:17+00:00,Aditya Dhara,"Lesson 27, lseek and add",False,False,253,0,2020,2020-06,253
+learn-nasm,thenomadlad/learn-nasm,5a52ada7,2020-06-01 07:17:32+00:00,Aditya Dhara,"Lesson 26, closing a file",False,False,268,0,2020,2020-06,268
+learn-nasm,thenomadlad/learn-nasm,0e257f85,2020-06-01 07:15:32+00:00,Aditya Dhara,Lesson 25 - reading contents,False,False,264,0,2020,2020-06,264
+learn-nasm,thenomadlad/learn-nasm,cf180a67,2020-06-01 07:11:41+00:00,Aditya Dhara,Lesson 24: opening file,False,False,253,0,2020,2020-06,253
+learn-nasm,thenomadlad/learn-nasm,a038cc25,2020-06-01 07:07:47+00:00,Aditya Dhara,Lesson 23: writing to file,False,False,247,0,2020,2020-06,247
+learn-nasm,thenomadlad/learn-nasm,ccb55bc2,2020-06-01 07:02:12+00:00,Aditya Dhara,Lesson 22: create file,False,False,239,0,2020,2020-06,239
+learn-nasm,thenomadlad/learn-nasm,0b90cd64,2020-06-01 06:57:18+00:00,Aditya Dhara,"Lesson 21, sys_time",False,False,240,0,2020,2020-06,240
+learn-nasm,thenomadlad/learn-nasm,067d1aaf,2020-06-01 06:52:44+00:00,Aditya Dhara,Lesson 20 fork,False,False,250,0,2020,2020-06,250
+learn-nasm,thenomadlad/learn-nasm,5971d8cc,2020-06-01 06:50:17+00:00,Aditya Dhara,"Lesson 19, sys_execve",False,False,244,0,2020,2020-06,244
+learn-nasm,thenomadlad/learn-nasm,93293b46,2020-06-01 06:24:53+00:00,Aditya Dhara,Add leson 19 fizzbuzz,False,False,286,0,2020,2020-06,286
+learn-nasm,thenomadlad/learn-nasm,2d8e17a8,2020-06-01 05:40:27+00:00,Aditya Dhara,lesson 17: namespaces,False,False,273,0,2020,2020-06,273
+learn-nasm,thenomadlad/learn-nasm,c77ac890,2020-06-01 05:21:45+00:00,Aditya Dhara,Leson 16: Atoi,False,False,290,0,2020,2020-06,290
+learn-nasm,thenomadlad/learn-nasm,6e1468fd,2020-05-31 14:18:44+00:00,Aditya Dhara,"Add lessons 12 to 15, calculator crap",False,False,697,0,2020,2020-05,697
+learn-nasm,thenomadlad/learn-nasm,5b07a1ac,2020-05-31 03:37:16+00:00,Aditya Dhara,Added lesson11,False,False,176,0,2020,2020-05,176
+learn-nasm,thenomadlad/learn-nasm,002cfe5b,2020-05-31 00:57:34+00:00,Aditya Dhara,Lesson10 bad atoi,False,False,112,0,2020,2020-05,112
+learn-nasm,thenomadlad/learn-nasm,7508b78b,2020-05-31 00:50:04+00:00,Aditya Dhara,Pad lesson numbers,False,False,0,0,2020,2020-05,0
+learn-nasm,thenomadlad/learn-nasm,53e1aec1,2020-05-31 00:47:01+00:00,Aditya Dhara,Donezo with lesson9,False,False,140,0,2020,2020-05,140
+learn-nasm,thenomadlad/learn-nasm,c50d9d81,2020-05-30 23:56:07+00:00,Aditya Dhara,Add program arguments in the program,False,False,105,0,2020,2020-05,105
+learn-nasm,thenomadlad/learn-nasm,b98f2e4b,2020-05-30 23:49:21+00:00,Aditya Dhara,Lesson 7 Create a sprintLF function woo,False,False,104,0,2020,2020-05,104
+learn-nasm,thenomadlad/learn-nasm,2e8c4b6f,2020-05-30 23:28:02+00:00,Aditya Dhara,Lesson 6 - fix the duplicate line,False,False,106,1,2020,2020-05,107
+learn-nasm,thenomadlad/learn-nasm,7424a45b,2020-05-30 22:57:42+00:00,Aditya Dhara,Lesson 5 complete - IMPORTS!,False,False,82,0,2020,2020-05,82
+learn-nasm,thenomadlad/learn-nasm,9a865cec,2020-05-30 22:36:43+00:00,Aditya Dhara,Completed lesson4,False,False,45,0,2020,2020-05,45
+learn-nasm,thenomadlad/learn-nasm,135da8bd,2020-05-30 22:14:28+00:00,Aditya Dhara,Complete lesson3,False,False,38,0,2020,2020-05,38
+learn-nasm,thenomadlad/learn-nasm,3b4a1f10,2020-05-30 22:03:36+00:00,Aditya Dhara,Completed lesson 2,False,False,27,1,2020,2020-05,28
+learn-nasm,thenomadlad/learn-nasm,20d9aa3b,2020-05-30 21:36:15+00:00,Aditya Dhara,First lesson,False,False,23,0,2020,2020-05,23
+saloon-rogue,thenomadlad/saloon-rogue,727b6d76,2020-05-10 03:21:21+00:00,Aditya Dhara,I thnk we're done here,False,False,487,61,2020,2020-05,548
+saloon-rogue,thenomadlad/saloon-rogue,7f3866d1,2020-02-06 06:13:24+00:00,Aditya Dhara,Added some gui components,False,False,135,21,2020,2020-02,156
+saloon-rogue,thenomadlad/saloon-rogue,a3e43905,2020-02-05 06:13:49+00:00,Aditya Dhara,Things can attach each other now,False,False,453,62,2020,2020-02,515
+saloon-rogue,thenomadlad/saloon-rogue,7887af4e,2020-02-02 06:57:08+00:00,Aditya Dhara,Actually working viewshed,False,False,34,28,2020,2020-02,62
+saloon-rogue,thenomadlad/saloon-rogue,118a03fa,2020-02-02 06:29:58+00:00,Aditya Dhara,Update Rltk version and basic viewporting,False,False,266,154,2020,2020-02,420
+saloon-rogue,thenomadlad/saloon-rogue,6dfcbe63,2020-02-01 08:06:03+00:00,Aditya Dhara,Add rooms and stuff,False,False,2160,0,2020,2020-02,2160
+w266-final-project,thenomadlad/w266-final-project,e558f13f,2019-12-08 07:57:23+00:00,Aditya Dhara,Small fix,False,False,0,0,2019,2019-12,0
+w266-final-project,thenomadlad/w266-final-project,02261ee3,2019-12-08 07:51:56+00:00,Aditya Dhara,Final versions,False,False,684,2967,2019,2019-12,3651
+w266-final-project,thenomadlad/w266-final-project,7012312b,2019-12-07 23:13:07+00:00,Aditya Dhara,Merge branch 'master' of github.com:ocamlmycaml/w266-final-project,False,True,1322,0,2019,2019-12,1322
+w266-final-project,thenomadlad/w266-final-project,2568a25c,2019-12-07 23:12:16+00:00,DeepLearning VM,Updated attention models,False,False,1322,0,2019,2019-12,1322
+w266-final-project,thenomadlad/w266-final-project,39a88b4e,2019-12-07 14:45:59+00:00,Aditya Dhara,Updated history of best doc models,False,False,228,12,2019,2019-12,240
+w266-final-project,thenomadlad/w266-final-project,461cb718,2019-12-07 07:05:15+00:00,Aditya Dhara,Add everything,False,False,1413,549,2019,2019-12,1962
+w266-final-project,thenomadlad/w266-final-project,7b0a6c28,2019-12-04 21:52:44+00:00,Aditya Dhara,Added doc and small doc models,False,False,228,215,2019,2019-12,443
+w266-final-project,thenomadlad/w266-final-project,ac626ca2,2019-12-04 21:46:27+00:00,DeepLearning VM,Added small attention doc model,False,False,6,0,2019,2019-12,6
+w266-final-project,thenomadlad/w266-final-project,d2780043,2019-12-04 05:29:38+00:00,DeepLearning VM,Added attentive_doc_model,False,False,767,112,2019,2019-12,879
+w266-final-project,thenomadlad/w266-final-project,6c2437ea,2019-12-03 00:37:54+00:00,Aditya Dhara,What why how,False,False,297,729,2019,2019-12,1026
+w266-final-project,thenomadlad/w266-final-project,1cad7ff3,2019-12-02 06:14:25+00:00,Aditya Dhara,Added a whole lot,False,False,1908,405,2019,2019-12,2313
+w266-final-project,thenomadlad/w266-final-project,8588da80,2019-12-01 01:11:57+00:00,Aditya Dhara,Stuff,False,False,1645,65,2019,2019-12,1710
+w266-final-project,thenomadlad/w266-final-project,335ab828,2019-11-29 09:57:12+00:00,Aditya Dhara,Add models,False,False,384,86,2019,2019-11,470
+w266-final-project,thenomadlad/w266-final-project,4980f2cc,2019-11-27 05:34:20+00:00,Aditya Dhara,Initial,False,False,21,2,2019,2019-11,23
+w266-final-project,thenomadlad/w266-final-project,d5c86eed,2019-11-27 02:42:40+00:00,Aditya Dhara,Initial stuff,False,False,1132,0,2019,2019-11,1132
+rust-annoy,thenomadlad/rust-annoy,9cc69a29,2019-08-06 06:31:03+00:00,ocamlmycaml,Create issue templates,False,False,58,0,2019,2019-08,58
+rust-annoy,thenomadlad/rust-annoy,ae816409,2019-06-09 07:25:03+00:00,Aditya Dhara,Added readme and license,False,False,680,0,2019,2019-06,680
+rust-annoy,thenomadlad/rust-annoy,2ecbaa66,2019-06-09 07:16:08+00:00,Aditya Dhara,Doing a simple dot product for funsies,False,False,92,0,2019,2019-06,92
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,7de3b74c,2018-12-18 21:54:32+00:00,Aditya Dhara,Updated es index name,False,False,3,3,2018,2018-12,6
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,659b2d3b,2018-12-18 19:50:44+00:00,Aditya Dhara,Added everything,False,False,294,58,2018,2018-12,352
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,05317742,2018-12-18 04:00:51+00:00,Aditya Dhara,Changed index name,False,False,2,2,2018,2018-12,4
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,b19cd121,2018-12-18 03:28:39+00:00,Aditya Dhara,Formatting,False,False,16,16,2018,2018-12,32
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,4e5f6584,2018-12-18 03:17:33+00:00,Aditya Dhara,Trimmed down the fat,False,False,27,4,2018,2018-12,31
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,2ba00073,2018-12-17 07:00:30+00:00,Aditya Dhara,Added server files,False,False,28,0,2018,2018-12,28
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,82ba1bad,2018-12-17 05:20:50+00:00,Aditya Dhara,Added spark file,False,False,87,0,2018,2018-12,87
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,c37c9151,2018-12-02 15:05:56+00:00,Aditya Dhara,Added arch and tasks,False,False,8,0,2018,2018-12,8
+w251-fall18-final-project,thenomadlad/w251-fall18-final-project,12223438,2018-12-02 14:56:26+00:00,Aditya Dhara,Start,False,False,3,0,2018,2018-12,3
+stateman,thenomadlad/stateman,329245b9,2018-08-14 02:26:01+00:00,Aditya Dhara,remove manage docs,False,False,2,18,2018,2018-08,20
+stateman,thenomadlad/stateman,7c73003e,2018-08-14 02:18:11+00:00,Aditya Dhara,Made a demo,False,False,141,15,2018,2018-08,156
+stateman,thenomadlad/stateman,a50a25c8,2018-08-04 00:09:39+00:00,Aditya Dhara,Added tests - now everything works and we have full coverage!,False,False,212,36,2018,2018-08,248
+stateman,thenomadlad/stateman,c7903c2d,2018-08-03 22:51:38+00:00,Aditya Dhara,Added more tests,False,False,29,3,2018,2018-08,32
+stateman,thenomadlad/stateman,5a1e92b5,2018-08-03 22:32:58+00:00,Aditya Dhara,moved some fixtures around and wrote a lot of tests,False,False,315,215,2018,2018-08,530
+stateman,thenomadlad/stateman,21b5333e,2018-08-03 20:43:28+00:00,Aditya Dhara,Making progress implementing my state graph walker thingy,False,False,193,29,2018,2018-08,222
+stateman,thenomadlad/stateman,6971917b,2018-08-02 18:57:55+00:00,Aditya Dhara,Add stategraph tests,False,False,213,41,2018,2018-08,254
+stateman,thenomadlad/stateman,076ffb59,2018-07-31 22:10:35+00:00,Aditya Dhara,Got tests to pass,False,False,1,1,2018,2018-07,2
+stateman,thenomadlad/stateman,e8f87378,2018-07-31 22:06:17+00:00,Aditya Dhara,Removed run_tests.sh,False,False,6,10,2018,2018-07,16
+stateman,thenomadlad/stateman,91c79b57,2018-07-31 21:57:50+00:00,Aditya Dhara,Fixed up data,False,False,49,28,2018,2018-07,77
+stateman,thenomadlad/stateman,ad9bab2b,2018-07-31 17:50:21+00:00,Aditya Dhara,Testmon is awesome!,False,False,5,1,2018,2018-07,6
+stateman,thenomadlad/stateman,b2db2eb7,2018-07-31 16:56:57+00:00,Aditya Dhara,makey,False,False,25,0,2018,2018-07,25
+stateman,thenomadlad/stateman,7a861971,2018-07-31 00:23:43+00:00,Aditya Dhara,Added badge,False,False,5,0,2018,2018-07,5
+stateman,thenomadlad/stateman,964dac29,2018-07-31 00:11:15+00:00,Aditya Dhara,Fixing travel (pt 2),False,False,1,1,2018,2018-07,2
+stateman,thenomadlad/stateman,cccb260a,2018-07-30 23:48:40+00:00,Aditya Dhara,Fixed travis,False,False,1,1,2018,2018-07,2
+stateman,thenomadlad/stateman,9471a2e2,2018-07-30 23:46:07+00:00,Aditya Dhara,Added travis,False,False,8,1,2018,2018-07,9
+stateman,thenomadlad/stateman,404d0c03,2018-07-27 22:49:12+00:00,Aditya Dhara,pytest and test successes,False,False,6,28,2018,2018-07,34
+stateman,thenomadlad/stateman,03b0cc29,2018-07-27 22:38:41+00:00,Aditya Dhara,Removed WF stuff,False,False,34,284,2018,2018-07,318
+stateman,thenomadlad/stateman,a6bf2887,2018-07-27 21:41:36+00:00,Aditya Dhara,Whatever,False,False,121,27,2018,2018-07,148
+stateman,thenomadlad/stateman,4aaee60c,2018-07-27 20:34:39+00:00,Aditya Dhara,minor mistake,False,False,5,2,2018,2018-07,7
+stateman,thenomadlad/stateman,33c17b49,2018-07-27 20:33:31+00:00,Aditya Dhara,Added logic to find neighbors,False,False,190,164,2018,2018-07,354
+stateman,thenomadlad/stateman,d8fb28d7,2018-07-27 07:40:52+00:00,Aditya Dhara,one test failing,False,False,230,48,2018,2018-07,278
+stateman,thenomadlad/stateman,ec400f6b,2018-07-26 18:24:35+00:00,Aditya Dhara,testing coverage by default,False,False,2,2,2018,2018-07,4
+stateman,thenomadlad/stateman,601a6dfe,2018-07-26 18:23:49+00:00,Aditya Dhara,Progress!!!,False,False,242,157,2018,2018-07,399
+stateman,thenomadlad/stateman,3887c38e,2018-07-26 07:52:58+00:00,Aditya Dhara,Added node validation logic,False,False,199,77,2018,2018-07,276
+stateman,thenomadlad/stateman,54daab40,2018-07-26 04:20:51+00:00,Aditya Dhara,Updated StateNode class and tests,False,False,255,66,2018,2018-07,321
+stateman,thenomadlad/stateman,1984f4d1,2018-07-24 20:36:39+00:00,Aditya Dhara,Added example,False,False,4,2,2018,2018-07,6
+stateman,thenomadlad/stateman,22dd443f,2018-07-24 20:33:51+00:00,Aditya Dhara,initial working,False,False,25,15,2018,2018-07,40
+stateman,thenomadlad/stateman,5e1885f2,2018-07-24 20:10:16+00:00,Aditya Dhara,initial,False,False,523,0,2018,2018-07,523
+RA-Scheduler,thenomadlad/RA-Scheduler,54d92416,2015-08-12 03:20:00+00:00,Aditya Dhara,Add placeholder dashboard,False,False,20613,34,2015,2015-08,20647
+RA-Scheduler,thenomadlad/RA-Scheduler,b94ae99b,2015-08-10 20:08:47+00:00,Aditya Dhara,"Create flask server to provide index.html, dahsboard.html and oauth login",False,False,250,848,2015,2015-08,1098
+RA-Scheduler,thenomadlad/RA-Scheduler,2705f39a,2015-08-10 17:33:58+00:00,Aditya Dhara,First commit on new angularJS model,False,False,44,115,2015,2015-08,159
+RA-Scheduler,thenomadlad/RA-Scheduler,0bc79b4a,2015-05-26 06:10:05+00:00,Aditya Dhara,Add & at the end of run.sh commands,False,False,1,1,2015,2015-05,2
+RA-Scheduler,thenomadlad/RA-Scheduler,113a2d64,2015-05-26 05:58:48+00:00,Aditya Dhara,Rename Procfile to run.sh and make sure it's executable,False,False,1,1,2015,2015-05,2
+RA-Scheduler,thenomadlad/RA-Scheduler,c9684942,2015-05-26 05:50:16+00:00,Aditya Dhara,Add quotes to Procfile variables,False,False,1,1,2015,2015-05,2
+RA-Scheduler,thenomadlad/RA-Scheduler,b51608ef,2015-05-26 05:43:26+00:00,Aditya Dhara,Add Procfile to define process to run app,False,False,1,0,2015,2015-05,1
+RA-Scheduler,thenomadlad/RA-Scheduler,9cc92112,2015-05-24 21:15:42+00:00,Aditya Dhara,Actually add requirements file this time,False,False,18,0,2015,2015-05,18
+RA-Scheduler,thenomadlad/RA-Scheduler,978284f5,2015-05-24 21:12:07+00:00,Aditya Dhara,Add requirements file for venv setup,False,False,2,0,2015,2015-05,2
+RA-Scheduler,thenomadlad/RA-Scheduler,3ffa8fd8,2015-03-11 08:33:11+00:00,george,Preliminary code to change preference on each date,False,False,67,1,2015,2015-03,68
+RA-Scheduler,thenomadlad/RA-Scheduler,9e739588,2015-02-24 21:04:43+00:00,george,Added placeholder calendar in update_preferences page,False,False,5,0,2015,2015-02,5
+RA-Scheduler,thenomadlad/RA-Scheduler,a3bd81fc,2015-02-24 21:01:55+00:00,george,Refactoring calendar.js,False,False,27,5,2015,2015-02,32
+RA-Scheduler,thenomadlad/RA-Scheduler,8d1b1ff1,2015-02-24 20:37:39+00:00,george,Minor edit: inserting shift types now works,False,False,1,1,2015,2015-02,2
+RA-Scheduler,thenomadlad/RA-Scheduler,53ae4497,2015-02-20 17:39:28+00:00,george,"Improvements to shift types -- insertion, deletion",False,False,46,5,2015,2015-02,51
+RA-Scheduler,thenomadlad/RA-Scheduler,092cc385,2015-02-20 16:24:15+00:00,george,Refactored js from create_schedule.html,False,False,25,33,2015,2015-02,58
+RA-Scheduler,thenomadlad/RA-Scheduler,01168ebf,2015-02-20 16:20:05+00:00,george,First attempt for adding shift types,False,False,26,2,2015,2015-02,28
+RA-Scheduler,thenomadlad/RA-Scheduler,67bc1748,2015-02-20 16:19:20+00:00,george,Adding bootstrap-editable (X-editable),False,False,662,0,2015,2015-02,662
+RA-Scheduler,thenomadlad/RA-Scheduler,6fa52dab,2015-02-19 18:20:44+00:00,george,Formatting: fixed alignment,False,False,19,19,2015,2015-02,38
+RA-Scheduler,thenomadlad/RA-Scheduler,f04dcb02,2015-02-19 18:20:03+00:00,george,Added weekdays header to calendar,False,False,19,0,2015,2015-02,19
+RA-Scheduler,thenomadlad/RA-Scheduler,4ca67912,2015-02-18 00:25:22+00:00,george,Minor changes,False,False,5,0,2015,2015-02,5
+RA-Scheduler,thenomadlad/RA-Scheduler,a1ece848,2015-02-18 00:24:05+00:00,george,Title tweaks,False,False,7,7,2015,2015-02,14
+RA-Scheduler,thenomadlad/RA-Scheduler,5657a7f9,2015-02-18 00:11:01+00:00,george,Display calendar on date selection,False,False,23,11,2015,2015-02,34
+RA-Scheduler,thenomadlad/RA-Scheduler,f67c5f90,2015-02-18 00:10:12+00:00,george,Initial attempt at js calendar,False,False,89,0,2015,2015-02,89
+RA-Scheduler,thenomadlad/RA-Scheduler,d2b4d8a3,2015-02-17 21:47:01+00:00,george,Adding datepickers for calendar start and end dates,False,False,2226,1,2015,2015-02,2227
+RA-Scheduler,thenomadlad/RA-Scheduler,596c46a7,2015-02-02 00:20:06+00:00,adityadhara,added functionality to profile page,False,False,18,10,2015,2015-02,28
+RA-Scheduler,thenomadlad/RA-Scheduler,7adc589d,2015-02-01 23:09:08+00:00,adityadhara,Completed profile page,False,False,116,24,2015,2015-02,140
+RA-Scheduler,thenomadlad/RA-Scheduler,2c159563,2015-01-31 09:06:48+00:00,adityadhara,"completed login, added formatting, corrected submit on enter",False,False,40,28,2015,2015-01,68
+RA-Scheduler,thenomadlad/RA-Scheduler,069fa7e8,2015-01-31 08:57:41+00:00,adityadhara,"completed login, added formatting, corrected submit on enter",False,False,82,52,2015,2015-01,134
+RA-Scheduler,thenomadlad/RA-Scheduler,681fd209,2015-01-31 07:24:20+00:00,adityadhara,implemented pass hash that morphs and uses salts,False,False,42,26,2015,2015-01,68
+RA-Scheduler,thenomadlad/RA-Scheduler,76e61b38,2015-01-30 22:56:09+00:00,adityadhara,completed db management - no need to repetitively create db,False,False,17,9,2015,2015-01,26
+RA-Scheduler,thenomadlad/RA-Scheduler,07f2643a,2015-01-30 22:44:23+00:00,george,UI: placeholder for updating preferences,False,False,17,0,2015,2015-01,17
+RA-Scheduler,thenomadlad/RA-Scheduler,c25074ef,2015-01-30 22:33:11+00:00,george,UI: fixed link to create schedule page,False,False,1,1,2015,2015-01,2
+RA-Scheduler,thenomadlad/RA-Scheduler,068b9e9d,2015-01-30 22:26:45+00:00,george,UI: Initial (incomplete) page for create_schedule,False,False,42,0,2015,2015-01,42
+RA-Scheduler,thenomadlad/RA-Scheduler,f6482019,2015-01-30 22:00:15+00:00,george,UI option to create new schedule in manage_schedules.html,False,False,11,5,2015,2015-01,16
+RA-Scheduler,thenomadlad/RA-Scheduler,3bac1ae0,2015-01-30 21:16:33+00:00,george,Initial UI for managing/administrating schedules,False,False,39,2,2015,2015-01,41
+RA-Scheduler,thenomadlad/RA-Scheduler,79cc84a1,2015-01-30 21:03:50+00:00,george,Corrected formatting for the case where no schedules exist,False,False,4,1,2015,2015-01,5
+RA-Scheduler,thenomadlad/RA-Scheduler,65b6c390,2015-01-30 18:19:14+00:00,adityadhara,removed oid fully,False,False,63,13,2015,2015-01,76
+RA-Scheduler,thenomadlad/RA-Scheduler,3bef6dfb,2015-01-30 18:07:47+00:00,adityadhara,added empty tmp and updated gitignore,False,False,2,1,2015,2015-01,3
+RA-Scheduler,thenomadlad/RA-Scheduler,9fe69bd9,2015-01-30 18:05:42+00:00,adityadhara,removed oid,False,False,122,56,2015,2015-01,178
+RA-Scheduler,thenomadlad/RA-Scheduler,514b814a,2015-01-30 17:09:30+00:00,adityadhara,added more missing files,False,False,227,0,2015,2015-01,227
+RA-Scheduler,thenomadlad/RA-Scheduler,f7e0daa5,2015-01-30 16:46:51+00:00,adityadhara,added missing file mocks.py,False,False,33,3,2015,2015-01,36
+RA-Scheduler,thenomadlad/RA-Scheduler,5c71f885,2015-01-30 07:08:12+00:00,adityadhara,added db stuff to ignore files,False,False,1,1,2015,2015-01,2
+RA-Scheduler,thenomadlad/RA-Scheduler,fe62d5c2,2015-01-30 07:00:31+00:00,adityadhara,added db stuff to ignore files,False,False,2,0,2015,2015-01,2
+RA-Scheduler,thenomadlad/RA-Scheduler,0e4dbd22,2015-01-30 06:57:55+00:00,adityadhara,updated readme,False,False,2,2,2015,2015-01,4
+RA-Scheduler,thenomadlad/RA-Scheduler,27823c9c,2015-01-30 06:55:18+00:00,adityadhara,added login functionality,False,False,89,74,2015,2015-01,163
+RA-Scheduler,thenomadlad/RA-Scheduler,9d28257d,2015-01-30 05:14:49+00:00,adityadhara,Attempted login with OID and custom pwd table,False,False,173,14,2015,2015-01,187
+RA-Scheduler,thenomadlad/RA-Scheduler,6a92e5d5,2015-01-30 04:40:53+00:00,george,make menu bar highlight the active page,False,False,19,3,2015,2015-01,22
+RA-Scheduler,thenomadlad/RA-Scheduler,7d0a31f2,2015-01-29 21:45:15+00:00,george,Built initial UI for schedule list,False,False,100,8,2015,2015-01,108
+RA-Scheduler,thenomadlad/RA-Scheduler,fed0d507,2015-01-29 19:40:50+00:00,george,minor text changes,False,False,6,5,2015,2015-01,11
+RA-Scheduler,thenomadlad/RA-Scheduler,3b8f14b5,2015-01-29 19:37:54+00:00,george,modified .gitignore,False,False,2,1,2015,2015-01,3
+RA-Scheduler,thenomadlad/RA-Scheduler,5cc428b7,2015-01-29 19:36:55+00:00,george,changed to use bootstrap theme,False,False,41,15,2015,2015-01,56
+RA-Scheduler,thenomadlad/RA-Scheduler,496bc925,2015-01-29 19:16:37+00:00,george,including bootstrap,False,False,9668,0,2015,2015-01,9668
+RA-Scheduler,thenomadlad/RA-Scheduler,9a6f7d32,2015-01-29 19:01:25+00:00,george,adding gitignore,False,False,2,0,2015,2015-01,2
+RA-Scheduler,thenomadlad/RA-Scheduler,a4c105b1,2015-01-29 18:58:03+00:00,george,added placeholders for viewing (user role) and managing (administrator role),False,False,20,2,2015,2015-01,22
+RA-Scheduler,thenomadlad/RA-Scheduler,409f8c16,2015-01-23 03:09:10+00:00,adityadhara,changing readme,False,False,13,13,2015,2015-01,26
+RA-Scheduler,thenomadlad/RA-Scheduler,97a3dac5,2015-01-23 03:08:08+00:00,adityadhara,changing readme,False,False,19,14,2015,2015-01,33
+RA-Scheduler,thenomadlad/RA-Scheduler,53c09dca,2015-01-23 03:05:23+00:00,adityadhara,changing readme,False,False,5,6,2015,2015-01,11
+RA-Scheduler,thenomadlad/RA-Scheduler,a16ffc9f,2015-01-23 03:04:06+00:00,adityadhara,removed hidden files from repo,False,False,4,3230,2015,2015-01,3234
+RA-Scheduler,thenomadlad/RA-Scheduler,6baf0d9a,2015-01-23 01:16:30+00:00,adityadhara,removed compiled files,False,False,0,0,2015,2015-01,0
+RA-Scheduler,thenomadlad/RA-Scheduler,30e3439c,2015-01-22 04:59:47+00:00,adityadhara,Database Schema written up WOO,False,False,3321,46,2015,2015-01,3367
+RA-Scheduler,thenomadlad/RA-Scheduler,59a17844,2015-01-22 01:39:50+00:00,adityadhara,Created folder structure,False,False,225,0,2015,2015-01,225
+RA-Scheduler,thenomadlad/RA-Scheduler,a0ecb928,2015-01-20 20:04:27+00:00,adityadhara,Initial commit,False,False,1,0,2015,2015-01,1
+lisp-interpreter,thenomadlad/lisp-interpreter,25a36a45,2016-02-27 19:29:22+00:00,Aditya Dhara,Created context class,False,False,218,0,2016,2016-02,218
+lisp-interpreter,thenomadlad/lisp-interpreter,71cbb800,2015-08-05 01:14:53+00:00,Aditya Dhara,"Second iteration! Implemented arithmetics, quote, eq, define",False,False,147,28,2015,2015-08,175
+lisp-interpreter,thenomadlad/lisp-interpreter,3a8b9627,2015-07-09 15:59:07+00:00,Aditya Dhara,New version way better than last and implements ASTs,False,False,904,673,2015,2015-07,1577
+lisp-interpreter,thenomadlad/lisp-interpreter,6b0516c1,2015-01-18 19:57:59+00:00,adityadhara,more tests pass,False,False,234,194,2015,2015-01,428
+lisp-interpreter,thenomadlad/lisp-interpreter,ca49a9be,2015-01-15 03:16:06+00:00,adityadhara,most parts seem fine and first six functions encoded,False,False,493,103,2015,2015-01,596
+lisp-interpreter,thenomadlad/lisp-interpreter,a556d5a7,2015-01-13 01:33:00+00:00,adityadhara,Ok i just really complicated it,False,False,229,107,2015,2015-01,336
+lisp-interpreter,thenomadlad/lisp-interpreter,069dff5b,2015-01-10 09:42:37+00:00,adityadhara,Create README.md,False,False,2,0,2015,2015-01,2
+lisp-interpreter,thenomadlad/lisp-interpreter,ac864e5a,2015-01-10 09:40:44+00:00,adityadhara,First commit waddup,False,False,144,0,2015,2015-01,144
+stepping-stone-model,thenomadlad/stepping-stone-model,ca7a884b,2015-01-26 08:01:15+00:00,adityadhara,first commit,False,False,170,0,2015,2015-01,170
+seeded-growth-model,thenomadlad/seeded-growth-model,148a3af7,2015-01-26 07:52:07+00:00,adityadhara,first commit,False,False,460,0,2015,2015-01,460

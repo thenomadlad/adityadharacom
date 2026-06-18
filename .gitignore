@@ -29,3 +29,8 @@ pnpm-debug.log*
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
