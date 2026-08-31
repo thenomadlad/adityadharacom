@@ -1,8 +1,7 @@
-import js from '@eslint/js';
-import eslintPluginAstro from 'eslint-plugin-astro';
-import ts from 'typescript-eslint';
+import js from "@eslint/js";
+import eslintPluginAstro from "eslint-plugin-astro";
+import ts from "typescript-eslint";
 import globals from "globals";
-
 
 export default [
   // add more generic rule sets here, such as:
@@ -14,7 +13,7 @@ export default [
     languageOptions: {
       globals: {
         ...globals.browser, // Adds browser globals like setTimeout
-      }
-    }
-  }
+      },
+    },
+  },
 ];
