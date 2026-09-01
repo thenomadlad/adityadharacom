@@ -214,7 +214,30 @@ agreeing on a shared formatting library. The renderer's job shrinks to
 formatting logic of its own, and no renderer lock-in to something like a
 web-component's built-in number formatter.
 
-<!-- TODO: diagram — a table spec's JSON response next to the rendered table, with arrows from each `{ value, formatted }` cell to the on-screen text it produces. -->
+Concretely, one response for a table of expenses looks like this — and the
+renderer never touches a locale or currency symbol:
+
+```json
+{
+  "columns": ["Vendor", "Amount", "Date"],
+  "data": [
+    {
+      "vendor": { "value": "Acme Corp" },
+      "amount": { "value": 1234.56, "formatted": "$1,234.56" },
+      "date": { "value": "2026-06-14T12:00:00Z", "formatted": "Jun 14, 2026" }
+    }
+  ]
+}
+```
+
+| Vendor    | Amount    | Date         |
+| --------- | --------- | ------------ |
+| Acme Corp | $1,234.56 | Jun 14, 2026 |
+
+The renderer reads that table top to bottom and prints `formatted` where
+it's present. A Python or Go backend emitting the same shape gets the exact
+same rendered table — no shared `Intl` library, no client-side locale logic
+to keep in sync across languages.
 
 ### Dogfooding surfaced real design gaps that spec-writing alone didn't
 
@@ -230,11 +253,42 @@ free and dropped about 40 lines of custom CSS. Every SPA now gets a default
 the explicit path, not opting in. None of that was in the original design;
 it only showed up because the framework had to render something real.
 
-<!-- TODO: diagram/screenshot — before/after of the landing page nav (hand-rolled sidebar vs. the sl-drawer rebuild), or a shot of the landing page rendering itself via Retrofit UI's own spec system. -->
+![Retrofit UI's landing page, rendered by Retrofit UI's own spec system — light theme, hero copy "Your server describes the UI."](/blog/retrofit-ui/landing-page.png)
+
+The page above isn't hand-authored HTML — it's a `PageSpec` served like any
+other Retrofit UI response and rendered by the same client that renders a
+consumer's admin table. If the framework couldn't handle its own marketing
+page cleanly, that would have been a real signal.
 
 ### AI harnesses can be built easily with spec-driven development
 
-<!-- TODO: expand — which harness, and what made spec-driven development easy to build one around? (e.g. the implement-issues.sh script, or the auto-changeset step mentioned in the npm-publishing post) -->
+`scripts/implement-issues.sh` picks up open GitHub issues and works through
+them autonomously — one Claude call to write and commit a plan, a second to
+implement against it, then a normal PR lifecycle: push, open/update the PR,
+check CI and mergeability, and loop to the next issue. Issues can declare
+dependencies on each other in plain text ("Depends on #42"), and the harness
+skips anything still blocked or already healthy, so re-running it is safe
+and idempotent rather than something that needs careful babysitting.
+
+```mermaid
+flowchart TD
+  A[Open GitHub issue] --> B{Skip it? needs-refinement label,<br/>open dependency, or PR already healthy}
+  B -- skip --> A
+  B -- proceed --> C[Fresh git worktree for the issue]
+  C --> D[Plan step: write + commit a plan]
+  D --> E[Implementation step: build against the plan]
+  E --> F[Push branch, open/update PR]
+  F --> G[CI + mergeability checks]
+  G --> H[Next issue]
+```
+
+The reason a spec-driven project makes this tractable: the harness doesn't
+need to understand the whole codebase to act correctly, it needs the same
+thing a `TableView` builder needs — a declared contract (the issue, the
+plan, the PR's CI status) it can reconcile against, one step at a time. The
+same idea that shows up in the framework's own design — declare a spec, let
+something else reconcile it — turns out to apply recursively to how the
+framework gets built.
 
 <!-- TODO: diagram — the harness's loop (issue → spec → implementation → changeset), or a screenshot of it running. -->
 
