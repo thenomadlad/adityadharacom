@@ -9,7 +9,7 @@ heroImage: "/blog/my-site-runs-on-astro/placeholder-hero.jpg"
 
 Retrofit UI is a server-driven UI framework aimed at developers. The idea: a
 backend developer should be able to expose an admin interface for their service
-by adding a few endpoints — no frontend code required. Point the app at those
+by adding a few endpoints — no frontend code required, unless you really want to opt into the complexity. Point the app at those
 endpoints and it renders forms, tables, and navigation from the data the backend
 describes.
 
@@ -18,8 +18,17 @@ describes.
 This is a rebuild of an earlier experiment called
 [server-driven MUI](/blog/hotw-002-server-driven-mui). That version got the idea
 working but was rough — Python backend, no tests, manually constructed JSON
-component trees. I came back to it in late December 2025 and started over with a
-clearer design.
+component trees. All it did was send a JSON representation of high level react component and leave it to the front end to build the rest of the component tree
+
+I came back to it in late December 2025 and started over with a
+clearer design:
+
+- a spec to represent components -- one that is easy to extend and utilize
+- a front end implementation of that spec (I used SolidJS and shoelace components just for learning)
+- two implementations of providers of the spec, backends for app developers to use:
+  - a static renderer which I used in the documentation page
+  - a spring-boot server library which can be used by java servers to declare data
+
 
 ## How it works
 
@@ -183,6 +192,12 @@ keeping.
 
 <!-- TODO: Screenshot of the table view / form view in action. The nice-table-component-demo from the original post shows the old version; would be good to have a side-by-side or a fresh screenshot of proto2 running. -->
 
+## Key Learnings
+
+- TODO: better for the data to be provided along with the display UI (show an example of a table spec and why it's better to pass the fully formatted data with the display spec
+- dogfooding brought out better design (i.e. building our docs page, and chalk-app) helped inform the details of the design
+- AI harnesses can be built easily with spec driven development
+
 ## What's next
 
 The roadmap calls out two more things worth doing: better handling of nested
@@ -190,6 +205,8 @@ objects in forms, and a way to define navigation between views (so clicking a
 row in a table can load the form view for that row without hardcoding the URL
 pattern on the backend). The `editUrlTemplate` is a start but it's a string
 template, not typed.
+
+TODO: also comment on refactoring and improvements to the design from creating several applications
 
 The original question — whether a developer can build a working admin UI by
 writing only backend code — has a cleaner answer now: yes, for the cases the
