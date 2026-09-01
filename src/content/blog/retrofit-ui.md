@@ -4,7 +4,7 @@ description:
   "A server-driven UI framework for developers — point it at an API, get a
   working admin interface without writing UI code"
 pubDate: "Jun 17 2026"
-heroImage: "/blog/my-site-runs-on-astro/placeholder-hero.jpg"
+heroImage: "/blog/retrofit-ui/landing-page.png"
 ---
 
 Retrofit UI is a server-driven UI framework aimed at developers. The idea: a
@@ -253,12 +253,15 @@ free and dropped about 40 lines of custom CSS. Every SPA now gets a default
 the explicit path, not opting in. None of that was in the original design;
 it only showed up because the framework had to render something real.
 
-![Retrofit UI's landing page, rendered by Retrofit UI's own spec system — light theme, hero copy "Your server describes the UI."](/blog/retrofit-ui/landing-page.png)
+![The Todos example on the docs site: a real spa-solid-shoelace table component rendering live data, with inline Edit/Delete actions and an add-row form — not a mockup.](/blog/retrofit-ui/todos-live-demo.png)
 
-The page above isn't hand-authored HTML — it's a `PageSpec` served like any
-other Retrofit UI response and rendered by the same client that renders a
-consumer's admin table. If the framework couldn't handle its own marketing
-page cleanly, that would have been a real signal.
+That's not a screenshot of a mockup — it's `@retrofit-ui/spa-solid-shoelace`
+actually mounted on the docs site, rendering a `TableSpec` against data
+mocked in-browser with MSW, the same renderer path a consumer's admin table
+would use. The docs site's landing page (this post's hero image) is built
+the same way — a `PageSpec` served like any other Retrofit UI response. If
+the framework couldn't handle its own docs and marketing pages cleanly,
+that would have been a real signal.
 
 ### AI harnesses can be built easily with spec-driven development
 
