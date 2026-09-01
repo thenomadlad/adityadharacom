@@ -55,7 +55,7 @@ const updateSchema = zodToJsonSchema(UpdateBookSchema);
 const view = TableView.fromSchema(jsonSchema, "Books")
   .forUpdateCommand(updateSchema)
   .editUrlTemplate("/sdmui/book/{$.isbn}")
-  .buildForPage(page);
+  .buildForPage(page); // page of rows of data
 
 return res.json(view);
 ```
@@ -137,7 +137,7 @@ const updateSchema = zodToJsonSchema(UpdateBookSchema);
 const view = TableView.fromSchema(jsonSchema, "Books")
   .forUpdateCommand(updateSchema)
   .editUrlTemplate("/sdmui/book/{$.isbn}")
-  .buildForPage(page);
+  .buildForPage(page); // page of rows of data
 
 return res.json(view);
 ```
@@ -201,31 +201,42 @@ keeping.
 
 ## Key Learnings
 
-- **Ship fully-formatted data with the spec, not just the shape.** A table
-  cell carries both the raw value and a pre-computed display string —
-  `{ value: 1234.56, formatted: "$1,234.56" }` — rather than shipping raw
-  values and leaving the frontend to apply `Intl` formatting itself. It
-  sounds like a small thing, but it means locale/currency/date formatting
-  lives in one place (the server) instead of being re-implemented per
-  renderer, and a Python or Java backend gets output identical to a
-  TypeScript one without agreeing on a shared formatting library. The
-  renderer's job shrinks to "print `cell.formatted` if present, else
-  `String(cell.value)`" — no formatting logic of its own, and no renderer
-  lock-in to something like a web-component's built-in number formatter.
-- **Dogfooding surfaced real design gaps that spec-writing alone didn't.**
-  Building the docs page, a demo app called chalk-app, and eventually the
-  project's own landing page — all rendered *by* Retrofit UI's own spec
-  system — forced decisions that stayed theoretical otherwise. The landing
-  page push added composable `flex`/`grid` layout containers (so a page can
-  be built from nested layout primitives instead of one flat list of views)
-  and a proper nav shell — a hand-rolled sidebar first, then rebuilt on
-  Shoelace's `sl-drawer`, which handles the backdrop, focus trap, and
-  Escape-to-close for free and dropped about 40 lines of custom CSS. Every
-  SPA now gets a default "Home" nav item without a server needing to declare
-  anything — opting out is the explicit path, not opting in. None of that
-  was in the original design; it only showed up because the framework had to
-  render something real.
-- AI harnesses can be built easily with spec driven development
+### Ship fully-formatted data with the spec, not just the shape
+
+A table cell carries both the raw value and a pre-computed display string —
+`{ value: 1234.56, formatted: "$1,234.56" }` — rather than shipping raw
+values and leaving the frontend to apply `Intl` formatting itself. It sounds
+like a small thing, but it means locale/currency/date formatting lives in one
+place (the server) instead of being re-implemented per renderer, and a
+Python or Java backend gets output identical to a TypeScript one without
+agreeing on a shared formatting library. The renderer's job shrinks to
+"print `cell.formatted` if present, else `String(cell.value)`" — no
+formatting logic of its own, and no renderer lock-in to something like a
+web-component's built-in number formatter.
+
+<!-- TODO: diagram — a table spec's JSON response next to the rendered table, with arrows from each `{ value, formatted }` cell to the on-screen text it produces. -->
+
+### Dogfooding surfaced real design gaps that spec-writing alone didn't
+
+Building the docs page, a demo app called chalk-app, and eventually the
+project's own landing page — all rendered *by* Retrofit UI's own spec system
+— forced decisions that stayed theoretical otherwise. The landing page push
+added composable `flex`/`grid` layout containers (so a page can be built
+from nested layout primitives instead of one flat list of views) and a
+proper nav shell — a hand-rolled sidebar first, then rebuilt on Shoelace's
+`sl-drawer`, which handles the backdrop, focus trap, and Escape-to-close for
+free and dropped about 40 lines of custom CSS. Every SPA now gets a default
+"Home" nav item without a server needing to declare anything — opting out is
+the explicit path, not opting in. None of that was in the original design;
+it only showed up because the framework had to render something real.
+
+<!-- TODO: diagram/screenshot — before/after of the landing page nav (hand-rolled sidebar vs. the sl-drawer rebuild), or a shot of the landing page rendering itself via Retrofit UI's own spec system. -->
+
+### AI harnesses can be built easily with spec-driven development
+
+<!-- TODO: expand — which harness, and what made spec-driven development easy to build one around? (e.g. the implement-issues.sh script, or the auto-changeset step mentioned in the npm-publishing post) -->
+
+<!-- TODO: diagram — the harness's loop (issue → spec → implementation → changeset), or a screenshot of it running. -->
 
 ## What's next
 
