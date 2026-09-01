@@ -13,7 +13,14 @@ by adding a few endpoints — no frontend code required, unless you really want 
 endpoints and it renders forms, tables, and navigation from the data the backend
 describes.
 
-<!-- TODO: Add context here — what prompted this project? Was there a real use case at work, a recurring pain point with admin UIs, or something else? This section should be personal. -->
+The itch is the same one that started server-driven MUI: admin UIs at my day
+job are a specific kind of annoying. Any change to a backend service's data
+model means a matching change in a separate frontend repo, just to keep some
+CRUD screen in sync — a screen nobody spends real design effort on to begin
+with. The amount of tedium never matched the value delivered. Server-driven
+UI seemed like the actual fix: let the backend that already owns the data
+model also own what gets shown for it, instead of a frontend team re-deriving
+that shape by hand every time it changes.
 
 This is a rebuild of an earlier experiment called
 [server-driven MUI](/blog/hotw-002-server-driven-mui). That version got the idea
@@ -194,8 +201,30 @@ keeping.
 
 ## Key Learnings
 
-- TODO: better for the data to be provided along with the display UI (show an example of a table spec and why it's better to pass the fully formatted data with the display spec
-- dogfooding brought out better design (i.e. building our docs page, and chalk-app) helped inform the details of the design. It helped agents also pick up on important design choices as well
+- **Ship fully-formatted data with the spec, not just the shape.** A table
+  cell carries both the raw value and a pre-computed display string —
+  `{ value: 1234.56, formatted: "$1,234.56" }` — rather than shipping raw
+  values and leaving the frontend to apply `Intl` formatting itself. It
+  sounds like a small thing, but it means locale/currency/date formatting
+  lives in one place (the server) instead of being re-implemented per
+  renderer, and a Python or Java backend gets output identical to a
+  TypeScript one without agreeing on a shared formatting library. The
+  renderer's job shrinks to "print `cell.formatted` if present, else
+  `String(cell.value)`" — no formatting logic of its own, and no renderer
+  lock-in to something like a web-component's built-in number formatter.
+- **Dogfooding surfaced real design gaps that spec-writing alone didn't.**
+  Building the docs page, a demo app called chalk-app, and eventually the
+  project's own landing page — all rendered *by* Retrofit UI's own spec
+  system — forced decisions that stayed theoretical otherwise. The landing
+  page push added composable `flex`/`grid` layout containers (so a page can
+  be built from nested layout primitives instead of one flat list of views)
+  and a proper nav shell — a hand-rolled sidebar first, then rebuilt on
+  Shoelace's `sl-drawer`, which handles the backdrop, focus trap, and
+  Escape-to-close for free and dropped about 40 lines of custom CSS. Every
+  SPA now gets a default "Home" nav item without a server needing to declare
+  anything — opting out is the explicit path, not opting in. None of that
+  was in the original design; it only showed up because the framework had to
+  render something real.
 - AI harnesses can be built easily with spec driven development
 
 ## What's next
@@ -206,7 +235,16 @@ row in a table can load the form view for that row without hardcoding the URL
 pattern on the backend). The `editUrlTemplate` is a start but it's a string
 template, not typed.
 
-TODO: also comment on refactoring and improvements to the design from creating several applications
+Building several example apps side by side surfaced a real drift problem,
+too: each example had two hand-maintained copies of its spec — an Express
+server building it with the fluent builder API, and a separate docs demo
+constructing the same shape as a plain object literal. They drifted silently;
+one docs demo broke when a spec shape changed in `core` but its hand-copied
+version didn't get updated. The fix was extracting the actual spec-building
+code into a shared module each side imports — the server thins to just
+Express wiring, the docs demo calls the same builder. Any future spec-shape
+change now breaks the docs build at compile time instead of failing silently
+at runtime, and about 360 lines of duplicated spec construction disappeared.
 
 The original question — whether a developer can build a working admin UI by
 writing only backend code — has a cleaner answer now: yes, for the cases the
