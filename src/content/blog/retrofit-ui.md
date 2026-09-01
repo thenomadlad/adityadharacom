@@ -195,7 +195,7 @@ keeping.
 ## Key Learnings
 
 - TODO: better for the data to be provided along with the display UI (show an example of a table spec and why it's better to pass the fully formatted data with the display spec
-- dogfooding brought out better design (i.e. building our docs page, and chalk-app) helped inform the details of the design
+- dogfooding brought out better design (i.e. building our docs page, and chalk-app) helped inform the details of the design. It helped agents also pick up on important design choices as well
 - AI harnesses can be built easily with spec driven development
 
 ## What's next
