@@ -199,6 +199,28 @@ keeping.
 
 <!-- TODO: Screenshot of the table view / form view in action. The nice-table-component-demo from the original post shows the old version; would be good to have a side-by-side or a fresh screenshot of proto2 running. -->
 
+## Using an agentic SDLC for development
+
+This was the first project where I used a small script to drive software
+generation autonomously, with GitHub itself as the intermediary that tracks
+the work: `scripts/implement-issues.sh` picks up open issues and works
+through them one at a time — a first pass to write and commit a plan, a
+second to implement against it, then a normal PR lifecycle: push, open or
+update the PR, check CI and mergeability, and move to the next issue. Issues
+can declare dependencies on each other in plain text ("Depends on #42"), and
+the harness skips anything still blocked or already healthy, so re-running
+it is safe rather than something that needs careful babysitting.
+
+![Loop diagram: open a GitHub issue, check whether to skip it (a needs-refinement label, an open dependency, or a PR that's already healthy loops straight back to the top), otherwise create a worktree, write a plan, implement it, push a PR, and run CI + mergeability checks, which loops back around for the next issue.](/blog/retrofit-ui/agentic-sdlc-loop.svg)
+
+The reason a spec-driven project makes this tractable: the harness doesn't
+need to understand the whole codebase to act correctly, it needs the same
+thing a `TableView` builder needs — a declared contract (the issue, the
+plan, the PR's CI status) it can reconcile against, one step at a time. The
+same idea that shows up in the framework's own design — declare a spec, let
+something else reconcile it — turns out to apply recursively to how the
+framework gets built.
+
 ## Key Learnings
 
 ### Ship fully-formatted data with the spec, not just the shape
@@ -265,35 +287,9 @@ that would have been a real signal.
 
 ### AI harnesses can be built easily with spec-driven development
 
-`scripts/implement-issues.sh` picks up open GitHub issues and works through
-them autonomously — one Claude call to write and commit a plan, a second to
-implement against it, then a normal PR lifecycle: push, open/update the PR,
-check CI and mergeability, and loop to the next issue. Issues can declare
-dependencies on each other in plain text ("Depends on #42"), and the harness
-skips anything still blocked or already healthy, so re-running it is safe
-and idempotent rather than something that needs careful babysitting.
-
-```mermaid
-flowchart TD
-  A[Open GitHub issue] --> B{Skip it? needs-refinement label,<br/>open dependency, or PR already healthy}
-  B -- skip --> A
-  B -- proceed --> C[Fresh git worktree for the issue]
-  C --> D[Plan step: write + commit a plan]
-  D --> E[Implementation step: build against the plan]
-  E --> F[Push branch, open/update PR]
-  F --> G[CI + mergeability checks]
-  G --> H[Next issue]
-```
-
-The reason a spec-driven project makes this tractable: the harness doesn't
-need to understand the whole codebase to act correctly, it needs the same
-thing a `TableView` builder needs — a declared contract (the issue, the
-plan, the PR's CI status) it can reconcile against, one step at a time. The
-same idea that shows up in the framework's own design — declare a spec, let
-something else reconcile it — turns out to apply recursively to how the
-framework gets built.
-
-<!-- TODO: diagram — the harness's loop (issue → spec → implementation → changeset), or a screenshot of it running. -->
+Experimenting with retrofit UI to create a chat harness to learn math was
+easy to do since it was driven by a spec that was minimal. Stay tuned for
+another blog post on this topic!
 
 ## What's next
 
