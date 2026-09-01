@@ -4,7 +4,7 @@ import LanguageIcon from "../components/LanguageIcon.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { load, type RepoDeets } from "../lib/github_repos";
 
-let gh_data: {repos: RepoDeets[]} = {repos: []};
+let gh_data: { repos: RepoDeets[] } = { repos: [] };
 try {
   gh_data = await load();
 } catch (e) {
@@ -14,16 +14,22 @@ try {
 
 <BaseLayout>
   <div class="flex flex-col items-center mt-8">
-    <div class="border-2 rounded-full mb-8 h-96 w-48 bg-linear-to-br from-yellow-100 via-red-400 to-blue-800 grid grid-cols-5 grid-rows-9 items-center justify-items-center">
+    <div
+      class="border-2 rounded-full mb-8 h-96 w-48 bg-linear-to-br from-yellow-100 via-red-400 to-blue-800 grid grid-cols-5 grid-rows-9 items-center justify-items-center"
+    >
       <div class="h-9 w-9 rounded-full col-2 row-2 bg-yellow-100"></div>
-      <div class="h-12 w-12 rounded-full col-3 row-5 bg-blue-600 grid grid-cols-3 grid-rows-3 overflow-hidden">
+      <div
+        class="h-12 w-12 rounded-full col-3 row-5 bg-blue-600 grid grid-cols-3 grid-rows-3 overflow-hidden"
+      >
         <div class="h-2 w-6 rounded-full col-1 row-2 bg-green-600"></div>
         <div class="h-5 w-4 rounded-full col-1 row-2 bg-green-600"></div>
         <div class="h-3 w-5 rounded-full col-2 row-1 bg-green-600"></div>
         <div class="h-3 w-3 rounded-full col-2 row-3 bg-green-600"></div>
         <div class="h-2 w-3 rounded-full col-3 row-2 bg-green-600"></div>
       </div>
-      <div class="h-9 w-9 rounded-full col-4 row-8 bg-gray-400 grid grid-cols-3 grid-rows-3 overflow-hidden">
+      <div
+        class="h-9 w-9 rounded-full col-4 row-8 bg-gray-400 grid grid-cols-3 grid-rows-3 overflow-hidden"
+      >
         <div class="h-3 w-3 rounded-full col-1 row-1 bg-teal-400"></div>
         <div class="h-3 w-3 rounded-full col-3 row-2 bg-teal-400"></div>
         <div class="h-2 w-2 rounded-full col-2 row-3 bg-teal-400"></div>
@@ -37,13 +43,13 @@ try {
         class="inline-grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-x-4 gap-y-4 mb-4"
       >
         {
-        gh_data.repos.map((repo) => (
-        <a class="block" href={repo.url}>
-          <Card heading={repo.name} date={repo.created_at}>
-            <LanguageIcon language={repo.language} />
-          </Card>
-        </a>
-        ))
+          gh_data.repos.map((repo) => (
+            <a class="block" href={repo.url}>
+              <Card heading={repo.name} date={repo.created_at}>
+                <LanguageIcon language={repo.language} />
+              </Card>
+            </a>
+          ))
         }
       </div>
     </div>

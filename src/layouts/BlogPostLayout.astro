@@ -40,8 +40,8 @@ const { title, description, pubDate, heroImage } = Astro.props;
   </article>
 </BaseLayout>
 
-<script type="module" is:inline>
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+<script>
+  import mermaid from "mermaid";
 
   mermaid.initialize({ startOnLoad: false });
   mermaid.init(undefined, document.querySelectorAll("code.language-mermaid"));
